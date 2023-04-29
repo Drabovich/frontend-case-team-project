@@ -21,5 +21,46 @@
     <footer>
         <!-- Подвал сайта -->
     </footer>
+     <div class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign in</h2>
+        <h3>
+          Sign in to your account using email and password provided during
+          registration.
+        </h3>
+        <form>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="password">Password</label>
+          <div class="password-container">
+            <input type="password" id="password" name="password" required />
+            <span class="toggle-password" onclick="togglePasswordVisibility()"
+              ><i class="far fa-eye"></i
+            ></span>
+          </div>
+          <br />
+          <label>
+            <input type="checkbox" name="remember" checked />
+            Keep me signed in
+          </label>
+          <a href="#">Forgot password?</a>
+          <br />
+          <button class="btn modal-btn" type="submit">Sign in</button>
+          <br />
+          <a href="#">Don't have an account? <span>Sign up</span></a>
+        </form>
+        <div class="social">
+          <h3>Or sign in with</h3>
+          <div class="social-icons">
+            <a href="#"><img class="fab fa-facebook-f" src="./Facebook.svg"/></a>
+            <a href="#"><img  class="fab fa-twitter" src="./Google.svg"/></a>
+            <a href="#"><i ></i><img  src="./Twitter.svg"/></a>
+            <a href="#">< class="fab fa-instagram"><img src="./Linked-In.svg"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
