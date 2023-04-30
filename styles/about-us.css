@@ -219,7 +219,7 @@
     text-align: center;
 }
 
-.learning-programs {
+.section-learning-programs {
     margin-bottom: 180px;
 }
 
@@ -328,4 +328,70 @@
     line-height: 150%;
     color: #424551;
     text-align: center;
+}
+
+.section-studying-process {
+    margin-bottom: 180px;
+}
+
+.studying-process-subtitle {
+    text-align: left;
+}
+
+.studying-process-title {
+    text-align: left;
+}
+
+.studying-process-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.steps-studying {
+    display: flex;
+    align-items: center;
+    margin-right: 210px;
+}
+
+.steps-line {
+    margin-right: 40px;
+}
+
+.step__items {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+}
+
+.step__item {
+    margin-bottom: 32px;
+}
+
+.step__item:last-child {
+    margin-bottom: 0;
+}
+
+.step__number {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 150%;
+    color: #787A80;
+}
+
+.step__name {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 8px;
+}
+
+.step__description {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787A80;
 }
