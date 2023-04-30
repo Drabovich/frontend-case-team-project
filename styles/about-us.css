@@ -145,3 +145,76 @@
     line-height: 150%;
     color: #1E212C;
 }
+
+.section-benefits {
+    margin-bottom: 180px;
+}
+
+.benefits-heading {
+    margin-bottom: 60px;
+}
+
+.benefits__subtitle {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+}
+
+.benefits__title {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+}
+
+.benefits-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #DADBDD;
+    padding: 0px 22.5px;
+}
+
+.benefit__item:first-child {
+    padding-left: 0;
+}
+
+.benefit__item:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.benefit__image {
+    padding-bottom: 24px;
+}
+
+.benefit__caption {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    padding-bottom: 8px;
+}
+
+.benefit__text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787A80;
+    text-align: center;
+}
