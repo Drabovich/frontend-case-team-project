@@ -4,7 +4,7 @@
 }
 
 .section-about-us {
-    margin-top: 80px;
+    margin: 80px 0 180px;
 }
 
 .section-about-us__container {
@@ -90,4 +90,58 @@
 .colored-btn:hover {
     background: transparent;
     color: #FF3F3A;
+}
+
+.section-statisticks {
+    margin-bottom: 180px;
+}
+
+.section-statisticks__container {
+    display: flex;
+    align-items: center;
+}
+
+.statisticks-video {
+    margin-right: 100px;
+}
+
+.button-play {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.video-btn-play {
+    margin-right: 16px;
+}
+
+.button-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1E212C;
+}
+
+.statisticks__info {
+    display: flex;
+    align-items: center;
+}
+
+.statisticks__quantity {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    color: #FF3F3A;
+    margin-right: 16px;
+}
+
+.statisticks__subtitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #1E212C;
 }
