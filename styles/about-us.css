@@ -150,11 +150,11 @@
     margin-bottom: 180px;
 }
 
-.benefits-heading {
+.section__heading {
     margin-bottom: 60px;
 }
 
-.benefits__subtitle {
+.section__subtitle {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -165,7 +165,7 @@
     color: #1E212C;
 }
 
-.benefits__title {
+.section__title {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -216,5 +216,116 @@
     font-size: 16px;
     line-height: 160%;
     color: #787A80;
+    text-align: center;
+}
+
+.learning-programs {
+    margin-bottom: 180px;
+}
+
+.learning-programs-layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    grid-row-gap: 30px
+}
+
+.learning-program__item {
+    background: #FFFFFF;
+    border: 1px solid #E5E8ED;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.learning-program__item:hover {
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+
+.learning-program__description {
+    padding: 24px;
+}
+
+.program__badge {
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+
+.badge-marketing {
+    background: #03CEA4;
+}
+
+.badge-management {
+    background: #5A87FC;
+}
+
+.badge-hr-recruting {
+    background: #F89828;
+}
+
+.badge-design {
+    background: #F52F6E;
+}
+
+.badge-development {
+    background: #7772F1;
+}
+
+.program__text {
+    max-width: 342px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787A80;
+    margin: 20px 0;
+}
+
+.program__link {
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1E212C;
+    transition: all 0.5s ease;
+}
+
+.arrow {
+    margin-left: 8px;
+    transition: all .5s ease-in-out;
+}
+
+.program__link:hover {
+    color: #FF3F3A;
+}
+
+.program__link:hover .arrow {
+    transform: translateX(6px);
+}
+
+.learning-program__item--soonest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 390px;
+    height: 420px;
+    background: #F4F5F7;
+    border-radius: 4px;
+}
+
+.soonest__item-title {
+    max-width: 242px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #424551;
     text-align: center;
 }
