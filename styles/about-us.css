@@ -1,0 +1,93 @@
+.container {
+    max-width: 1230px;
+    margin: auto;
+}
+
+.section-about-us {
+    margin-top: 80px;
+}
+
+.section-about-us__container {
+    display: flex;
+}
+
+.info {
+    margin-right: 165px;
+}
+
+.info__title h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+    margin-bottom: 8px;
+}
+
+.info__title h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+    margin-bottom: 48px;
+}
+
+.main__text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 24px;
+}
+
+.secondary__text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    margin-bottom: 60px;
+}
+
+.no-colored-btn {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    color: #FF3F3A;
+    padding: 20px 40px;
+    border: 1px solid #FF3F3A;
+    border-radius: 4px;
+    background: transparent;
+    margin-right: 24px;
+    transition: all 0.4s ease-in-out;
+}
+
+.no-colored-btn:hover {
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    color: #FFFFFF;
+}
+
+.colored-btn {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border: 1px solid #FF3F3A;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+}
+
+.colored-btn:hover {
+    background: transparent;
+    color: #FF3F3A;
+}
