@@ -6,6 +6,10 @@
 
 section {
     padding: rem(100) 0;
+
+    @media screen and (max-width: rem(998)) {
+        padding: rem(50) 0;
+    }
 }
 
 .sr-only {
@@ -22,7 +26,6 @@ section {
 }
 
 .btn {
-
     color: #ffffff;
     background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     border-radius: 4px;
