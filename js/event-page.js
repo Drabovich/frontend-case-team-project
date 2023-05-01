@@ -1,7 +1,7 @@
 //accordition 
 
-const titles = document.querySelectorAll('.about-event__subtitle');
-const contents = document.querySelectorAll('.about-event__text');
+const titles = document.querySelectorAll('.event-about__subtitle');
+const contents = document.querySelectorAll('.event-about__text');
 
 titles.forEach(item => item.addEventListener('click', () => {
     const activeContent = document.querySelector('#' + item.dataset.tab);
