@@ -34,23 +34,69 @@ p {
 .cell-1, .cell-2, .cell-3, .cell-6, .cell-7, .cell-8 {
     width: 100%;
     max-width: 390px;
+    position: relative;
 }
 
 .cell-4 {
     width: 100%;
     max-width: 705px;
     flex-grow: 1.807;
-}
-
-.img-mob {
-    display: none;
+    position: relative;
 }
 
 .cell-5 {
     width: 100%;
     max-width: 495px;
     flex-grow: 1.269;
+    position: relative;
 }
+
+.img-mob {
+    display: none;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.vl {
+    border-left: 1px solid #999;
+    padding-right: 12px;
+}
+
+.brief {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+.topic-name {
+    padding-right: 12px;
+    font-size: 14.5px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #666;
+}
+
+.date, .time {
+    padding-right: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #666;
+}
+
+.fi {
+    padding-right: 9px;
+    color: #666;
+    transform: translateY(1px);
+}
+
 
 
 
