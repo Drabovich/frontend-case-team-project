@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Start About block */
+
+.about {
+    margin: 120px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.about__left {
+    width: 50%;
+    padding: 0 20px;
+}
+.about__left-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1e212c;
+}
+.about__left-text {
+    margin: 40px 0 0 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #424551;
+}
+.about__left-subtitle {
+    margin: 48px 0 0 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: #1e212c;
+}
+.about__left-list {
+    margin: 24px 0 0 0;
+}
+.about__left-item {
+    display: flex;
+    align-items: center;
+}
+.about__left-img {
+    width: 16px;
+    height: 16px;
+    margin: 0 16px 0 0;
+}
+.about__left-item-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+}
+
+.about__right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+.about__right-border {
+    background: #ffffff;
+    border: 1px solid #e5e8ed;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+        0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+        0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+        0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 495px;
+}
+.about__right-item {
+    margin: 25px 0 0 0;
+}
+.about__right-item:first-child {
+    margin: 0;
+}
+.about__right-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1e212c;
+}
+.about__right-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #ff3f3a;
+}
+.about__right-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787a80;
+}
+.about__right-button {
+    margin: 40px 0 0 0;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 32px;
+    gap: 10px;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    border-radius: 4px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+/* End About block */
+
+/* Start Curator block */
+
+.curator {
+    display: flex;
+    margin: 180px 20px 0 20px;
+}
+.curator__left {
+    width: 50%;
+}
+.curator__left-bg {
+    max-width: 495px;
+    width: 100%;
+    height: 580px;
+    background-color: #ffcf2d;
+    border-radius: 4px;
+    position: relative;
+}
+.curator__left-img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+.curator__right {
+    width: 50%;
+    padding: 20px;
+}
+.curator__right-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1e212c;
+}
+.curator__right-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1e212c;
+}
+.curator__right-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #787a80;
+    margin: 16px 0 0 0;
+}
+.curator__right-list {
+    margin: 32px 0 0 0;
+}
+.curator__right-item {
+    display: flex;
+    align-items: center;
+}
+.curator__right-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    margin: 0 0 0 8px;
+}
+.curator__right-about {
+    font-weight: 400;
+    font-size: 16px;
+    color: #424551;
+    margin: 32px 0 0 0;
+    line-height: 25.6px;
+}
+.curator__right-social {
+    display: flex;
+    align-items: center;
+    margin: 42px 0 0 0;
+}
+.curator__right-link {
+    margin: 0 25px 0 0;
+}
+.curator__right-link:last-child {
+    margin: 0;
+}
+.curator__right-svg {
+    width: 24px;
+    height: 24px;
+    fill: #787a80;
+}
+.curator__right-svg:hover {
+    fill: #ff3f3a;
+}
+
+.curator__right-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* End Curator block*/
+
+@media (max-width: 980px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__left {
+        width: 80%;
+        padding: 0;
+    }
+    .about__right {
+        justify-content: center;
+        margin: 60px 0 0 0;
+        width: 100%;
+        padding: 0;
+    }
+    .about__left-title {
+        font-size: 38px;
+    }
+    .about__left-subtitle {
+        font-size: 24px;
+    }
+    .about__right-title {
+        font-size: 22px;
+    }
+    .curator {
+        flex-direction: column;
+        align-items: center;
+    }
+    .curator__left,
+    .curator__right {
+        width: 100%;
+    }
+    .curator__left-bg {
+        margin: 0 auto;
+    }
+    .curator__right {
+        margin: 60px 0 0 0;
+        padding: 0;
+        width: 80%;
+    }
+    .curator__right-name {
+        font-size: 15px;
+    }
+    .curator__right-title {
+        font-size: 38px;
+    }
+    .curator__right-subtitle {
+        font-size: 18px;
+    }
+    .curator__right-text {
+        font-size: 17px;
+    }
+}
+@media (max-width: 600px) {
+    .about__left {
+        width: 100%;
+    }
+    .about__right {
+        justify-content: center;
+        margin: 60px 0 0 0;
+        width: 100%;
+    }
+    .about__left-title {
+        font-size: 30px;
+    }
+    .about__left-subtitle {
+        font-size: 20px;
+    }
+    .about__left-item-text {
+        font-size: 14px;
+    }
+    .about__right-title {
+        font-size: 20px;
+    }
+    .about__right-border {
+        padding: 20px 10px;
+    }
+    .curator__right-name {
+        font-size: 14px;
+    }
+    .curator__right-title {
+        font-size: 30px;
+    }
+    .curator__right-subtitle {
+        font-size: 16px;
+    }
+    .curator__right-text {
+        font-size: 14px;
+    }
+}
