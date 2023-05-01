@@ -482,3 +482,38 @@
     text-align: center;
     color: #787A80;
 }
+
+.testimonials-section {
+    margin-bottom: 100px;
+    padding: 100px 0;
+    background: url('../images/about-us/background/background-gray.png') no-repeat;
+}
+
+.testimonials-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    height: 344px;
+    border-radius: 80px;
+    margin-bottom: 180px;
+}
+
+.testimonial {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+    text-align: center;
+}
+
+.companies-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 102px;
+    row-gap: 40px;
+}
