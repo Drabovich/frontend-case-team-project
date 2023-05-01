@@ -42,6 +42,10 @@ p {
     flex-grow: 1.807;
 }
 
+.img-mob {
+    display: none;
+}
+
 .cell-5 {
     width: 100%;
     max-width: 495px;
@@ -76,6 +80,7 @@ p {
 
 }
 
+
 @media (max-width: 1600px) {
     .blog {
         margin: auto;
@@ -89,6 +94,21 @@ p {
     .blog {
         margin: auto;
         width: 95%;
+    }
+
+}
+
+@media (max-width: 736px) {
+    .blog {
+        margin: auto;
+        width: 95%;
+    }
+    .img-web {
+        display: none;
+    }
+    .img-mob {
+        display: initial;
+        border-radius: 4px;
     }
 
 }
