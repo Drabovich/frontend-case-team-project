@@ -2,14 +2,9 @@ html {
   font-size: 62.5%;
 }
 
-.header-p404 {
-  height: 10vh;
-  background-color: black;
-}
-
 .page-404 {
   display: grid;
-  height: 65vh;
+  height: 100%;
   grid-template-columns: 50% 1fr 1fr;
   grid-template-rows: 65% 1fr;
   background-color: #e5e5f7;
@@ -63,12 +58,7 @@ html {
   height: 50rem;
 }
 
-.footer-p404 {
-  height: 25vh;
-  background-color: black;
-}
-
-button {
+a {
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
   width: 25rem;
   padding: 2rem 1rem;
@@ -80,16 +70,16 @@ button {
   margin-left: 1rem;
   font-size: 1.7rem;
   cursor: pointer;
+  text-align: center;
 }
 
-button:hover {
+a:hover {
   transform: scale(1.2);
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .page-404 {
     display: grid;
-    height: 65vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
