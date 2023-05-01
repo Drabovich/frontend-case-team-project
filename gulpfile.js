@@ -31,7 +31,7 @@ function styles() {
 function browsersync() {
     browserSync.init({
         server: {
-            baseDir: "pages/",
+            baseDir: "./",
         },
     });
 }
