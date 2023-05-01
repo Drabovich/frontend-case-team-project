@@ -77,7 +77,6 @@
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    line-height: 52px;
     letter-spacing: 0.5px;
     color: #FFFFFF;
     padding: 20px 40px;
@@ -516,4 +515,117 @@
     justify-content: space-between;
     column-gap: 102px;
     row-gap: 40px;
+}
+
+.latest-posts-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.posts-section {
+    margin-bottom: 180px;
+}
+
+.posts-subtitle {
+    text-align: left;
+}
+
+.posts-title {
+    text-align: left;
+}
+
+.posts-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.post-heading {
+    margin-bottom: 0;
+}
+
+.post__image {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.post__badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #ffffff;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+.post__badge-heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #424551;
+}
+
+.post__description {
+    max-width: 390px;
+    margin-bottom: 16px;
+}
+
+.info__post {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.post__profession {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787A80;
+    padding-right: 12px;
+    border-right: 1px solid #787A80;
+}
+
+.date__post {
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+}
+
+.time__icon {
+    padding-right: 8px;
+}
+
+.post__time-reading {
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+    border-left: 1px solid #787A80;
+}
+
+.date-time {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787A80;
+}
+
+.post__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 8px;
+}
+
+.post__subtitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
 }
