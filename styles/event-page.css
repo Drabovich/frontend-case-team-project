@@ -49,6 +49,16 @@ section {
   }
 }
 
+.event-subtitle {
+  display: block;
+  text-transform: uppercase;
+  color: #1E212C;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
 .event-top {
   padding: 12rem 0 7.5rem 0;
   background: -o-linear-gradient(34.05deg, rgba(255, 64, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
@@ -293,15 +303,6 @@ section {
     text-align: center;
   }
 }
-.event-speaker__subtitle {
-  display: block;
-  text-transform: uppercase;
-  color: #1E212C;
-  font-weight: 700;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
-}
 .event-speaker__title {
   margin-bottom: 1rem;
 }
@@ -374,4 +375,60 @@ section {
 }
 .event-speaker__icon:hover {
   fill: #FF3F3A;
+}
+
+.event-whom__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 62.375rem) {
+  .event-whom__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.event-whom__title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  margin-right: 5rem;
+}
+.event-whom__title h2 {
+  max-width: 31.25rem;
+}
+@media screen and (max-width: 62.375rem) {
+  .event-whom__title {
+    text-align: center;
+    margin: 0 auto 2.5rem;
+  }
+}
+.event-whom__list {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+}
+.event-whom__item {
+  position: relative;
+  padding: 0 0.625rem 0 2.1875rem;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.event-whom__item::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/event-page/whom-check.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 4px;
+  left: 0;
 }
