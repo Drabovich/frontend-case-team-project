@@ -1,0 +1,4 @@
+/node_module
+/dist
+/styles/course
+package-lock.json
