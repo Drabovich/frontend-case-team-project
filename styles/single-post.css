@@ -1,3 +1,11 @@
+body {
+  font-family: Lato;
+}
+
+a {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1230px;
   margin: 0 auto;
@@ -27,8 +35,38 @@
 .aside {
   width: 30%;
 }
+
 .aside img {
   height: 100%;
+}
+
+.img-move {
+  display: inline-block; /* Строчно-блочный элемент */
+  overflow: hidden; /* Скрываем всё за контуром */
+}
+
+ .img-move  {
+  vertical-align: middle;
+  transition: transform .3s ease-in-out;
+  will-change: transform;
+}
+
+.img-move   {
+  transition: 1s; /* Время эффекта */
+  display: block; /* Убираем небольшой отступ снизу */
+ }
+
+.img-move:hover {
+  transform: scale(1.1); /* Увеличиваем масштаб */
+ }
+
+.loupe  > svg {
+  fill: rgba(154, 156, 165, 1);
+}
+
+.loupe svg:hover {
+  fill: rgba(255, 63, 58, 1);
+  cursor: pointer;
 }
 
 .header-ul {
@@ -53,17 +91,14 @@
   margin-left: 12px;
 }
 
-h1 {
-  font-family: Lato;
+.title-h1{
   font-size: 46px;
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 0em;
-  text-align: left;
-  margin-bottom: 26px;
 }
 
-h2 {
+.title-h2 {
   font-size: 32px;
   font-weight: 900;
   line-height: 42px;
@@ -72,7 +107,9 @@ h2 {
 .header-bot {
   display: flex;
   justify-content: space-between;
+  margin-top: 26px;
 }
+
 .span {
   font-size: 16px;
   font-weight: 700;
@@ -85,8 +122,12 @@ h2 {
   display: flex;
   align-items: center;
 }
-.icon img {
-  height: auto;
+ 
+.icon-social > svg {
+  fill: #787A80;
+}
+.icon-social svg:hover {
+  fill: #FF3F3A;
 }
 
 .icon a:nth-child(2) {
@@ -151,10 +192,12 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
+
 .tags { 
   display: flex;
   gap: 12px
 }
+
 .tags-link {
   border: 1px solid #D7DADD;
   border-radius: 4px;
@@ -164,6 +207,7 @@ h2 {
   line-height: 21px;
   color: rgba(120, 122, 128, 1);
 }
+
 .tags-link:hover {
   background-color: rgba(255, 63, 58, 1);
   color: rgba(255, 255, 255, 1);
@@ -172,12 +216,16 @@ h2 {
 .aside {
   max-width: 342px;
 }
+
 .aside > div {
   margin-bottom: 60px;
 }
 
 .aside h6 {
   margin-bottom: 24px;
+}
+
+.title-h6{
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -213,6 +261,7 @@ h2 {
 .author_card-desc p:nth-child(2) {
   margin-bottom: 20px ;
 }
+
 .text-grey {
   font-size: 14px;
   font-weight: 400;
@@ -292,12 +341,32 @@ h2 {
   color:rgba(154, 156, 165, 1);
 }
  
-.form-email-btn {
+.form-email-btn  {
   margin-left: 64px;
-  padding: 13px 40px;
+}
+
+.btn-red{
+  padding: 0px 40px;
   border-radius: 4px;
   background-image: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
   color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+}
+
+.posts {
+  padding: 120px 0 185px;
+}
+
+.posts-title {
+  margin-top: 8px;
+  margin-bottom: 60px;
+}
+
+.swiper-slide {
+  max-width: 390px
 }
 
 .swiper-slide_content {
@@ -310,14 +379,64 @@ h2 {
   line-height: 21px;
   color: rgba(120, 122, 128, 1);
 }
+
 .swiper-slide_content img {
   margin-right: 8px;
-  
 }
+
+.swiper-slide_text  {
+  margin-bottom: 16px;
+}
+
+.swiper-slide_btn {
+  display: flex;
+  gap: 11px;
+}
+
+.swiper-slide_btn:hover{
+  color: rgba(255, 63, 58, 1);
+}
+
+.swiper-navigation {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 66px;
+  gap: 30px;
+}
+
+.arrow > svg {
+  fill: #000;
+}
+
+.arrow svg:hover {
+  fill: rgba(255, 63, 58, 1);
+  cursor: pointer;
+}
+
+.posts-bot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 85px;
+}
+
+.posts-bot_title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+ .btn-red:hover {
+  box-shadow: 0 0.5rem 1.125rem -0.5rem #F75E05;
+ }
 
 @media (max-width: 1279px) {
   .container {
     max-width: 980px;
+  }
+  .subscribe_content {
+    gap: 80px;
   }
 }
 
@@ -325,11 +444,27 @@ h2 {
   .container {
     max-width: 768px;
   }
+  .container-bg {
+    padding: 0 30px;
+  }
+
   .article {
     width: 100%;
   }
   .aside {
     display: none;
+  }
+  .subscribe_content {
+    gap: 80px;
+  }
+  .posts-bot {
+    gap: 10px;
+  }
+  .title-h2 {
+    font-size: 25px;
+  }
+  .form-email-btn {
+    margin-left: 30px;
   }
 }
 
@@ -346,11 +481,4 @@ h2 {
     padding: 0 10px;
   }
 }
-
-
-  
-  
-  
-
-
 

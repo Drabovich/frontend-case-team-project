@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Post</title>
     <link rel="stylesheet" href="../styles/null.css">
+    <link rel="stylesheet" href="../libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="../styles/header-footer.css">
     <link rel="stylesheet" href="../styles/single-post.css">
+    <script defer src="../libs/swiper-bundle.min.js"></script>
     <script defer src="../js/header-footer.js"></script>
+    <script defer src="../js/single-post.js"></script>
 </head>
 <body>
   <main>
@@ -22,7 +25,7 @@
               </li>
               <li> <a style="color: rgba(255, 63, 58, 1);" href="#">HR & Recruting</a></li>
             </ul>
-            <h1>HR statistics: job search, interviews, hiring and recruiting</h1>
+            <h1 class="title-h1">HR statistics: job search, interviews, hiring and recruiting</h1>
             <div class="header-bot">
               <ul class="header-ul bot">
                 <li><a href="#"><img class="li-img" src="../images/single-post/calend.svg" alt="calendar"> August 3, 2020</a></li>
@@ -30,9 +33,16 @@
               </ul>
               <div class="icon">
                 <span class="span">Share:</span>
-                <a href="#"><img src="../images/single-post/iconf.svg" alt="icon"></a>
-                <a href="#"><img src="../images/single-post/icont.svg" alt="icon"></a>
-                <a href="#"><img src="../images/single-post/iconi.svg" alt="icon"></a>
+                <a class="icon-social" href="#"><svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.63537 0.836822L7.32099 0.833008C4.72086 0.833008 3.04054 2.60392 3.04054 5.34487V7.42513H0.713524C0.512443 7.42513 0.349609 7.59259 0.349609 7.79915V10.8132C0.349609 11.0198 0.512628 11.187 0.713524 11.187H3.04054V18.7925C3.04054 18.9991 3.20337 19.1663 3.40445 19.1663H6.44054C6.64162 19.1663 6.80445 18.9989 6.80445 18.7925V11.187H9.52527C9.72635 11.187 9.88919 11.0198 9.88919 10.8132L9.8903 7.79915C9.8903 7.69997 9.85187 7.60499 9.78373 7.5348C9.71558 7.46461 9.62275 7.42513 9.5262 7.42513H6.80445V5.66166C6.80445 4.81407 7.00108 4.38379 8.07593 4.38379L9.635 4.38322C9.8359 4.38322 9.99873 4.21576 9.99873 4.00939V1.21065C9.99873 1.00447 9.83608 0.837204 9.63537 0.836822Z"/></svg>
+                </a>
+                <a class="icon-social" href="#"><svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.75 1.8106C17.1059 2.08388 16.4148 2.26922 15.6887 2.35196C16.4301 1.92683 16.9976 1.25252 17.2666 0.451489C16.5711 0.845186 15.8035 1.13106 14.9855 1.28603C14.3305 0.616946 13.3988 0.200195 12.3653 0.200195C10.3827 0.200195 8.77523 1.73942 8.77523 3.63674C8.77523 3.90583 8.80694 4.16865 8.86819 4.41997C5.88501 4.2765 3.23973 2.90797 1.46928 0.828429C1.1598 1.33523 0.983743 1.92576 0.983743 2.55613C0.983743 3.74878 1.618 4.8011 2.58033 5.41677C1.992 5.39793 1.43866 5.24296 0.954233 4.98537V5.0283C0.954233 6.69317 2.19213 8.08265 3.83353 8.39889C3.5328 8.47637 3.21568 8.5193 2.88761 8.5193C2.6558 8.5193 2.43161 8.49732 2.2118 8.45543C2.66889 9.82188 3.99429 10.8156 5.56463 10.8428C4.33657 11.7642 2.7881 12.3119 1.10624 12.3119C0.816463 12.3119 0.53103 12.2951 0.25 12.2647C1.83893 13.2417 3.7253 13.8113 5.75273 13.8113C12.3566 13.8113 15.9665 8.57376 15.9665 4.0315L15.9544 3.5865C16.6597 3.1048 17.2699 2.49959 17.75 1.8106Z"/></svg>
+                  </a>
+                <a class="icon-social" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.3295 17.3337L17.3337 17.333V11.2205C17.3337 8.23019 16.6899 5.92671 13.1941 5.92671C11.5135 5.92671 10.3857 6.84894 9.92532 7.72324H9.87671V6.20588H6.56212V17.333H10.0135V11.8232C10.0135 10.3726 10.2885 8.96977 12.085 8.96977C13.8552 8.96977 13.8816 10.6253 13.8816 11.9163V17.3337H17.3295Z"/>
+                  <path d="M0.941988 6.20657H4.39754V17.3337H0.941988V6.20657Z"/><path d="M2.66838 0.666992C1.56352 0.666992 0.666992 1.56352 0.666992 2.66838C0.666992 3.77324 1.56352 4.68852 2.66838 4.68852C3.77324 4.68852 4.66977 3.77324 4.66977 2.66838C4.66908 1.56352 3.77255 0.666992 2.66838 0.666992Z"/></svg>
+                </a>
               </div>
             </div>
           </header>
@@ -61,36 +71,53 @@
             </div>
             <div class="icon">
               <span class="span">Share:</span>
-              <a href="#"><img src="../images/single-post/iconf.svg" alt="icon"></a>
-              <a href="#"><img src="../images/single-post/icont.svg" alt="icon"></a>
-              <a href="#"><img src="../images/single-post/iconi.svg" alt="icon"></a>
+              <a class="icon-social" href="#"><svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.63537 0.836822L7.32099 0.833008C4.72086 0.833008 3.04054 2.60392 3.04054 5.34487V7.42513H0.713524C0.512443 7.42513 0.349609 7.59259 0.349609 7.79915V10.8132C0.349609 11.0198 0.512628 11.187 0.713524 11.187H3.04054V18.7925C3.04054 18.9991 3.20337 19.1663 3.40445 19.1663H6.44054C6.64162 19.1663 6.80445 18.9989 6.80445 18.7925V11.187H9.52527C9.72635 11.187 9.88919 11.0198 9.88919 10.8132L9.8903 7.79915C9.8903 7.69997 9.85187 7.60499 9.78373 7.5348C9.71558 7.46461 9.62275 7.42513 9.5262 7.42513H6.80445V5.66166C6.80445 4.81407 7.00108 4.38379 8.07593 4.38379L9.635 4.38322C9.8359 4.38322 9.99873 4.21576 9.99873 4.00939V1.21065C9.99873 1.00447 9.83608 0.837204 9.63537 0.836822Z"/></svg>
+              </a>
+              <a class="icon-social" href="#"><svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.75 1.8106C17.1059 2.08388 16.4148 2.26922 15.6887 2.35196C16.4301 1.92683 16.9976 1.25252 17.2666 0.451489C16.5711 0.845186 15.8035 1.13106 14.9855 1.28603C14.3305 0.616946 13.3988 0.200195 12.3653 0.200195C10.3827 0.200195 8.77523 1.73942 8.77523 3.63674C8.77523 3.90583 8.80694 4.16865 8.86819 4.41997C5.88501 4.2765 3.23973 2.90797 1.46928 0.828429C1.1598 1.33523 0.983743 1.92576 0.983743 2.55613C0.983743 3.74878 1.618 4.8011 2.58033 5.41677C1.992 5.39793 1.43866 5.24296 0.954233 4.98537V5.0283C0.954233 6.69317 2.19213 8.08265 3.83353 8.39889C3.5328 8.47637 3.21568 8.5193 2.88761 8.5193C2.6558 8.5193 2.43161 8.49732 2.2118 8.45543C2.66889 9.82188 3.99429 10.8156 5.56463 10.8428C4.33657 11.7642 2.7881 12.3119 1.10624 12.3119C0.816463 12.3119 0.53103 12.2951 0.25 12.2647C1.83893 13.2417 3.7253 13.8113 5.75273 13.8113C12.3566 13.8113 15.9665 8.57376 15.9665 4.0315L15.9544 3.5865C16.6597 3.1048 17.2699 2.49959 17.75 1.8106Z"/></svg>
+                </a>
+              <a class="icon-social" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.3295 17.3337L17.3337 17.333V11.2205C17.3337 8.23019 16.6899 5.92671 13.1941 5.92671C11.5135 5.92671 10.3857 6.84894 9.92532 7.72324H9.87671V6.20588H6.56212V17.333H10.0135V11.8232C10.0135 10.3726 10.2885 8.96977 12.085 8.96977C13.8552 8.96977 13.8816 10.6253 13.8816 11.9163V17.3337H17.3295Z"/>
+                <path d="M0.941988 6.20657H4.39754V17.3337H0.941988V6.20657Z"/><path d="M2.66838 0.666992C1.56352 0.666992 0.666992 1.56352 0.666992 2.66838C0.666992 3.77324 1.56352 4.68852 2.66838 4.68852C3.77324 4.68852 4.66977 3.77324 4.66977 2.66838C4.66908 1.56352 3.77255 0.666992 2.66838 0.666992Z"/></svg>
+              </a>
             </div>
           </footer>
         </article>
         <aside class="aside">
           <div class="aside-input">
             <input class="form-search" type="text" placeholder="Search blog...">
-            <button> <img src="../images/single-post/search.svg" alt="search"></button>
+            <button class="loupe"> <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path  d="M7.24967 2.16634C4.44223 2.16634 2.16634 4.44223 2.16634 7.24967C2.16634 10.0571 4.44223 12.333 7.24967 12.333C8.65227 12.333 9.92112 11.7658 10.8415 10.8467C11.7637 9.92589 12.333 8.6549 12.333 7.24967C12.333 4.44223 10.0571 2.16634 7.24967 2.16634ZM0.833008 7.24967C0.833008 3.70585 3.70585 0.833008 7.24967 0.833008C10.7935 0.833008 13.6663 3.70585 13.6663 7.24967C13.6663 8.78248 13.1282 10.1905 12.2317 11.2939L14.9706 14.0278C15.2312 14.2879 15.2316 14.7101 14.9715 14.9706C14.7114 15.2312 14.2893 15.2316 14.0287 14.9715L11.2883 12.2362C10.1858 13.13 8.7799 13.6663 7.24967 13.6663C3.70585 13.6663 0.833008 10.7935 0.833008 7.24967Z"/>
+              </svg>
+              </button>
           </div>
           <div class="aside-author">
-            <h6>Author</h6>
+            <h6 class="title-h6">Author</h6>
             <div class="aside-author_card">
               <img src="../images/single-post/author.png" alt="img">
               <div class="author_card-desc">
                 <p class="title-h3 ">Kristin Watson</p>
                 <p class="text-grey">Curator of Marketing Course</p>
                 <div class="icon" >
-                  <a href="#"><img src="../images/single-post/iconf.svg" alt="icon"></a>
-                  <a href="#"><img src="../images/single-post/icont.svg" alt="icon"></a>
-                  <a href="#"><img src="../images/single-post/iconi.svg" alt="icon"></a>
+                  <a class="icon-social" href="#"><svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.63537 0.836822L7.32099 0.833008C4.72086 0.833008 3.04054 2.60392 3.04054 5.34487V7.42513H0.713524C0.512443 7.42513 0.349609 7.59259 0.349609 7.79915V10.8132C0.349609 11.0198 0.512628 11.187 0.713524 11.187H3.04054V18.7925C3.04054 18.9991 3.20337 19.1663 3.40445 19.1663H6.44054C6.64162 19.1663 6.80445 18.9989 6.80445 18.7925V11.187H9.52527C9.72635 11.187 9.88919 11.0198 9.88919 10.8132L9.8903 7.79915C9.8903 7.69997 9.85187 7.60499 9.78373 7.5348C9.71558 7.46461 9.62275 7.42513 9.5262 7.42513H6.80445V5.66166C6.80445 4.81407 7.00108 4.38379 8.07593 4.38379L9.635 4.38322C9.8359 4.38322 9.99873 4.21576 9.99873 4.00939V1.21065C9.99873 1.00447 9.83608 0.837204 9.63537 0.836822Z"/></svg>
+                  </a>
+                  <a class="icon-social" href="#"><svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.75 1.8106C17.1059 2.08388 16.4148 2.26922 15.6887 2.35196C16.4301 1.92683 16.9976 1.25252 17.2666 0.451489C16.5711 0.845186 15.8035 1.13106 14.9855 1.28603C14.3305 0.616946 13.3988 0.200195 12.3653 0.200195C10.3827 0.200195 8.77523 1.73942 8.77523 3.63674C8.77523 3.90583 8.80694 4.16865 8.86819 4.41997C5.88501 4.2765 3.23973 2.90797 1.46928 0.828429C1.1598 1.33523 0.983743 1.92576 0.983743 2.55613C0.983743 3.74878 1.618 4.8011 2.58033 5.41677C1.992 5.39793 1.43866 5.24296 0.954233 4.98537V5.0283C0.954233 6.69317 2.19213 8.08265 3.83353 8.39889C3.5328 8.47637 3.21568 8.5193 2.88761 8.5193C2.6558 8.5193 2.43161 8.49732 2.2118 8.45543C2.66889 9.82188 3.99429 10.8156 5.56463 10.8428C4.33657 11.7642 2.7881 12.3119 1.10624 12.3119C0.816463 12.3119 0.53103 12.2951 0.25 12.2647C1.83893 13.2417 3.7253 13.8113 5.75273 13.8113C12.3566 13.8113 15.9665 8.57376 15.9665 4.0315L15.9544 3.5865C16.6597 3.1048 17.2699 2.49959 17.75 1.8106Z"/></svg>
+                    </a>
+                  <a class="icon-social" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3295 17.3337L17.3337 17.333V11.2205C17.3337 8.23019 16.6899 5.92671 13.1941 5.92671C11.5135 5.92671 10.3857 6.84894 9.92532 7.72324H9.87671V6.20588H6.56212V17.333H10.0135V11.8232C10.0135 10.3726 10.2885 8.96977 12.085 8.96977C13.8552 8.96977 13.8816 10.6253 13.8816 11.9163V17.3337H17.3295Z"/>
+                    <path d="M0.941988 6.20657H4.39754V17.3337H0.941988V6.20657Z"/><path d="M2.66838 0.666992C1.56352 0.666992 0.666992 1.56352 0.666992 2.66838C0.666992 3.77324 1.56352 4.68852 2.66838 4.68852C3.77324 4.68852 4.66977 3.77324 4.66977 2.66838C4.66908 1.56352 3.77255 0.666992 2.66838 0.666992Z"/></svg>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
           <div class="aside-articles">
-            <h6>Trending Articles</h6>
+            <h6 class="title-h6">Trending Articles</h6>
             <div class="aside-articles_card">
-              <img src="../images/single-post/card1.png" alt="img">
+              <img class="img-move" src="../images/single-post/card1.png" alt="img">
               <div class="articles_card-desc">
                 <div class="card-desc_data">
                   <img src="../images/single-post/calend.svg" alt="img">
@@ -100,7 +127,7 @@
               </div>
             </div>
             <div class="aside-articles_card">
-              <img src="../images/single-post/card2.png" alt="img">
+              <img class="img-move"  src="../images/single-post/card2.png" alt="img">
               <div class="articles_card-desc">
                 <div class="card-desc_data">
                   <img src="../images/single-post/calend.svg" alt="img">
@@ -110,7 +137,7 @@
               </div>
             </div>
             <div class="aside-articles_card">
-              <img src="../images/single-post/card3.png" alt="img">
+              <img class="img-move"  src="../images/single-post/card3.png" alt="img">
               <div class="articles_card-desc">
                 <div class="card-desc_data">
                   <img src="../images/single-post/calend.svg" alt="img">
@@ -121,7 +148,7 @@
             </div>
           </div>
           <div class="aside-tags">
-            <h6>Tags</h6>
+            <h6 class="title-h6">Tags</h6>
             <div class="aside-tags-items">
               <a class="tags-link" href="#">#marketing</a>
               <a class="tags-link" href="#">#recruiting</a>
@@ -138,12 +165,12 @@
       <div class="container-bg subscribe_content">
         <img src="../images/single-post/illustration.png" alt="img">
         <div class="subscribe_content-text">
-          <h2 class="subscribe_content-title">Want to get the best articles weekly?
+          <h2 class="subscribe_content-title title-h2">Want to get the best articles weekly?
             Subscribe to our newsletter!</h2>
           <form class="subscribe_content-form">
             <div class="form-email">
               <input class="form-email_input" type="email" placeholder="Your working email">
-              <button class="form-email-btn"> Subscribe </button>
+              <button class="form-email-btn btn-red"> Subscribe </button>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="ex-check-1" checked="">
@@ -155,47 +182,127 @@
       </div>
     </section>
     <section class="posts">
-      <h3>Our blog</h3>
-      <h2 class="posts-title">You may also like</h2>
-      <div class="swiper-navigation">
-        <div class="swiper-btn-prev arrow"> <svg width="20" height="30" viewBox="0 0 22 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8.32471 17.5005L21.731 30.9067L17.9014 34.7363L0.665547 17.5005L17.9014 0.264663L21.731 4.09425L8.32471 17.5005Z" />
-          </svg> 
+      <div class="container">
+        <h6 class="title-h6">Our blog</h6>
+        <h2 class="posts-title title-h1">You may also like</h2>
+        <div class="swiper-navigation">
+          <div class="swiper-btn-prev arrow"> <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071L0.292892 6.70711C-0.0976315 6.31658 -0.0976315 5.68342 0.292892 5.29289L4.79289 0.792893C5.18342 0.402369 5.81658 0.402369 6.20711 0.792893C6.59763 1.18342 6.59763 1.81658 6.20711 2.20711L3.41421 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7L3.41421 7L6.20711 9.79289C6.59763 10.1834 6.59763 10.8166 6.20711 11.2071Z" />
+            </svg>
+          </div>
+          <div class="swiper-btn-next arrow"> <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path  d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z"/>
+            </svg>          
+          </div>
         </div>
-        <div class="swiper-btn-next arrow"> <svg width="20" height="30" viewBox="0 0 22 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.8358 17.7715L0.471191 4.54867L4.28888 0.771484L21.4712 17.7715L4.28888 34.7715L0.471191 30.9943L13.8358 17.7715Z" />
-          </svg>
-        </div>
-      </div>
-      <div class="swiper container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div>
-              <img src="../images/single-post/swiper1.png" alt="img">
-              <div class="swiper-slide_content">
-                <p> <a href="#">Design</a></p>
-                <span>|</span>
-                <p> <a href="#"><img src="../images/single-post/calend.svg"alt="time">July 28, 2020</a></p>
-                <span>|</span>
-                <p> <a href="#"><img src="../images/single-post/time.svg" alt="time"> 36 min</a></p>
+        <div class="swiper swiperPosts">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <img class="img-move" src="../images/single-post/swiper1.png" alt="img">
+                <div class="swiper-slide_content">
+                  <p> <a href="#">Design</a></p>
+                  <span>|</span>
+                  <p> <a href="#"><img src="../images/single-post/calend.svg"alt="time">July 28, 2020</a></p>
+                  <span>|</span>
+                  <p> <a href="#"><img src="../images/single-post/time.svg" alt="time"> 36 min</a></p>
+                </div>
+                <h3 class="title-h3 ">What are color profiles and how they work in graphic design</h3>
+                <p class="swiper-slide_text text-base">Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend...</p>
+                <a class="swiper-slide_btn" href="#">Listen <div class="arrow"><svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path  d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z"/>
+                  </svg></div>
+                </a>
               </div>
-              <h3 class="title-h3 ">What are color profiles and how they work in graphic design</h3>
-              <p class="text-base">Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend...</p>
-              <a href="#">Listen <img src="../images/single-post/Line (Stroke).svg" alt="line"></a>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div>
-              <img src="../images/single-post/swiper2.png" alt="img">
+            <div class="swiper-slide">
+              <div>
+                <img class="img-move" src="../images/single-post/swiper2.png" alt="img">
+                <div class="swiper-slide_content">
+                  <p> <a href="#">Development</a></p>
+                  <span>|</span>
+                  <p> <a href="#"><img src="../images/single-post/calend.svg"alt="time">September 1, 2020</a></p>
+                </div>
+                <h3 class="title-h3 ">How to choose the first programming language for a beginner</h3>
+                <p class="swiper-slide_text text-base">Turpis sed at magna laoreet gravida consequat tortor placerat. Gravida vitae aliquet enim egestas dui...</p>
+                <a class="swiper-slide_btn" href="#">Read <div class="arrow"><svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path  d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z"/>
+                  </svg> </div>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div>
-              <img src="../images/single-post/swiper3.png" alt="img">
+            <div class="swiper-slide">
+              <div>
+                <img class="img-move" src="../images/single-post/swiper3.png" alt="img">
+                <div class="swiper-slide_content">
+                  <p><a href="#">Design</a></p>
+                  <span>|</span>
+                  <p> <a href="#"><img src="../images/single-post/calend.svg"alt="time">August 8, 2020</a></p>
+                </div>
+                <h3 class="title-h3 ">Should you choose a creative profession if you are attracted to creativity?</h3>
+                <p class="swiper-slide_text text-base">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...</p>
+                <a class="swiper-slide_btn" href="#">Read <div class="arrow"><svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path  d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z"/>
+                  </svg></div>  
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img class="img-move" class="img-move" src="../images/single-post/swiper1.png" alt="img">
+                <div class="swiper-slide_content">
+                  <p> <a href="#">Design</a></p>
+                  <span>|</span>
+                  <p> <a href="#"><img src="../images/single-post/calend.svg"alt="time">July 28, 2020</a></p>
+                  <span>|</span>
+                  <p> <a href="#"><img src="../images/single-post/time.svg" alt="time"> 36 min</a></p>
+                </div>
+                <h3 class="title-h3 ">What are color profiles and how they work in graphic design</h3>
+                <p class="swiper-slide_text text-base">Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend...</p>
+                <a class="swiper-slide_btn" href="#">Listen <div class="arrow"><svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path  d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z"/>
+                  </svg></div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img class="img-move" src="../images/single-post/swiper2.png" alt="img">
+                <div class="swiper-slide_content">
+                  <p> <a href="#">Development</a></p>
+                  <span>|</span>
+                  <p> <a href="#"><img src="../images/single-post/calend.svg"alt="time">September 1, 2020</a></p>
+                </div>
+                <h3 class="title-h3 ">How to choose the first programming language for a beginner</h3>
+                <p class="swiper-slide_text text-base">Turpis sed at magna laoreet gravida consequat tortor placerat. Gravida vitae aliquet enim egestas dui...</p>
+                <a class="swiper-slide_btn" href="#">Read <div class="arrow"><svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path  d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z"/>
+                  </svg></div>  
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img class="img-move" src="../images/single-post/swiper3.png" alt="img">
+                <div class="swiper-slide_content">
+                  <p> <a href="#">Design</a></p>
+                  <span>|</span>
+                  <p> <a href="#"><img src="../images/single-post/calend.svg"alt="time">August 8, 2020</a></p>
+                </div>
+                <h3 class="title-h3 ">Should you choose a creative profession if you are attracted to creativity?</h3>
+                <p class="swiper-slide_text text-base">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...</p>
+                <a class="swiper-slide_btn" href="#">Read <div class="arrow"><svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path  d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z"/>
+                  </svg></div>  
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="posts-bot">
+          <h3 class="posts-bot_title ">Do you want more articles, podcasts and videos?</h3>
+          <button class="btn-red">Go to blog</button>
+        </div>
       </div>
     </section>
   </main>
