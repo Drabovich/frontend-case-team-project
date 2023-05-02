@@ -8,7 +8,10 @@
 	<title>Courses</title>
 	<link rel="stylesheet" href="../styles/null.css">
 	<link rel="stylesheet" href="../styles/header-footer.css">
+	<link rel="stylesheet" href="../libs/swiper-bundle.min.css">
 	<link rel="stylesheet" href="../styles/courses.css">
+	<script defer src="../libs/swiper-bundle.min.js"></script>
+	<script defer src="../js/courses.js"></script>
 	<script defer src="../js/header-footer.js"></script>
 </head>
 
@@ -205,42 +208,71 @@
 				<h3 class="section-title">
 					What our students say
 				</h3>
-				<div class="testimonials-inner">
-					<p class="testimonials-inner-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
-						fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue
-						tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
-					</p>
-					<div class="testimonials-person flex">
-						<img class="testimonials-img" src="/images/courses-page/image.jpg" alt="img">
-						<div class="testimonials-img-wrapper flex">
-							<span class="testimonials-img-name">
-								Eleanor Pena
-							</span>
-							<span class="testimonials-profesion">
-								Position, Course
-							</span>
+				<div class="testimonials-inner swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<p class="testimonials-inner-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
+								fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non.
+								Congue
+								tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+							</p>
+							<div class="testimonials-person flex">
+								<img class="testimonials-img" src="/images/courses-page/image.jpg" alt="img">
+								<div class="testimonials-img-wrapper flex">
+									<span class="testimonials-img-name">
+										Eleanor Pena
+									</span>
+									<span class="testimonials-profesion">
+										Position, Course
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<p class="testimonials-inner-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
+								fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non.
+								Congue
+								tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+							</p>
+							<div class="testimonials-person flex">
+								<img class="testimonials-img" src="/images/courses-page/image.jpg" alt="img">
+								<div class="testimonials-img-wrapper flex">
+									<span class="testimonials-img-name">
+										Eleanor Pena
+									</span>
+									<span class="testimonials-profesion">
+										Position, Course
+									</span>
+								</div>
+							</div>
 						</div>
 					</div>
+					<div class="swiper-pagination"></div>
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 				</div>
+
 			</section>
 			<section class="sertificate ">
 				<div class="sertificate-inner ">
-						<h2 class="first-title first-sertificate-title">
-							Createx Certificate
-						</h2>
-						<h3 class="section-title section-sertificate-title">
-							Your expertise will&nbsp; be confirmed
-						</h3>
-						<p class="sertificate-text">
-							We are accredited by international professional organizations and institutes:
-						</p>
-						<div class="our-partners">
-							<img src="../images/courses-page/logo-1.jpg" class="our-partners-img" alt="logo-1">
-							<img src="../images/courses-page/logo-2.jpg" class="our-partners-img" alt="logo-2">
-							<img src="../images/courses-page/logo-3.jpg" class="our-partners-img" alt="logo-3">
-						</div>
+					<h2 class="first-title first-sertificate-title">
+						Createx Certificate
+					</h2>
+					<h3 class="section-title section-sertificate-title">
+						Your expertise will&nbsp; be confirmed
+					</h3>
+					<p class="sertificate-text">
+						We are accredited by international professional organizations and institutes:
+					</p>
+					<div class="our-partners">
+						<img src="../images/courses-page/logo-1.jpg" class="our-partners-img" alt="logo-1">
+						<img src="../images/courses-page/logo-2.jpg" class="our-partners-img" alt="logo-2">
+						<img src="../images/courses-page/logo-3.jpg" class="our-partners-img" alt="logo-3">
 					</div>
+				</div>
 			</section>
 			<section class="subscription">
 				<h2 class="first-title">
@@ -249,6 +281,14 @@
 				<h3 class="section-title subscription-title">
 					Subscribe to the Createx School<br> announcements
 				</h3>
+				<div class="subscription-wrapper">
+					<form class="subscription-form ">
+						<input type="email" placeholder="Your working email" class="subscription-search">
+						<button class="subscription-btn">
+							Subscribe
+						</button>
+					</form>
+				</div>
 			</section>
 		</div>
 	</main>

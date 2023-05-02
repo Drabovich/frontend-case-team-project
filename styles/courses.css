@@ -258,6 +258,8 @@ input {
 	background-color: #f4f5f7;
 }
 .testimonials-inner {
+	width: 1020px;
+	height: 344px;
 	background-image: url(../images/courses-page/braces.jpg);
 	background-repeat: no-repeat;
 	background-position: top 65px left 50px;
@@ -326,6 +328,44 @@ input {
 	margin-right: 40px;
 }
 .subscription {
-	background-color: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
-	opacity: 0.2;;
+	background: url(../images/courses-page/illustration-left.png) left bottom, 
+	url(../images/courses-page/illustration-right.png) right bottom ;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 564px;
+	padding-top: 120px;
+	background-color: #feddd0;
+}
+
+.subscription-title {
+	margin-bottom: 60px;
+}
+
+.subscription-wrapper {
+	margin: 0 auto;
+	max-width: 610px;
+}
+.subscription-search {
+	padding: 13px 272px 13px 16px;
+	width: 422px;
+	height: 52px;
+	margin-right: 24px;
+	background-color: #fff;
+	background-image: none;
+}
+.subscription-btn {
+	padding: 0 40px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 52px;
+	color: #fff;
+	background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+	border-radius: 4px;
+}
+.background-img-left {
+	position: absolute;
+	background-color: #feddd0;
+}
+.background-img-right {
+	position: absolute;
 }
