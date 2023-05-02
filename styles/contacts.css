@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --primary: #ff3f3a;
   --f-c-grey-1: #787a80;
@@ -28,11 +22,6 @@ html::-webkit-scrollbar-track {
 /* Handle */
 html::-webkit-scrollbar-thumb {
   background: var(--primary);
-}
-
-.header-c {
-  height: 5vh;
-  background-color: black;
 }
 
 .main-grid {
