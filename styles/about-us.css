@@ -524,9 +524,31 @@
 }
 
 .testimonials-section {
-    margin-bottom: 100px;
-    padding: 100px 0;
-    background: url('../images/about-us/background/background-gray.png') no-repeat;
+    position: relative;
+    padding: 100px 0 180px;
+    background: #F4F5F7;
+}
+
+.gray-circles {
+    position: absolute;
+    top: 75px;
+    left: 75px;
+}
+
+.testimonials-heading {
+    position: relative;
+}
+
+.testimonials-title {
+    position: relative;
+    z-index: 999;
+}
+
+.gray-shapes {
+    position: absolute;
+    top: 20px;
+    right: 260px;
+    z-index: 0;
 }
 
 .testimonials-box {
@@ -536,7 +558,6 @@
     background: #ffffff;
     height: 344px;
     border-radius: 80px;
-    margin-bottom: 180px;
 }
 
 .testimonial {
@@ -547,6 +568,24 @@
     line-height: 130%;
     color: #1E212C;
     text-align: center;
+}
+
+.gray-circles-side {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+.companies-section {
+    position: relative;
+    background: #F4F5F7;
+    padding: 0 0 100px;
+}
+
+.gray-shapes-arrows {
+    position: absolute;
+    top: 0;
+    left: 40px;
 }
 
 .companies-box {
@@ -566,7 +605,7 @@
 }
 
 .posts-section {
-    margin-bottom: 180px;
+    margin: 100px 0 180px;
 }
 
 .posts-subtitle {
