@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6,p{font-size: inherit; font-weight: inherit}
 [hidden] {display: none}
 
 
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); 
 
 body{
     display: flex;

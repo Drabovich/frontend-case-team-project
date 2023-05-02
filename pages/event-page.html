@@ -183,16 +183,39 @@
                         <h2 class="event-subscription__title event-title">Don’t want to miss the best events? Subscribe
                             to our newsletter!</h2>
                         <div class="event-subscription__input">
-                            <input class="event-subscription__email" type="text" placeholder="Your working email"
+                            <input class="event-subscription__email" type="email" placeholder="Your working email"
                                 name="mail" required>
                             <input class="event-subscription__btn btn" type="submit" name="button" value="Subscribe">
                         </div>
                         <div class="event-subscription__check">
-                            <input class="event-subscription__checkbox" type="checkbox" checked="checked" name="check" id="check">
+                            <input class="event-subscription__checkbox" type="checkbox" checked="checked" name="check"
+                                id="check">
                             <label for="check">I agree
                                 to receive communications from Createx Online School</label>
                         </div>
                     </form>
+                </div>
+            </div>
+        </section>
+        <section class="request">
+            <div class="container">
+                <div class="request__content">
+                    <form class="request__form" action="#">
+                        <span class="event-subtitle">Don't miss the event</span>
+                        <h2 class="request__title event-title">Leave a request</h2>
+                        <label class="request__label" for="name">Full Name</label>
+                        <input class="request__input" type="text" id="name" name="full-name"
+                            placeholder="Your full name" required>
+                        <label class="request__label" for="email">Email</label>
+                        <input class="request__input" type="email" id="email" name="email"
+                            placeholder="Your working email" required>
+                        <label class="request__label" for="phone">Phone</label>
+                        <input class="request__input request__input--phone" type="tel" id="phone" name="phone"
+                            placeholder="Your phone number" required>
+                        <input class="request__btn btn" type="submit" name="button" value="Join the event">
+<p class="request__text">&#42You will receive a link to the online lecture in an email after registration.</p>
+                    </form>
+                    <div class="request__img"></div>
                 </div>
             </div>
         </section>

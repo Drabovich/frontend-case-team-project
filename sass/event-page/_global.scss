@@ -5,10 +5,14 @@
 }
 
 section {
-    padding: rem(100) 0;
+    padding: rem(60) 0;
 
     @media screen and (max-width: rem(998)) {
         padding: rem(50) 0;
+    }
+
+    @media screen and (max-width: rem(376)) {
+        padding: rem(40) 0;
     }
 }
 
@@ -30,8 +34,9 @@ section {
     background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     border-radius: 4px;
     font-size: rem(14);
-    padding: rem(15) rem(168);
+    padding: rem(15) 0;
     text-align: center;
+    cursor: pointer;
 }
 
 .event-title {
@@ -41,7 +46,7 @@ section {
     color: #1E212C;
 
     @media screen and (max-width: rem(780)) {
-        font-size: rem(42);
+        font-size: rem(38);
     }
 }
 
