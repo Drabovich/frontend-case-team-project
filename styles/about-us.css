@@ -100,6 +100,7 @@
 }
 
 .section-statisticks {
+    position: relative;
     margin-bottom: 180px;
 }
 
@@ -114,14 +115,14 @@
 
 .video__background {
     position: relative;
-    z-index: 9;
+    z-index: 999;
 }
 
 .dots {
-    position: relative;
+    position: absolute;
     z-index: 0;
-    right: 90px;
-    bottom: 43px;
+    left: 70px;
+    bottom: -45px;
 }
 
 .button-play {
