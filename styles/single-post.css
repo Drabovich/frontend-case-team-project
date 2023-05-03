@@ -69,7 +69,7 @@ a {
   cursor: pointer;
 }
 
-.header-top {
+.header-items{
   display: flex;
   gap: 12px;
   margin-bottom: 12px;
@@ -83,11 +83,11 @@ a {
   margin-right: 9px;
 }
 
-.header-top a {
+.header-items a {
   color: rgba(66, 69, 81, 1);
 }
 
-.header-top span {
+.header-items span {
   margin-left: 12px;
 }
 
