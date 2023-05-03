@@ -3,8 +3,12 @@
     margin: auto;
 }
 
+.section {
+    margin-bottom: 180px;
+}
+
 .section-about-us {
-    margin: 80px 0 180px;
+    margin-top: 80px;
 }
 
 .section-about-us__container {
@@ -57,14 +61,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 52px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    line-height: 52px;
     letter-spacing: 0.5px;
     color: #FF3F3A;
-    padding: 20px 40px;
+    padding: 16px 40px;
     border: 1px solid #FF3F3A;
     border-radius: 4px;
     background: transparent;
@@ -78,7 +80,6 @@
 }
 
 .colored-btn {
-    height: 52px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +88,7 @@
     font-size: 16px;
     letter-spacing: 0.5px;
     color: #FFFFFF;
-    padding: 20px 40px;
+    padding: 16px 40px;
     background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     border: 1px solid #FF3F3A;
     border-radius: 4px;
@@ -101,7 +102,6 @@
 
 .section-statisticks {
     position: relative;
-    margin-bottom: 180px;
 }
 
 .section-statisticks__container {
@@ -168,7 +168,6 @@
 
 .section-benefits {
     position: relative;
-    margin-bottom: 180px;
 }
 
 .shapes {
@@ -204,6 +203,7 @@
 
 .benefits-layout {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -244,10 +244,6 @@
     line-height: 160%;
     color: #787A80;
     text-align: center;
-}
-
-.section-learning-programs {
-    margin-bottom: 180px;
 }
 
 .learning-programs-layout {
@@ -359,7 +355,6 @@
 
 .section-studying-process {
     position: relative;
-    margin-bottom: 180px;
 }
 
 .circles {
@@ -655,6 +650,7 @@
 
 .info__post {
     display: flex;
+    align-items: center;
     margin-bottom: 8px;
 }
 
@@ -696,7 +692,7 @@
 .post__title {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 17px;
     line-height: 150%;
     color: #1E212C;
     margin-bottom: 8px;
@@ -711,9 +707,8 @@
 }
 
 .subscribe-section {
-    position: relative;
     background: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
-    padding: 120px 0 180px;
+    padding: 120px 0 0;
 }
 
 .subscribe-holder {
@@ -737,16 +732,367 @@
     margin-right: 24px;
 }
 
-.subscribe-image-left {
-    position: absolute;
-    top: 310px;
-    bottom: 0;
-    left: 0;
+.subsribe-image {
+    display: flex;
+    justify-content: space-between;
 }
 
-.subscribe-image-right {
-    position: absolute;
-    top: 310px;
-    bottom: 0;
-    right: 0;
+
+@media (max-width: 1250px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .info {
+        margin-right: 90px;
+    }
+
+    .statisticks-video {
+        margin-right: 80px;
+    }
+
+    .video__background {
+        width: 770px;
+        height: 510px;
+    }
+
+    .dots {
+        left: 12px;
+    }
+
+    .learning-programs-layout {
+        justify-content: space-evenly;
+        grid-row-gap: 50px;
+    }
+
+    .companies-box {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1230px) {
+    .about-us-image {
+        width: 423px;
+    }
+
+    .video__background {
+        width: 720px;
+        height: 470px;
+    }
+
+    .steps-studying {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 1135px) {
+    .section__title {
+        font-size: 40px;
+    }
+
+    .section-about-us__container {
+        align-items: center;
+    }
+
+    .about-us-image {
+        width: 423px;
+        height: 380px;
+    }
+
+    .video__background {
+        width: 660px;
+        height: 410px;
+    }
+
+    .benefit__caption {
+        font-size: 18px;
+    }
+
+    .team-members {
+        justify-content: center;
+        column-gap: 40px;
+    }
+}
+
+@media(max-width: 1115px) {
+    .section-about-us__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        max-width: 500px;
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .info__title h1 {
+        font-size: 41px;
+    }
+
+    .secondary__text {
+        margin-bottom: 40px;
+    }
+
+    .statisticks-video {
+        margin-right: 70px;
+    }
+
+    .video__background {
+        width: 590px;
+        height: 340px;
+    }
+
+    .benefit__item {
+        padding: 0 20px;
+    }
+
+    .steps-studying-image {
+        height: 552px;
+    }
+
+    .post__title {
+        font-size: 15px;
+    }
+
+    .post__subtitle {
+        font-size: 15px;
+    }
+
+    .date-time {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 1048px) {
+    .section {
+        margin-bottom: 120px;
+    }
+
+    .section__title {
+        font-size: 35px;
+    }
+
+    .section-statisticks__container {
+        flex-direction: column;
+    }
+
+    .statisticks-video {
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .dots {
+        bottom: 268px;
+        left: 164px;
+    }
+
+    .benefits-layout {
+        flex-direction: column;
+    }
+
+    .benefit__item {
+        width: 240px;
+        border-right: 0;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .benefit__caption {
+        font-size: 17px;
+    }
+
+    .benefit__text {
+        font-size: 15px;
+    }
+
+    .learning-programs-layout {
+        column-gap: 45px;
+    }
+
+    .studying-process-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step__items {
+        max-width: 447px;
+    }
+
+    .steps-studying {
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .steps-studying-image {
+        width: 500px;
+        height: 488px;
+    }
+
+    .latest-posts-layout {
+        flex-direction: column;
+    }
+
+    .post {
+        margin-bottom: 60px;
+    }
+
+    .post:last-child {
+        margin-bottom: 0;
+    }
+
+    .post__title {
+        font-size: 18px;
+    }
+
+    .subscribe-holder {
+        margin-bottom: 40px;
+    }
+
+    .subscribe-section {
+        padding: 60px 0 0;
+    }
+
+    .subscribe-holder {
+        margin-bottom: 60px;
+    }
+
+    .subsribe-image {
+        justify-content: center;
+    }
+
+    .right-subscribe-image {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-us-image {
+        width: 400px;
+        height: 360px;
+    }
+    
+    .section__title {
+        font-size: 27px;
+    }
+
+    .info__title {
+        text-align: center;
+    }
+
+    .info__title h1{
+        font-size: 39px;
+    }
+
+    .main__text {
+        text-align: center;
+    }
+
+    .secondary__text {
+        text-align: center;
+    }
+
+    .info__buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .shapes {
+        top: -56px;
+        right: 20px;
+        bottom: 0;
+    }
+
+    .steps-line {
+        height: 582px;
+    }
+
+    .step__item {
+        margin-bottom: 55px;
+    }
+
+    .step__name {
+        font-size: 18px;
+    }
+
+    .step__description {
+        font-size: 15px;
+    }
+
+    .steps-studying-image {
+        width: 450px;
+        height: 430px;
+    }
+
+    .team-members {
+        row-gap: 40px;
+    }
+
+    .section__title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 495px) {
+    .info__buttons {
+        width: 213px;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .no-colored-btn {
+        font-size: 15px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-us-image {
+        width: 350px;
+        height: 310px;
+    }
+
+    .video__background {
+        height: 280px;
+    }
+
+    .companies-box {
+        flex-direction: column;
+    }
+
+    .posts-heading {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .post-heading {
+        margin-bottom: 20px;
+    }
+
+    .posts-subtitle {
+        text-align: center;
+    }
+
+    .subscribe-holder {
+        flex-direction: column;
+    }
+
+    .subscribe-form {
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 395px) {
+    .video__background {
+        height: 230px;
+    }
+
+    .step__item {
+        margin-bottom: 30px;
+    }
+
+    .date-time {
+        font-size: 12px;
+    }
 }

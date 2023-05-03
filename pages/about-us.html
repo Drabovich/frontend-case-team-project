@@ -12,7 +12,7 @@
 </head>
 <body>
     <main>
-        <section class="section-about-us">
+        <section class="section section-about-us">
             <div class="container section-about-us__container">
                 <div class="info">
                     <div class="info__title">
@@ -29,11 +29,11 @@
                     </div>
                 </div>
                 
-                <img src="../images/about-us/illustration.png" alt="Illustration" class="about-is-image" width="465" height="400">
+                <img src="../images/about-us/illustration.png" alt="Illustration" loading="lazy" class="about-us-image" width="465" height="400">
             </div>
         </section>
 
-        <section class="section-statisticks">
+        <section class="section section-statisticks">
             <div class="container section-statisticks__container">
                 <div class="statisticks-video">
                     <div class="button-play">
@@ -67,7 +67,7 @@
             </div>
         </section>
 
-        <section class="section-benefits">
+        <section class="section section-benefits">
             <img src="../images/about-us/background/shapes.svg" alt="" class="shapes">
             <div class="container">
                 <div class="section__heading">
@@ -100,7 +100,7 @@
             </div>
         </section>
 
-        <section class="section-learning-programs">
+        <section class="section section-learning-programs">
             <div class="container">
                 <div class="section__heading">
                     <h3 class="section__subtitle">our main directions</h3>
@@ -190,7 +190,7 @@
             </div>
         </section>
 
-        <section class="section-studying-process">
+        <section class="section section-studying-process">
             <img src="../images/about-us/background/circles.svg" alt="" class="circles">
             <div class="container">
                 <div class="section__heading">
@@ -240,7 +240,7 @@
             <img src="../images/about-us/background/shapes-arrows.svg" alt="" class="shapes-arrows">
         </section>
 
-        <section class="section-our-team">
+        <section class="section section-our-team">
             <div class="container">
                 <div class="section__heading">
                     <h3 class="section__subtitle">Best tutors are all here</h3>
@@ -615,7 +615,7 @@
             </div>
         </section>
 
-        <section class="posts-section">
+        <section class="section posts-section">
             <div class="container">
                 <div class="posts-heading">
                     <div class="section__heading post-heading">
@@ -732,14 +732,16 @@
 
                 <div class="subscribe-holder">
                     <form action="" class="subscribe-form">
-                        <input type="text" placeholder="Your working email">
+                        <input type="email" placeholder="Your working email">
                     </form>
 
-                    <button href="#" class="colored-btn">Subscribe</button>
+                    <input type="submit" class="colored-btn" value="Subscribe">
+                    <!-- <button href="#" class="colored-btn" type="submit">Subscribe</button> -->
                 </div>
-
-                <img src="../images/about-us/image-subscribe.png" alt="" width="354" height="246" class="subscribe-image-left">
-                <img src="../images/about-us/image-subscribe.png" alt="" width="354" height="246" class="subscribe-image-right">
+            </div>
+            <div class="subsribe-image">
+                <img src="../images/about-us/image-subscribe.png" alt="" width="354" height="246" class="left-subscribe-image">
+                <img src="../images/about-us/image-subscribe.png" alt="" width="354" height="246" class="right-subscribe-image">
             </div>
         </section>
     </main>
