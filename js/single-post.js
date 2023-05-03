@@ -7,13 +7,8 @@ var swiperPosts = new Swiper(".swiperPosts", {
   },
  
   breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-    },
     640: {
-      slidesPerView: 2,
-      spaceBetween: 20
+      slidesPerView: 1,
     },
     1279: {
       slidesPerView: 3,

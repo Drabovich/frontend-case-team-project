@@ -41,8 +41,8 @@ a {
 }
 
 .img-move {
-  display: inline-block; /* Строчно-блочный элемент */
-  overflow: hidden; /* Скрываем всё за контуром */
+  display: inline-block;
+  overflow: hidden; 
 }
 
  .img-move  {
@@ -52,12 +52,12 @@ a {
 }
 
 .img-move   {
-  transition: 1s; /* Время эффекта */
-  display: block; /* Убираем небольшой отступ снизу */
+  transition: 1s; 
+  display: block; 
  }
 
 .img-move:hover {
-  transform: scale(1.1); /* Увеличиваем масштаб */
+  transform: scale(1.1); 
  }
 
 .loupe  > svg {
@@ -69,7 +69,7 @@ a {
   cursor: pointer;
 }
 
-.header-ul {
+.header-top {
   display: flex;
   gap: 12px;
   margin-bottom: 12px;
@@ -83,11 +83,11 @@ a {
   margin-right: 9px;
 }
 
-.header-ul a {
+.header-top a {
   color: rgba(66, 69, 81, 1);
 }
 
-.header-ul span {
+.header-top span {
   margin-left: 12px;
 }
 
@@ -356,10 +356,6 @@ a {
   text-align: center;
 }
 
-.posts {
-  padding: 120px 0 185px;
-}
-
 .posts-title {
   margin-top: 8px;
   margin-bottom: 60px;
@@ -443,19 +439,31 @@ a {
 @media (max-width: 1024px) {
   .container {
     max-width: 768px;
+    padding: 70px 0 50px;
+  }
+  .container-bg {
+    max-width: 900px;
   }
   .container-bg {
     padding: 0 30px;
   }
-
   .article {
     width: 100%;
+  }
+  .article-text_bold  {
+    font-size: 16px;
+  }
+  .text-base {
+    font-size: 13px;
   }
   .aside {
     display: none;
   }
   .subscribe_content {
     gap: 80px;
+  }
+  .posts {
+    padding: 50px 0 60px;
   }
   .posts-bot {
     gap: 10px;
@@ -470,8 +478,45 @@ a {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 550px;
+    max-width: 350px;
   }
+  .title-h1 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 0em;
+  }
+  .header-bot {
+    flex-direction: column;
+  }
+  .article-footer {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .subscribe_content {
+    flex-direction: column;
+    text-align: center;
+  } 
+  .tags-link {
+    padding: 2px 4px 2px 4px;
+  }
+  .form-email  {
+    flex-direction: column;
+  }
+  .form-email_input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .subscribe_content-text {
+    padding: 40px 0 40px;
+  }
+  .posts-bot {
+    flex-direction: column;
+    text-align: center;
+  }
+  .posts {
+    padding: 10px 0 15px; 
+}
 }
 
 @media (max-width: 320px) {
