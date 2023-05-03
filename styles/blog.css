@@ -1,4 +1,10 @@
-
+h1 {
+    color: #1E212C;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0em;
+}
 
 h3 {
     font-size: 20px;
@@ -8,6 +14,14 @@ h3 {
     text-align: left;
     color: #1E212C;
     margin: 8px auto 8px;
+}
+
+h4 {
+    color: #1E212C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1px;
 }
 
 p {
@@ -20,16 +34,65 @@ p {
     margin: 8px auto 16px;
 }
 
-.blog {
+.text-box {
+    display: flex;
+    justify-content: center;
+    margin: 155px auto 80px auto;
+}
+
+.text-wrap {
+    text-align: center;
+}
+
+.list-block {
+    display: flex;
+    justify-content: center;
     margin: auto;
 }
 
+.list {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    max-width: 1230px;
+    padding-bottom: 5px;
+}
+
+.blog {
+    display: flex;
+    justify-content: center;
+    margin: 45px auto 80px auto;
+}
+
+.container {
+    display: flex;
+    grid-gap: 53px 30px;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1230px;
+    margin: auto 10px;
+}
+
+/*
 .container {
     display: flex;
     grid-gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 390px);
+    /*grid-template-columns: repeat( auto-fit, minmax(65px, 1fr));*/
+   /* grid-gap: 30px 30px;
+    justify-content: center;
+}
+*/
 
 .cell-1, .cell-2, .cell-3, .cell-6, .cell-7, .cell-8 {
     width: 100%;
@@ -40,16 +103,31 @@ p {
 .cell-4 {
     width: 100%;
     max-width: 705px;
-    flex-grow: 1.807;
     position: relative;
 }
 
 .cell-5 {
     width: 100%;
     max-width: 495px;
-    flex-grow: 1.269;
     position: relative;
 }
+
+.conclusion {
+    display: flex;
+}
+
+.conclusion .fi {
+    padding-left: 10px;
+    color: #FF3F3A;
+    transform: translateY(2px);
+} 
+
+.arrow {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
 
 .img-mob {
     display: none;
@@ -91,16 +169,63 @@ p {
     color: #666;
 }
 
-.fi {
+.brief .fi {
     padding-right: 9px;
     color: #666;
     transform: translateY(1px);
 }
 
+#li1, #li2, #li3, #li4 {
+    color: #888;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+
+.list .fi {
+    padding-right: 8px;
+}
+
+.number-box {
+    display: flex;
+    margin: 70px auto 150px auto;
+    justify-content: center;
+}
+.number-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.number-wrap li {
+    color: #565a69;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 0 15px;
+}
+
+.number-box .fi {
+    padding-left: 15px;
+    transform: translateY(8px);
+}
+
+.number-wrap li:first-child {
+    color: #FF3F3A;
+}
 
 
+/*
+.container > div:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.grid > div:nth-child(5) {
+    justify-self: start;
+}
+*/
 
-
+/*
 @media (max-width: 3300px) {
     .blog {
         margin: auto;
@@ -134,21 +259,11 @@ p {
     }
 
 }
+*/
 
 
 @media (max-width: 736px) {
-    .blog {
-        margin: auto;
-        width: 95%;
-    }
-
-}
-
-@media (max-width: 736px) {
-    .blog {
-        margin: auto;
-        width: 95%;
-    }
+    
     .img-web {
         display: none;
     }
@@ -156,5 +271,52 @@ p {
         display: initial;
         border-radius: 4px;
     }
+        .blog {
+            display: flex;
+            margin: 20px auto;
+        }
+        .container {
+            grid-gap: 20px;
+            justify-content: center;
 
+        }
+        .cell-4, .cell-5 {
+            width: 100%;
+            max-width: 390px;
+        }
+    h1 {
+        font-size: 28px;
+        font-weight: 800;
+
+    }
 }
+/*
+@media (max-width: 736px) {
+    
+    .img-web {
+        display: none;
+    }
+    .img-mob {
+        display: initial;
+        border-radius: 4px;
+    }
+        .blog {
+            display: flex;
+            margin: 20px auto;
+        }
+        .container {
+            flex-wrap: wrap;
+            grid-gap: 20px;
+            justify-content: center;
+
+        }
+        .cell-4, .cell-5, .cell-1, .cell-2, .cell-3, .cell-6, .cell-7, .cell-8 {
+            width: 100%;
+            min-width: 300px;
+            max-width: 390px;
+        }
+}
+
+*/
+
+
