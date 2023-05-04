@@ -10,8 +10,10 @@
 }
 .about {
   display: flex;
+  margin-bottom: 180px;
 }
-.about img {
+.about__img {
+  background-image: url("../images/homepage/image-1.jpg");
   width: 705px;
   height: 560px;
   border-radius: 4px;
@@ -40,16 +42,29 @@
 
 .check p {
   font-family: "Lato";
-
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-
   color: #424551;
+  margin-bottom: 12px;
+}
+.check__check::before {
+  content: "";
+  background-image: url("../images/homepage/check.svg");
+  width: 15px;
+  height: 15px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.check__check-box {
+  display: flex;
+}
+.check__box {
+  margin-bottom: 48px;
 }
 .check {
-  /* display: flex; */
-  align-items: center;
+  display: flex;
 }
 
 .check svg {
@@ -67,9 +82,273 @@
   color: #ffffff;
   letter-spacing: 0.5px;
   font-family: "Lato";
-
   font-weight: 700;
   font-size: 14px;
   line-height: 44px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 1440px) {
+  .about__img {
+    background-image: url("../images/homepage/tablet-img.jpg");
+    width: 450px;
+    height: 360px;
+    border-radius: 4px;
+    background-repeat: repeat;
+  }
+  .background {
+    background-image: url("../images/homepage/dots.png"),
+      url("../images/homepage/circles.png");
+    background-repeat: no-repeat;
+    background-position: 0% 70px, 100% 100%;
+    background-size: 5%;
+  }
+  .about__text-block {
+    margin-left: 50px;
+  }
+  .about__text-block h2 {
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 55%;
+    color: #1e212c;
+    margin-bottom: 19px;
+  }
+  .about__text-block h5 {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1e212c;
+    margin-bottom: 8px;
+  }
+  .check p {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 130%;
+    color: #424551;
+    margin-bottom: 10px;
+  }
+  .check__box {
+    margin-bottom: 20px;
+  }
+  .main__btn {
+    width: 120px;
+    height: 25px;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    border-radius: 4px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 25px;
+    cursor: pointer;
+  }
+  .check__check::before {
+    content: "";
+    background-image: url(../images/homepage/check.svg);
+    width: 15px;
+    height: 15px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-right: 8px;
+  }
+}
+@media only screen and (max-width: 834px) {
+  .about {
+    display: block;
+    margin-bottom: 180px;
+  }
+  .background {
+    background-image: none;
+  }
+  .about__img {
+    background-image: url("../images/homepage/mobile-img.jpg");
+    width: 350px;
+    height: 250px;
+    border-radius: 4px;
+    background-repeat: repeat;
+    margin: 0 auto;
+  }
+  .about__text-block {
+    margin-left: 0px;
+    margin: 0 auto;
+  }
+  .about__text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 25px;
+  }
+  .about__text-block h2 {
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 45%;
+    color: #1e212c;
+    margin-bottom: 25px;
+  }
+}
+/* Section Card */
+.courses__title {
+  display: flex;
+}
+.courses__title p {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+}
+.courses__title h3 {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+}
+.courses__btn {
+  width: 202px;
+  height: 52px;
+  margin-left: auto;
+  font-family: "Lato";
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border: 1px solid #ff3f3a;
+  border-radius: 4px;
+  margin-left: auto;
+}
+.card {
+  display: flex;
+  width: 600px;
+  height: 214px;
+  background: #ffffff;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.1),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.08),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  border-radius: 4px;
+}
+.card__box {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.card__content {
+  margin: 32px 0 0 32px;
+}
+.card__content p {
+  margin-bottom: 20px;
+}
+.card .card__mark {
+  width: 79px;
+  height: 23px;
+  background: #03cea4;
+  border-radius: 4px;
+  margin-bottom: 21px;
+  font-family: "Lato";
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__mark-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97px;
+  height: 23px;
+  background: #5a87fc;
+  border-radius: 4px;
+  font-family: "Lato";
+  margin-bottom: 21px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.card__mark-3 {
+  width: 112px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f89828;
+  border-radius: 4px;
+  margin-bottom: 21px;
+  font-family: "Lato";
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  color: #ffffff;
+}
+.card__mark-4 {
+  width: 59px;
+  height: 23px;
+  margin-bottom: 21px;
+  background: #f52f6e;
+  border-radius: 4px;
+  font-family: "Lato";
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.card__text {
+  font-family: "Lato";
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+}
+.card__baks {
+  margin-right: 8px;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ff4242;
+}
+.card__slash {
+  margin-right: 8px;
+  width: 16px;
+  height: 0px;
+  border: 1px solid #787a80;
+  transform: rotate(90deg);
+}
+.card__name {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #787a80;
+}
+/* @media screen and (min-width: 1440px);
+@media screen and (min-width: 768px) */
