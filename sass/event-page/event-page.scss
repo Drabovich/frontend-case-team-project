@@ -190,6 +190,10 @@
         color: #FF3F3A;
         margin-bottom: rem(40);
         border-bottom: 1px solid #FF3F3A;
+        transition: border-bottom 0.3s;
+        &:hover {
+        border-bottom: 1px solid transparent;
+        }
     }
 
     &__btn {

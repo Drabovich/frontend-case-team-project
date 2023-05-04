@@ -263,6 +263,12 @@ body {
   color: #FF3F3A;
   margin-bottom: 2.5rem;
   border-bottom: 1px solid #FF3F3A;
+  -webkit-transition: border-bottom 0.3s;
+  -o-transition: border-bottom 0.3s;
+  transition: border-bottom 0.3s;
+}
+.event-about__link:hover {
+  border-bottom: 1px solid transparent;
 }
 .event-about__btn {
   display: block;
