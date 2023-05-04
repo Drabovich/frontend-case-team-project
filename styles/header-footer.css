@@ -164,7 +164,7 @@ footer {
   grid-template-columns: 1fr 40rem 10rem 12rem 16rem 30rem 1fr;
   grid-template-rows: 1fr 20%;
   column-gap: 4rem;
-  height: 35vh;
+  height: 35rem;
   background-color: #1e212c;
   place-items: center;
   width: 100%;
