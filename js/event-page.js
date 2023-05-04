@@ -23,3 +23,29 @@ titles.forEach(item => item.addEventListener('click', () => {
         activeContent.style.maxHeight = activeContent.scrollHeight + 'px';
     }
 }))
+
+//buttons for slider event-others section
+
+const slider = document.querySelector('.event-others__items');
+const nextBtn = document.querySelector('#nextBtn');
+const prevBtn = document.querySelector('#prevBtn');
+
+nextBtn.addEventListener('click', () => {
+    const currentScrollPos = slider.scrollLeft;
+    const slideWidth = slider.clientWidth;
+    const nextSlidePos = currentScrollPos + slideWidth;
+    slider.scrollTo({
+        left: nextSlidePos,
+        behavior: 'smooth'
+    });
+});
+
+prevBtn.addEventListener('click', () => {
+    const currentScrollPos = slider.scrollLeft;
+    const slideWidth = slider.clientWidth;
+    const prevSlidePos = currentScrollPos - slideWidth;
+    slider.scrollTo({
+        left: prevSlidePos,
+        behavior: 'smooth'
+    });
+});
