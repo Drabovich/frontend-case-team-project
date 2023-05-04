@@ -6,7 +6,11 @@
 
 .event-top {
     padding: rem(228) 0 rem(120) 0;
-    background: linear-gradient(55.95deg, rgba(255, 64, 58, 0.2) 0%, rgb(247, 94, 5, 0.2) 100%);
+
+    background-image: url("../images/event-page/decoration/white-shapes.svg"), url("../images/event-page/decoration/white-dots.svg"), url("../images/event-page/decoration/white-circles.svg"), url("../images/event-page/decoration/white-arrows.svg"), linear-gradient(55.95deg, rgba(255, 64, 58, 0.2) 0%, rgb(247, 94, 5, 0.2) 100%);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 10% 15%, 100% center, 0 bottom, 90% bottom;
 
     @media screen and (max-width: rem(998)) {
         padding: rem(132) 0 rem(100) 0;
@@ -32,10 +36,10 @@
 }
 
 .event-about {
-    padding: rem(120) 0 rem(180) 0;
+    padding: rem(120) 0 rem(120) 0;
 
     @media screen and (max-width: rem(1024)) {
-        padding: rem(100) 0 rem(150) 0;
+        padding: rem(100) 0 rem(90) 0;
     }
 
     @media screen and (max-width: rem(998)) {
@@ -195,14 +199,20 @@
 }
 
 .event-speaker {
-    padding-bottom: rem(180);
+
+    background-image: url("../images/event-page/decoration/yellow-dots.svg"), url("../images/event-page/decoration/yellow-circles.svg"), url("../images/event-page/decoration/yellow-shapes.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0 bottom, 12% 0, 100% top;
+
+    padding: rem(60) 0 rem(180) 0;
 
     @media screen and (max-width: rem(1024)) {
-        padding-bottom: rem(150);
+        padding: rem(60) 0 rem(150) 0;
     }
 
     @media screen and (max-width: rem(998)) {
-        padding-bottom: rem(80);
+        padding: rem(60) 0 rem(80) 0;
     }
 
     &__content {
@@ -312,6 +322,12 @@
 }
 
 .event-whom {
+
+    background-image: url("../images/event-page/decoration/yellow-arrows.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 100% center;
+
     padding-bottom: rem(180);
 
     @media screen and (max-width: rem(1024)) {
@@ -379,10 +395,15 @@
     }
 
     &__content {
+        background-image: url("../images/event-page/decoration/white-dots.svg"), url("../images/event-page/decoration/white-arrows-two.svg"), url("../images/event-page/decoration/white-circles-two.svg"), linear-gradient(55.95deg, rgba(255, 64, 58, 0.2) 0%, rgb(247, 94, 5, 0.2) 100%);
+        background-size: 60px, auto, 135px, auto;
+        background-repeat: no-repeat;
+        background-position: 0 80%, 30% 80%, 98% 0;
+
         display: flex;
         justify-content: space-evenly;
         padding: rem(60) rem(15);
-        background: linear-gradient(55.95deg, rgba(255, 64, 58, 0.2) 0%, rgb(247, 94, 5, 0.2) 100%);
+
 
         @media screen and (max-width: rem(998)) {
             flex-direction: column;
@@ -453,7 +474,6 @@
             margin-right: rem(20);
         }
     }
-
 
     &__check {
         display: flex;
@@ -565,6 +585,15 @@
             }
         }
 
+        &:focus {
+            border: 1px solid hsla(2, 100%, 61%, 0.4);
+            box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        }
+
+        &:hover {
+            border: 1px solid hsla(2, 100%, 61%, 0.4);
+        }
+
         &--phone {
             margin-bottom: rem(40);
         }
@@ -605,6 +634,11 @@
 
 .event-others {
     background-color: #F4F5F7;
+    background-image: url("../images/event-page/decoration/white-dots.svg"), url("../images/event-page/decoration/white-arrows-two.svg"), url("../images/event-page/decoration/white-circles-bottom.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 5% 70%, 100% 40%, 112% 113%;
+
     padding: rem(100) 0 rem(180) 0;
 
     @media screen and (max-width: rem(1024)) {
