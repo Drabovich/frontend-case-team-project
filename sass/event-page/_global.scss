@@ -36,6 +36,11 @@ body {
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+box-shadow: 0px 4px 15px #ff403ab2;
+    }
 }
 
 .event-title {

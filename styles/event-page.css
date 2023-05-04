@@ -36,6 +36,15 @@ body {
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+.btn:hover {
+  -webkit-box-shadow: 0px 4px 15px rgba(255, 64, 58, 0.6980392157);
+          box-shadow: 0px 4px 15px rgba(255, 64, 58, 0.6980392157);
 }
 
 .event-title {
