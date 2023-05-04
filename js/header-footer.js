@@ -1,9 +1,10 @@
-const main = document.querySelector("main");
+// const main = document.querySelector("main");
 
-main.insertAdjacentHTML(
-  "beforebegin",
+const header = document.querySelector("header");
+const footer = document.querySelector("footer");
+header.insertAdjacentHTML(
+  "afterbegin",
   `
-  <header id="top">
   <!-- <div class="burger-menu"></div> -->
   <div class="wrapper-burger">
     <div class="burger">
@@ -12,7 +13,7 @@ main.insertAdjacentHTML(
   </div>
   <div class="block-navbar-1">
     <div class="logo-header"></div>
-    <nav class="nav">
+    <nav class="nav" id="top">
       <ul>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Courses</a></li>
@@ -29,13 +30,12 @@ main.insertAdjacentHTML(
       <a href="#">Log in / Register</a>
     </div>
   </div>
-</header>
 `
 );
 
-main.insertAdjacentHTML(
-  "afterend",
-  ` <footer>
+footer.insertAdjacentHTML(
+  "afterbegin",
+  `
   <!-- First Column -->
   <div class="first-col">
     <div class="logo-footer"></div>
@@ -95,6 +95,5 @@ main.insertAdjacentHTML(
       Createx Studio
     </div>
     <div class="gtt"><a href="#top">GO TO TOP</a></div>
-  </div>
-</footer>`
+  </div>`
 );
