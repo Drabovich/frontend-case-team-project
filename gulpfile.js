@@ -21,7 +21,7 @@ function styles() {
         .pipe(sourcemaps.init())
         .pipe(autoprefixer({ overrideBrowserslist: ["last 10 version"] }))
         .pipe(concat("course.css"))
-        .pipe(scss({ outputStyle: "compressed" }))
+        .pipe(scss.sync({ outputStyle: "expanded" }))
         .pipe(sourcemaps.write())
         .pipe(dest(paths.styles.dest))
         .pipe(browserSync.stream());

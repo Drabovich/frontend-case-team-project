@@ -6,9 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Course</title>
         <link rel="stylesheet" href="../styles/null.css" />
+        <link rel="stylesheet" href="../libs/swiper-bundle.min.css" />
         <link rel="stylesheet" href="../styles/header-footer.css" />
         <link rel="stylesheet" href="../styles/course.css" />
+        <script defer src="../libs/swiper-bundle.min.js"></script>
         <script defer src="../js/header-footer.js"></script>
+        <script defer src="../js/course.js"></script>
     </head>
     <body>
         <main>
@@ -426,16 +429,21 @@
                         <h2 class="program__left-title">What will you learn</h2>
                         <ul class="program__left-links">
                             <li class="program__left-link">
-                                <div class="program__left-header">
-                                    <div class="program__left-icon"></div>
-                                    <div class="program__left-lesson">
-                                        Lesson 1.
+                                <div
+                                    data-tab="tab-1"
+                                    class="program__left-header"
+                                >
+                                    <div class="program__left-wrapper">
+                                        <span class="program__left-icon"></span>
+                                        <div class="program__left-lesson">
+                                            Lesson 1.
+                                        </div>
                                     </div>
                                     <div class="program__left-name">
                                         Aliquet lectus urna viverra in odio.
                                     </div>
                                 </div>
-                                <div class="program__left-text hidden">
+                                <div id="tab-1" class="program__left-text">
                                     Nulla amet, sagittis potenti rhoncus sit.
                                     Elit lectus nec pulvinar aliquet donec enim,
                                     ornare. Lacus facilisi curabitur turpis
@@ -446,17 +454,22 @@
                                 </div>
                             </li>
                             <li class="program__left-link">
-                                <div class="program__left-header">
-                                    <div class="program__left-icon"></div>
-                                    <div class="program__left-lesson">
-                                        Lesson 2.
+                                <div
+                                    data-tab="tab-2"
+                                    class="program__left-header"
+                                >
+                                    <div class="program__left-wrapper">
+                                        <span class="program__left-icon"></span>
+                                        <div class="program__left-lesson">
+                                            Lesson 2.
+                                        </div>
                                     </div>
                                     <div class="program__left-name">
                                         Orci commodo, viverra orci mollis ut
                                         euismod.
                                     </div>
                                 </div>
-                                <div class="program__left-text hidden">
+                                <div id="tab-2" class="program__left-text">
                                     Nulla amet, sagittis potenti rhoncus sit.
                                     Elit lectus nec pulvinar aliquet donec enim,
                                     ornare. Lacus facilisi curabitur turpis
@@ -467,17 +480,22 @@
                                 </div>
                             </li>
                             <li class="program__left-link">
-                                <div class="program__left-header">
-                                    <div class="program__left-icon"></div>
-                                    <div class="program__left-lesson">
-                                        Lesson 3.
+                                <div
+                                    data-tab="tab-3"
+                                    class="program__left-header"
+                                >
+                                    <div class="program__left-wrapper">
+                                        <span class="program__left-icon"></span>
+                                        <div class="program__left-lesson">
+                                            Lesson 3.
+                                        </div>
                                     </div>
                                     <div class="program__left-name">
                                         Sagittis vitae facilisi rutrum amet
                                         mauris quisque vel.
                                     </div>
                                 </div>
-                                <div class="program__left-text hidden">
+                                <div id="tab-3" class="program__left-text">
                                     Nulla amet, sagittis potenti rhoncus sit.
                                     Elit lectus nec pulvinar aliquet donec enim,
                                     ornare. Lacus facilisi curabitur turpis
@@ -488,17 +506,22 @@
                                 </div>
                             </li>
                             <li class="program__left-link">
-                                <div class="program__left-header">
-                                    <div class="program__left-icon"></div>
-                                    <div class="program__left-lesson">
-                                        Lesson 4.
+                                <div
+                                    data-tab="tab-4"
+                                    class="program__left-header"
+                                >
+                                    <div class="program__left-wrapper">
+                                        <span class="program__left-icon"></span>
+                                        <div class="program__left-lesson">
+                                            Lesson 4.
+                                        </div>
                                     </div>
                                     <div class="program__left-name">
                                         In id dolor quis nunc, urna hendrerit
                                         pharetra.
                                     </div>
                                 </div>
-                                <div class="program__left-text hidden">
+                                <div id="tab-4" class="program__left-text">
                                     Nulla amet, sagittis potenti rhoncus sit.
                                     Elit lectus nec pulvinar aliquet donec enim,
                                     ornare. Lacus facilisi curabitur turpis
@@ -509,16 +532,21 @@
                                 </div>
                             </li>
                             <li class="program__left-link">
-                                <div class="program__left-header">
-                                    <div class="program__left-icon"></div>
-                                    <div class="program__left-lesson">
-                                        Lesson 5.
+                                <div
+                                    data-tab="tab-5"
+                                    class="program__left-header"
+                                >
+                                    <div class="program__left-wrapper">
+                                        <span class="program__left-icon"></span>
+                                        <div class="program__left-lesson">
+                                            Lesson 5.
+                                        </div>
                                     </div>
                                     <div class="program__left-name">
                                         Est, ut tempus id rutrum facilisi.
                                     </div>
                                 </div>
-                                <div class="program__left-text hidden">
+                                <div id="tab-5" class="program__left-text">
                                     Nulla amet, sagittis potenti rhoncus sit.
                                     Elit lectus nec pulvinar aliquet donec enim,
                                     ornare. Lacus facilisi curabitur turpis
@@ -529,16 +557,21 @@
                                 </div>
                             </li>
                             <li class="program__left-link">
-                                <div class="program__left-header">
-                                    <div class="program__left-icon"></div>
-                                    <div class="program__left-lesson">
-                                        Lesson 6.
+                                <div
+                                    data-tab="tab-6"
+                                    class="program__left-header"
+                                >
+                                    <div class="program__left-wrapper">
+                                        <span class="program__left-icon"></span>
+                                        <div class="program__left-lesson">
+                                            Lesson 6.
+                                        </div>
                                     </div>
                                     <div class="program__left-name">
                                         Amet nec in pellentesque.
                                     </div>
                                 </div>
-                                <div class="program__left-text hidden">
+                                <div id="tab-6" class="program__left-text">
                                     Nulla amet, sagittis potenti rhoncus sit.
                                     Elit lectus nec pulvinar aliquet donec enim,
                                     ornare. Lacus facilisi curabitur turpis
@@ -549,17 +582,22 @@
                                 </div>
                             </li>
                             <li class="program__left-link">
-                                <div class="program__left-header">
-                                    <div class="program__left-icon"></div>
-                                    <div class="program__left-lesson">
-                                        Lesson 7.
+                                <div
+                                    data-tab="tab-7"
+                                    class="program__left-header"
+                                >
+                                    <div class="program__left-wrapper">
+                                        <span class="program__left-icon"></span>
+                                        <div class="program__left-lesson">
+                                            Lesson 7.
+                                        </div>
                                     </div>
                                     <div class="program__left-name">
                                         Massa vel arcu mauris, id vel rhoncus
                                         mattis quis.
                                     </div>
                                 </div>
-                                <div class="program__left-text hidden">
+                                <div id="tab-7" class="program__left-text">
                                     Nulla amet, sagittis potenti rhoncus sit.
                                     Elit lectus nec pulvinar aliquet donec enim,
                                     ornare. Lacus facilisi curabitur turpis
@@ -570,16 +608,21 @@
                                 </div>
                             </li>
                             <li class="program__left-link">
-                                <div class="program__left-header">
-                                    <div class="program__left-icon"></div>
-                                    <div class="program__left-lesson">
-                                        Lesson 8.
+                                <div
+                                    data-tab="tab-8"
+                                    class="program__left-header"
+                                >
+                                    <div class="program__left-wrapper">
+                                        <span class="program__left-icon"></span>
+                                        <div class="program__left-lesson">
+                                            Lesson 8.
+                                        </div>
                                     </div>
                                     <div class="program__left-name">
                                         Neque, cursus sapien nullam id.
                                     </div>
                                 </div>
-                                <div class="program__left-text hidden">
+                                <div id="tab-8" class="program__left-text">
                                     Nulla amet, sagittis potenti rhoncus sit.
                                     Elit lectus nec pulvinar aliquet donec enim,
                                     ornare. Lacus facilisi curabitur turpis
@@ -599,8 +642,11 @@
                         />
                     </div>
                 </div>
+                <div class="other">
+                    <p class="other-text">Check other courses</p>
+                    <h2 class="other-title">You may also like</h2>
+                </div>
             </div>
         </main>
-        <script src="../js/course.js"></script>
     </body>
 </html>
