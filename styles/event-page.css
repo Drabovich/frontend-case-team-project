@@ -830,6 +830,46 @@ body {
 .event-others__title {
   margin-bottom: 3.75rem;
 }
+.event-others__slider {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 77.8125rem) {
+  .event-others__slider {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 75rem) {
+  .event-others__slider {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 72.5625rem) {
+  .event-others__slider {
+    width: 77%;
+  }
+}
+@media screen and (max-width: 64rem) {
+  .event-others__slider {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .event-others__slider {
+    width: 52%;
+  }
+}
+@media screen and (max-width: 26.625rem) {
+  .event-others__slider {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 23.75rem) {
+  .event-others__slider {
+    width: 100%;
+  }
+}
 .event-others__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -847,6 +887,11 @@ body {
 }
 .event-others__items::-webkit-scrollbar {
   display: none;
+}
+@media screen and (max-width: 75rem) {
+  .event-others__items {
+    gap: 1.25rem;
+  }
 }
 @media screen and (max-width: 48.75rem) {
   .event-others__items {
@@ -975,7 +1020,17 @@ body {
   min-height: 20.1875rem;
   width: 23.75rem;
 }
-@media screen and (max-width: 26.25rem) {
+@media screen and (max-width: 77.8125rem) {
+  .event-others .event-card {
+    width: 21.25rem;
+  }
+}
+@media screen and (max-width: 75rem) {
+  .event-others .event-card {
+    width: 23.75rem;
+  }
+}
+@media screen and (max-width: 26.875rem) {
   .event-others .event-card {
     width: 21.25rem;
   }
