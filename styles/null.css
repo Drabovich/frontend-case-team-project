@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     border: none;
@@ -6,14 +6,13 @@
 
 *,
 *::before,
-*::after {
+*::after{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body{
     height: 100%;
     width: 100%;
 }
@@ -26,97 +25,29 @@ body {
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
 }
-
-nav,
-section,
-footer,
-header,
-aside,
-main,
-details,
-hgroup,
-figure,
-figcaption,
-article {
-    display: block
-}
-
-input,
-textarea,
-button,
-select {
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    background-color: transparent
-}
-
-input::-ms-clear {
-    display: none
-}
-
-button {
-    cursor: pointer
-}
-
-:focus,
-:active {
-    outline: none
-}
-
-a,
-a:visited,
-a:hover,
-a:link {
-    text-decoration: none
-}
-
-a {
-    color: inherit;
-    background-color: transparent
-}
-
-ul,
-ul li {
-    list-style: none
-}
-
-img {
-    vertical-align: top;
-    border-style: none
-}
-
-img,
-svg {
-    max-width: 100%;
-    height: auto
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    font-size: inherit;
-    font-weight: inherit
-}
-
-[hidden] {
-    display: none
-}
+nav, section, footer, header, aside, main, details, hgroup, figure, figcaption, article{display: block}
+input, textarea, button, select {font-family: inherit; font-size: inherit; color: inherit; background-color: transparent}
+input::-ms-clear{display: none}
+button{cursor: pointer}
+:focus, :active{outline: none}
+a, a:visited, a:hover, a:link{text-decoration: none}
+a{color: inherit; background-color: transparent}
+ul, ul li {list-style: none}
+img{vertical-align: top; border-style: none}
+img, svg { max-width: 100%; height: auto}
+h1,h2,h3,h4,h5,h6,p{font-size: inherit; font-weight: inherit}
+[hidden] {display: none}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
-body {
+body{
     display: flex;
     flex-direction: column;
 }
 
-main {
+main{
     flex-grow: 1;
 }
