@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events list</title>
+    <link rel="stylesheet" href="../styles/null.css">
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/events-list.css">
+    <script defer src="../js/header-footer.js"></script>
+    <script defer src="../js/events-list-events.js"></script>
+    <script defer src="../js/events-list.js"></script>
+</head>
+<body>
+    <main class="content">
+        <section class="events-list">
+            <div class="events-list__container container">
+                <div class="events-list__sup-title title_h2">Our events</div>
+                <h2 class="events-list__title title_h1">Lectures, workshops & master-classes</h2>
+                <div class="events-list__filter">
+                    <label for="event" class="events-list__filter-item">
+                        <span class="events-list__filter-title">Event category</span>
+                        <select id="event" class="events-list__filter-list">
+                            <option value="all" selected>all themes</option>
+                            <option value="lecture">lecture</option>
+                            <option value="workshop">workshop</option>
+                            <option value="master-class">master class</option>
+                        </select>
+                    </label>
+                    <label for="sort" class="events-list__filter-item">
+                        <span class="events-list__filter-title">Sort by</span>
+                        <select id="sort" class="events-list__filter-list events-list__filter-list_2">
+                            <option value="id" selected>newest</option>
+                            <option value="monthNumber">month</option>
+                            <option value="duration">duration</option>
+                        </select>
+                        <select id="hi-low" class="events-list__filter-list events-list__filter-list_2">
+                            <option value="ascending" selected>Ascending</option>
+                            <option value="descending">descending</option>
+                        </select>
+                    </label>
+                    <label class="events-list__filte-number" for="number">
+                        <b>Show</b>
+                       <select id="pages">
+                            <option value="6" selected>6</option>
+                            <option value="9">9</option>
+                            <option value="12">12</option>
+                            <option value="15">15</option>
+                            <option value="18">18</option>
+                            <option value="21">21</option>
+                            <option value="24">24</option>
+                        </select>
+                        <span>events per page</span>
+                    </label>
+                    <div class="events-list__filte-search" id="search">
+                        <input type="text" name="event-search" placeholder="Search event...">
+                        <button class="btn_3 search" type="button"></button>
+                    </div>
+                    <div class="events-list__filte-links">
+                        <a href="pages/events-list.html"><img src="../images/events-list/list.png" alt="list"></a>
+                        <a href="pages/events-grid.html"><img src="../images/events-list/grid.png" alt="grid"></a>
+                    </div>
+                </div>
+                <div class="events-list__list"></div>
+                <div class="events-list__pages">
+                    <button type="button" class="events-list__numbers change-page">
+                        <span class="events-list__numbers-list"></span>
+                        <span class="events-list__next"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="events-list__form">
+            <div class="events-list__form-container container">
+                <div class="events-list__sup-title title_h2">Don’t miss anything</div>
+                <h3 class="events-list__title title_h1">Subscribe to the Createx School announcements</h3>
+                <form action="#" class="events-list__form-form">
+                    <input type="email" required placeholder="Your working email" name="subscriber-mail">
+                    <button class="btn_2" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
