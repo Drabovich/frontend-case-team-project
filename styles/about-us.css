@@ -1,3 +1,8 @@
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none;
+}
+
 .container {
     max-width: 1230px;
     margin: auto;
@@ -537,6 +542,10 @@
     background: #F4F5F7;
 }
 
+.reviews-container {
+    padding-bottom: 3.8125rem;
+}
+
 .gray-circles {
     position: absolute;
     top: 75px;
@@ -557,45 +566,22 @@
     top: 20px;
     right: 260px;
     z-index: 0;
-}
+} 
 
-.testimonials-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.reviews-slider__box {
+    position: relative;
 }
-
-.slider__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    transition: all 0.4s ease-out;
-}
-
-.btn-img {
-    max-width: 24px;
-}
-
-.slider__btn:hover path {
-    fill: white
-}
-
-.slider__btn:hover {
-    padding: 12px;
-    border: 1px solid #FF3F3A;
-    border-radius: 50%;
-    background: #FF3F3A;
-}
-
-.testimonials-box {
-    background: #ffffff;
+  
+.reviews-slider {
+    max-width: 63.75rem;
+    background: #fff;
+    margin: 0 auto;
     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
     border-radius: 4px;
-    padding: 64px 105px;
-    margin: 0 105px;
+}
+  
+.reviews__slide {
+    padding: 4rem 6.5625rem;
 }
 
 .svg-quote {
@@ -639,6 +625,48 @@
     font-size: 14px;
     line-height: 150%;
     color: #787A80;
+}
+
+.reviews-slider__btn {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    transition: all 0.4s ease-in-out;
+}
+.reviews-slider__btn:hover {
+    background: #FF3F3A;
+}
+
+.reviews-slider__btn:hover .reviews-slider__btn-img {
+    filter: brightness(0) invert(1);
+}
+  
+.reviews-swiper-button-prev {
+    left: -15px;
+}
+  
+.reviews-swiper-button-next {
+    right: -10px;
+}
+  
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -64px;
+}
+  
+.swiper-pagination-bullet {
+    background: #B3B7BC;
+    opacity: 1;
+    width: 30px;
+    height: 3px;
+    border-radius: 4px;
+}
+  
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px);
+}
+  
+.swiper-pagination-bullet-active {
+    background: #424551;
 }
 
 .gray-circles-side {
