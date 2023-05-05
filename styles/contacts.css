@@ -9,19 +9,8 @@ html {
   scroll-behavior: smooth;
 }
 
-/* width */
-html::-webkit-scrollbar {
-  width: 1rem;
-}
-
-/* Track */
-html::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-}
-
-/* Handle */
-html::-webkit-scrollbar-thumb {
-  background: var(--primary);
+main {
+  margin-bottom: 5rem;
 }
 
 .main-grid {

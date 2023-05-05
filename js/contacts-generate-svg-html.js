@@ -1,5 +1,4 @@
 function elementFromHtml(html) {
-  /*function for contain html*/
   const template = document.createElement("template");
   template.innerHTML = html.trim();
 
