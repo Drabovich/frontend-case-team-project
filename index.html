@@ -7,8 +7,10 @@
     <title>Главная страница</title>
     <link rel="stylesheet" href="./styles/null.css">
     <link rel="stylesheet" href="./styles/header-footer.css">
+    <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/main-page.css">
     <script defer src="./js/header-footer.js"></script>
+    <script defer src="./libs/swiper-bundle.min.js"></script>
     <script defer src="./js/main-page.js"></script>
 </head>
 <body>
@@ -16,10 +18,290 @@
         <!-- Шапка сайта -->
     </header>
     <main>
-        <section class="team">
+        <section class="certificate">
             <div class="container">
-                
+                <div class="certificate__wrapper">
+                    <div class="certificate-info">
+                        <p class="subtitle certificate__subtitle">Createx Certificate</p>                
+                        <h2 class="title certificate__title">Your expertise will be confirmed</h2>
+                        <p class="certificate__text">
+                            We are accredited by international professional organizations and institutes:
+                        </p>
+                        <div class="certificate__box">
+                            <img class="certificate__box-img" src="images/main-page/certificate-logo-1.png" alt="Logo organization"  loading="lazy" width="105" height="50">
+                            <img class="certificate__box-img" src="images/main-page/certificate-logo-2.png" alt="Logo organization"  loading="lazy" width="105" height="50">
+                            <img class="certificate__box-img" src="images/main-page/certificate-logo-3.png" alt="Logo organization"  loading="lazy" width="105" height="50">
+                        </div>
+                    </div>
+                    <div class="certificate__photo">
+                        <img class="img certificate__photo-img" src="images/main-page/certificate.png" alt="Photo certificate" loading="lazy" width="705" height="500">
+                    </div>
+                </div>                
             </div>
+        </section>
+        
+        <section class="team">
+            <div class="team-block">
+                <div class="container">
+                    <p class="subtitle team__subtitle">Best tutors are all here</p>                
+                    <h2 class="title team__title">Meet our team</h2>
+                    <div class="team-slider__box">
+                        <div class="team-slider__btns">
+                            <div class="team-slider__btn team-swiper-button-prev">
+                                <img class="team-slider__btn-img" src="images/main-page/swiper-array-prev.svg" alt="slider array prev">
+                            </div>
+                            <div class="team-slider__btn team-swiper-button-next">
+                                <img class="team-slider__btn-img" src="images/main-page/swiper-array-next.svg" alt="slider array next">
+                            </div>
+                        </div>
+                        <div class="team-slider swiper">
+                            <ul class="team-slider__wrapper swiper-wrapper">
+                            <!-- Slides -->
+                                <li class="team-slide swiper-slide">
+                                    <div class="team-slide__inner">
+                                        <div class="team-slide__image">
+                                            <img class="img team-slide__img" src="./images/main-page/dianne.png" alt="Photo tutor" loading="lazy" width="245" height="320">
+                                        </div>
+                                        <ul class="slide-socials">
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/facebook.svg" alt="Facebook Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/instagram.svg" alt="Instagram Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/linkedin.svg" alt="Linkedin Icon" width="20" height="20">
+                                                </a>  
+                                            </li>                                                              
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="team-slider__slide-info">
+                                        <h4 class="team-slider__slide-title card-title">Dianne Russell</h4>                    
+                                        <p class="team-slider__slide-text">Founder and CEO</p>
+                                    </div>
+                                </li>
+        
+                                <li class="team-slide swiper-slide">
+                                    <div class="team-slide__inner">
+                                        <div class="team-slide__image">
+                                            <img class="img team-slide__img" src="./images/main-page/jerome.png" alt="Photo tutor" loading="lazy" width="245" height="320">
+                                        </div>
+                                        <ul class="slide-socials">
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/facebook.svg" alt="Facebook Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/instagram.svg" alt="Instagram Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/linkedin.svg" alt="Linkedin Icon" width="20" height="20">
+                                                </a>  
+                                            </li>                                                              
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="team-slider__slide-info">
+                                        <h4 class="team-slider__slide-title card-title">Jerome Bell</h4>                    
+                                        <p class="team-slider__slide-text">Founder and Program Director</p>
+                                    </div>
+                                </li>
+        
+                                <li class="team-slide swiper-slide">
+                                    <div class="team-slide__inner">
+                                        <div class="team-slide__image">
+                                            <img class="img team-slide__img" src="./images/main-page/kristin.png" alt="Photo tutor" loading="lazy" width="245" height="320">
+                                        </div>
+                                        <ul class="slide-socials">
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/facebook.svg" alt="Facebook Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/instagram.svg" alt="Instagram Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/linkedin.svg" alt="Linkedin Icon" width="20" height="20">
+                                                </a>  
+                                            </li>                                                              
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="team-slider__slide-info">
+                                        <h4 class="team-slider__slide-title card-title">Kristin Watson</h4>                    
+                                        <p class="team-slider__slide-text">Marketer, Curator of Marketing Course</p>
+                                    </div>
+                                </li>
+        
+                                <li class="team-slide swiper-slide">
+                                    <div class="team-slide__inner">
+                                        <div class="team-slide__image">
+                                            <img class="img team-slide__img" src="./images/main-page/marvin.png" alt="Photo tutor" loading="lazy" width="245" height="320">
+                                        </div>
+                                        <ul class="slide-socials">
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/facebook.svg" alt="Facebook Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/instagram.svg" alt="Instagram Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/linkedin.svg" alt="Linkedin Icon" width="20" height="20">
+                                                </a>  
+                                            </li>                                                              
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="team-slider__slide-info">
+                                        <h4 class="team-slider__slide-title card-title">Marvin McKinney</h4>                    
+                                        <p class="team-slider__slide-text">PM, Curator of Management Course</p>
+                                    </div>
+                                </li>
+        
+                                <li class="team-slide swiper-slide">
+                                    <div class="team-slide__inner">
+                                        <div class="team-slide__image">
+                                            <img class="img team-slide__img" src="./images/main-page/dianne.png" alt="Photo tutor" loading="lazy" width="245" height="320">
+                                        </div>
+                                        <ul class="slide-socials">
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/facebook.svg" alt="Facebook Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/instagram.svg" alt="Instagram Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/linkedin.svg" alt="Linkedin Icon" width="20" height="20">
+                                                </a>  
+                                            </li>                                                              
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="team-slider__slide-info">
+                                        <h4 class="team-slider__slide-title card-title">Dianne Russell</h4>                    
+                                        <p class="team-slider__slide-text">Founder and CEO</p>
+                                    </div>
+                                </li>
+        
+                                <li class="team-slide swiper-slide">
+                                    <div class="team-slide__inner">
+                                        <div class="team-slide__image">
+                                            <img class="img team-slide__img" src="./images/main-page/jerome.png" alt="Photo tutor" loading="lazy" width="245" height="320">
+                                        </div>
+                                        <ul class="slide-socials">
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/facebook.svg" alt="Facebook Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/instagram.svg" alt="Instagram Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/linkedin.svg" alt="Linkedin Icon" width="20" height="20">
+                                                </a>  
+                                            </li>                                                              
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="team-slider__slide-info">
+                                        <h4 class="team-slider__slide-title card-title">Jerome Bell</h4>                    
+                                        <p class="team-slider__slide-text">Founder and Program Director</p>
+                                    </div>
+                                </li>
+        
+                                <li class="team-slide swiper-slide">
+                                    <div class="team-slide__inner">
+                                        <div class="team-slide__image">
+                                            <img class="img team-slide__img" src="./images/main-page/kristin.png" alt="Photo tutor" loading="lazy" width="245" height="320">
+                                        </div>
+                                        <ul class="slide-socials">
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/facebook.svg" alt="Facebook Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/instagram.svg" alt="Instagram Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/linkedin.svg" alt="Linkedin Icon" width="20" height="20">
+                                                </a>  
+                                            </li>                                                              
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="team-slider__slide-info">
+                                        <h4 class="team-slider__slide-title card-title">Kristin Watson</h4>                    
+                                        <p class="team-slider__slide-text">Marketer, Curator of Marketing Course</p>
+                                    </div>
+                                </li>
+        
+                                <li class="team-slide swiper-slide">
+                                    <div class="team-slide__inner">
+                                        <div class="team-slide__image">
+                                            <img class="img team-slide__img" src="./images/main-page/marvin.png" alt="Photo tutor" loading="lazy" width="245" height="320">
+                                        </div>
+                                        <ul class="slide-socials">
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/facebook.svg" alt="Facebook Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/instagram.svg" alt="Instagram Icon" width="20" height="20">
+                                                </a>
+                                            </li>                                
+                                            <li class="slide-socials__item">
+                                                <a href="javascript:void(0);" class="slide-socials__link">
+                                                    <img class="slide-socials__img" src="./images/main-page/linkedin.svg" alt="Linkedin Icon" width="20" height="20">
+                                                </a>  
+                                            </li>                                                              
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="team-slider__slide-info">
+                                        <h4 class="team-slider__slide-title card-title">Marvin McKinney</h4>                    
+                                        <p class="team-slider__slide-text">PM, Curator of Management Course</p>
+                                    </div>
+                                </li>
+                            </ul>                        
+                        </div>                    
+                    </div>                
+                </div>
+            </div>
+            
         </section>
     </main>
     <footer>
