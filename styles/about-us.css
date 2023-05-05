@@ -75,6 +75,7 @@
 }
 
 .no-colored-btn:hover {
+    box-shadow: 0px 0px 10px 0px rgba(247, 94, 5, 0.7);
     background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     color: #FFFFFF;
 }
@@ -88,6 +89,7 @@
     font-size: 16px;
     letter-spacing: 0.5px;
     color: #FFFFFF;
+    cursor: pointer;
     padding: 16px 40px;
     background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
     border: 1px solid #FF3F3A;
@@ -96,6 +98,7 @@
 }
 
 .colored-btn:hover {
+    box-shadow: 0px 0px 10px 0px rgba(247, 94, 5, 0.7);
     background: transparent;
     color: #FF3F3A;
 }
@@ -133,6 +136,14 @@
 
 .video-btn-play {
     margin-right: 16px;
+}
+
+.svg-play {
+    transition: filter 0.5s ease;
+  }
+  
+.svg-play:hover {
+    filter: drop-shadow(0px 0px 8px #FF3F3A);
 }
 
 .button-title {
