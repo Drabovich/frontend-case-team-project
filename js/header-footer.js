@@ -3,7 +3,7 @@ const main = document.querySelector("main");
 main.insertAdjacentHTML(
   "beforebegin",
   `
-  <header>
+  <header id="top">
     <!-- <div class="burger-menu"></div> -->
     <div class="wrapper-burger">
       <div class="burger">
@@ -12,7 +12,7 @@ main.insertAdjacentHTML(
     </div>
     <div class="block-navbar-1">
       <div class="logo-header"></div>
-      <nav class="nav" id="top">
+      <nav class="nav">
         <ul>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Courses</a></li>
