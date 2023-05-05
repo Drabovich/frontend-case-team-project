@@ -585,9 +585,9 @@
 
 .slider__btn:hover {
     padding: 12px;
-    border: 1px solid red;
+    border: 1px solid #FF3F3A;
     border-radius: 50%;
-    background: red;
+    background: #FF3F3A;
 }
 
 .testimonials-box {
