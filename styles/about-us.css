@@ -222,7 +222,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right-width: 1px;
+    border-right-width: 2px;
     border-right-style: solid;
     border-image: linear-gradient(to bottom, rgba(218, 219, 221, 0), rgba(218, 219, 221, 0.5), rgba(218, 219, 221, 1), rgba(218, 219, 221, 0.5), rgba(218, 219, 221, 0)) 1 100%;
     padding: 0px 22.5px;
