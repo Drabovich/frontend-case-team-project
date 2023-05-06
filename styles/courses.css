@@ -423,8 +423,36 @@ input {
 		padding: 20px 85px;
 		background-position: top 20px left 45px;
 	}
+	.section-title {
+		font-size: 30px;
+	}
 	.sertificate {
-    padding: 5px;
-    margin-bottom: 300px;
+		padding: 5px;
+		margin-bottom: 300px;
+	}
+	.subscription-form {
+		display: flex;
+		flex-direction: column;
+	}
+	.subscription-btn {
+		max-width: 300px;
+		margin: auto;
+	}
+	.subscription-search {
+		margin: auto;
+		margin-bottom: 20px;
+	}
 }
+@media (max-width: 556px) {
+	.testimonials-inner {
+		padding: 0px 50px;
+		background-position: top 3px left 15px;
+	}
+	.testimonials-inner-text {
+		font-size: 15px;
+	}
+	.subscription-search {
+		max-width: 250px;
+		padding: 13px 80px 13px 16px;
+	}
 }
