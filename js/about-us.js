@@ -1,37 +1,3 @@
-// new Swiper('.swiper-box', {
-
-//     navigation: {
-//         nextEl: '.testimonial-swiper-button-next',
-//         prevEl: '.testimonial-swiper-button-prev'
-//     },
-
-//     pagination: {
-//         el: '.swiper-pagination',
-//         type: 'bullets',
-//         clickable: true
-//     },
-
-//     simulateTouch: true,
-//     touchRatio: 1,
-//     touchAngle: 45,
-//     grabCursor: true,
-//     slideToClickedSlide: true,
-
-    
-//     keyboard: {
-//         enabled: true,
-//         onlyInViewport: true,
-//         pageUpDown: true
-//     },
-    
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-//     slidesPerGroup: 1,
-//     initialSlide: 0,
-//     speed: 900,
-//     loop: true,
-// });
-
 new Swiper('.reviews-slider', {
     navigation: {
         nextEl: '.reviews-swiper-button-next',
