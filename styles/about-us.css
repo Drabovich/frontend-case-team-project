@@ -1220,12 +1220,36 @@
 }
 
 @media (max-width: 395px) {
+    .info__title h1 {
+        font-size: 34px;
+    }
+
+    .about-us-image {
+        height: 277px;
+    }
+
     .video__background {
-        height: 230px;
+        height: 215px;
+    }
+
+    .dots {
+        display: none;
+    }
+
+    .shapes {
+        display: none;
     }
 
     .step__item {
         margin-bottom: 30px;
+    }
+
+    .gray-shapes {
+        display: none;
+    }
+
+    .gray-circles {
+        display: none;
     }
 
     .testimonial {
@@ -1236,8 +1260,16 @@
         margin-right: 10px;
     }
 
+    .gray-shapes-arrows {
+        display: none;
+    }
+
     .date-time {
-        font-size: 12px;
+        font-size: 9px;
+    }
+
+    .left-subscribe-image {
+        display: none;
     }
 }
 
@@ -1306,5 +1338,13 @@
 
     .swiper-pagination-bullet {
         width: 24px;
+    }
+
+    .post__title {
+        font-size: 17px;
+    }
+
+    .section__title {
+        font-size: 24px;
     }
 }
