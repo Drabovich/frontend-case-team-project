@@ -887,6 +887,16 @@
     .steps-studying {
         margin-right: 30px;
     }
+
+    .reviews__slide {
+        padding: 35px 45px;
+    }
+}
+
+@media(max-width: 1155px) {
+    .reviews-slider__btns {
+        display: none;
+    }
 }
 
 @media (max-width: 1135px) {
@@ -1075,24 +1085,6 @@
     }
 }
 
-@media(max-width: 805px) {
-    .testimonials-wrapper {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .testimonials-box {
-        order: 1;
-        margin-bottom: 40px;
-        padding: 35px 45px;
-    }
-
-    .slider__btn {
-        order: 2;
-    }
-}
-
 @media (max-width: 600px) {
     .about-us-image {
         width: 400px;
@@ -1186,14 +1178,17 @@
         height: 280px;
     }
 
-    .testimonials-box {
-        margin: 0 0 20px;
+    .reviews__slide {
         padding: 35px 10px;
     }
 
     .testimonial {
         font-size: 16px;
         padding-left: 45px;
+    }
+
+    .testimonial-author {
+        margin-left: 45px;
     }
 
     .companies-box {
@@ -1233,7 +1228,83 @@
         margin-bottom: 30px;
     }
 
+    .testimonial {
+        font-size: 14px;
+    }
+
+    .testimonial-author-img {
+        margin-right: 10px;
+    }
+
     .date-time {
         font-size: 12px;
+    }
+}
+
+@media(max-width: 300px) {
+    .circles {
+        width: 102px;
+        height: 172px;
+    }
+
+    .info__title h1 {
+        font-size: 29px;
+    }
+
+    .main__text {
+        font-size: 17px;
+    }
+
+    .secondary__text {
+        font-size: 15px;
+    }
+
+    .statisticks__quantity {
+        font-size: 39px;
+        margin-right: 10px;
+    }
+
+    .statisticks__subtitle {
+        font-size: 17px;
+    }
+
+    .about-us-image {
+        height: 250px;
+    }
+
+    .video__background {
+        height: 160px;
+    }
+
+    .program__badge {
+        font-size: 14px;
+    }
+
+    .program__text {
+        font-size: 16px;
+    }
+
+    .soonest__item-title {
+        font-size: 15px;
+    }
+
+    .steps-studying-image {
+        height: 260px;
+    }
+
+    .gray-shapes-arrows {
+        display: none;
+    }
+
+    .testimonial {
+        font-size: 13px;
+    }
+
+    .testimonial-author {
+        margin: auto;
+    }
+
+    .swiper-pagination-bullet {
+        width: 24px;
     }
 }
