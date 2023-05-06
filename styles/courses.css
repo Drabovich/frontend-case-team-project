@@ -34,6 +34,7 @@
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 .filter-wrapper {
 	justify-content: space-between;
@@ -67,7 +68,7 @@
 }
 .form-search {
 	margin: 0 auto;
-	max-width: 315px;
+	/* max-width: 315px; */
 	position: relative;
 }
 input {
@@ -95,12 +96,7 @@ input {
 	width: 390px;
 	height: 438px;
 }
-/* .managers-item:not(:nth-child(3n + 3)) {
-	margin-right: 30px;
-}
-.managers-item:not(:nth-last-child(-n + 3)) {
-	margin-bottom: 30px;
-} */
+
 .managers-item-img-1 {
 	background-image: url(../images/courses-page/image-1.jpg);
 	background-repeat: no-repeat;
@@ -256,19 +252,17 @@ input {
 }
 .testimonials {
 	padding-top: 80px;
-	max-width: 100%;
+	width: 100%;
 	height: 736px;
 	margin: auto;
 	background-color: #f4f5f7;
 }
 .testimonials-inner {
-	width: 1020px;
+	max-width: 1020px;
 	height: 344px;
 	background-image: url(../images/courses-page/braces.jpg);
 	background-repeat: no-repeat;
 	background-position: top 65px left 50px;
-
-	max-width: 1020px;
 	margin: 0 auto;
 	padding: 64px 105px;
 	background-color: #fff;
@@ -306,11 +300,6 @@ input {
 	justify-content: space-between;
 	height: 500px;
 	width: 100%;
-	/* background-image: url(../images/courses-page/image-sertificate.jpg);
-	background-repeat: no-repeat;
-	background-size: auto;
-	background-position: right;
- */
 }
 .sertificate-inner-left {
 	max-width: 405px;
@@ -385,4 +374,57 @@ input {
 }
 .background-img-right {
 	position: absolute;
+}
+@media (max-width: 1260px) {
+	.container {
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	.filter-wrapper {
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
+	.testimonials-inner {
+		max-width: 850px;
+		background-position: top 65px left 50px;
+		padding: 64px 105px;
+	}
+	.sertificate {
+		padding: 75px 200px;
+		margin-bottom: 354px;
+	}
+	.sertificate-inner {
+		flex-direction: column;
+	}
+	.sertificate-inner-left {
+		margin: 0 auto;
+	}
+}
+@media (max-width: 958px) {
+	.manager-choice-item {
+		padding: 10px;
+	}
+	.sertificate {
+		padding: 30px 70px;
+		margin-bottom: 300px;
+	}
+}
+@media (max-width: 840px) {
+	.container {
+		align-items: center;
+	}
+	.manager-choice-list {
+		flex-direction: column;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 768px) {
+	.testimonials-inner {
+		padding: 20px 85px;
+		background-position: top 20px left 45px;
+	}
+	.sertificate {
+    padding: 5px;
+    margin-bottom: 300px;
+}
 }
