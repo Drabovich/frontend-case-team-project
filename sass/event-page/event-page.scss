@@ -660,79 +660,84 @@
 
     &__title {
         margin-bottom: rem(60);
-    }
 
-    &__slider {
-        overflow-x: hidden;
-        width: 100%;
-        margin: 0 auto;
-
-        @media screen and (max-width: rem(1245)) {
-            width: 92%;
-        }
-
-        @media screen and (max-width: rem(1200)) {
-            width: 70%;
-        }
-      
-        @media screen and (max-width: rem(1161)) {
-            width: 77%;
-        }
-        @media screen and (max-width: rem(1024)) {
-            width: 80%;
-        }
-        @media screen and (max-width: rem(768)) {
-            width: 52%;
-        }
-        @media screen and (max-width: rem(426)) {
-            width: 90%;
-        }
-        @media screen and (max-width: rem(380)) {
-            width: 100%;
-     
-        }   
-    }
-
-    &__items {
-        display: flex;
-        justify-content: space-between;
-        gap: rem(30);
-        margin-bottom: rem(80);
-
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-
-        //Hide scrollbar
-        &::-webkit-scrollbar {
-            display: none;
-        }
-
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-
-       
-
-        @media screen and (max-width: rem(1200)) {
-            gap: rem(20);
-        }
-
-        @media screen and (max-width: rem(780)) {
-            margin-bottom: rem(120);
-        }
-
-        @media screen and (max-width: rem(540)) {
-            margin-bottom: rem(70);
-        }
-
-        @media screen and (max-width: rem(470)) {
+        @media screen and (max-width: rem(590)) {
             margin-bottom: rem(100);
         }
     }
 
+    .swiper-wrapper {
+        display: flex;
+        max-width: 900px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__items {
+        margin-bottom: rem(80);
+    }
+
     &__item {
-        flex: 1;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
+        height: 100%;
+    }
+
+    .event-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: rem(24);
+        background-color: #ffffff;
+        border: 1px solid #E5E8ED;
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        border-radius: 4px;
+        max-width: rem(390);
+        min-height: 323px;
+
+        @media screen and (max-width: rem(370)) {
+            min-height: 300px;
+        }
+
+        &__date {
+            font-size: rem(28);
+            font-weight: 700;
+            line-height: 1.5;
+            color: #FF3F3A;
+        }
+
+        &__title {
+            flex: 1;
+            font-size: rem(18);
+            font-weight: 900;
+            line-height: 1.5;
+            margin-bottom: rem(8);
+        }
+
+        &__time,
+        &__type {
+            color: #787A80;
+            line-height: 1.6;
+        }
+
+        &__time {
+            margin-bottom: rem(20);
+        }
+
+        &__link {
+            border: 1px solid #FF3F3A;
+            color: #FF3F3A;
+            border-radius: 4px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            padding: rem(15);
+            max-width: rem(342);
+            width: 100%;
+            transition: color 0.2s, background-color 0.2s;
+
+            &:hover {
+                color: #ffffff;
+                background-color: #FF3F3A;
+            }
+        }
     }
 
     &__explore {
@@ -758,34 +763,34 @@
     .arrow {
         position: absolute;
         top: 60px;
-        right: 15px;
         width: 45px;
         height: 45px;
         border-radius: 50%;
         transition: background-color 0.3s;
 
-        @media screen and (max-width: rem(780)) {
-            top: 80%;
-            right: 40%;
+        @media screen and (max-width: rem(590)) {
+            top: 100px;
         }
 
-        @media screen and (max-width: rem(540)) {
-            top: 72%;
-        }
-
-        @media screen and (max-width: rem(470)) {
-            right: 30%;
+        @media screen and (max-width: rem(435)) {
+            top: 150px;
         }
 
         &--prev {
-            right: 60px;
+            right: 45px;
 
-            @media screen and (max-width: rem(780)) {
+            @media screen and (max-width: rem(590)) {
                 right: 50%;
-            }
 
-            @media screen and (max-width: rem(470)) {
-                right: 60%;
+            }
+        }
+
+        &--next {
+            right: 0;
+
+            @media screen and (max-width: rem(590)) {
+                right: 35%;
+
             }
         }
 
@@ -806,78 +811,6 @@
 
         &:hover &__icon {
             fill: #F4F5F7;
-        }
-    }
-
-    .event-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: rem(24);
-        background-color: #ffffff;
-        border: 1px solid #E5E8ED;
-        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
-        border-radius: 4px;
-        min-height: rem(323);
-        width: rem(380);
-
-        @media screen and (max-width: rem(1245)) {
-            width: rem(340);
-        }
-
-        @media screen and (max-width: rem(1200)) {
-        width: rem(380);
-        }
-        @media screen and (max-width: rem(430)) {
-        width: rem(340);
-        }
-
-
-
-        &__date {
-            font-size: rem(28);
-            font-weight: 700;
-            line-height: 1.5;
-            color: #FF3F3A;
-        }
-
-        &__type {
-            flex: 1;
-        }
-
-        &__time,
-        &__type {
-            color: #787A80;
-            line-height: 1.6;
-        }
-
-        &__time {
-            margin-bottom: rem(20);
-        }
-
-        &__title {
-            flex: 1;
-            font-size: rem(18);
-            font-weight: 900;
-            line-height: 1.5;
-            margin-bottom: rem(8);
-        }
-
-        &__link {
-            border: 1px solid #FF3F3A;
-            color: #FF3F3A;
-            border-radius: 4px;
-            text-align: center;
-            letter-spacing: 0.5px;
-            padding: rem(15);
-            max-width: rem(342);
-            width: 100%;
-            transition: color 0.2s, background-color 0.2s;
-
-            &:hover {
-                color: #ffffff;
-                background-color: #FF3F3A;
-            }
         }
     }
 }

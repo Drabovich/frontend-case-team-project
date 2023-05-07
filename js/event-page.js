@@ -24,28 +24,33 @@ titles.forEach(item => item.addEventListener('click', () => {
     }
 }))
 
-//buttons for slider event-others section
+// swiper
 
-const slider = document.querySelector('.event-others__items');
-const nextBtn = document.querySelector('#nextBtn');
-const prevBtn = document.querySelector('#prevBtn');
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    
 
-nextBtn.addEventListener('click', () => {
-    const currentScrollPos = slider.scrollLeft;
-    const slideWidth = slider.clientWidth;
-    const nextSlidePos = currentScrollPos + slideWidth;
-    slider.scrollTo({
-        left: nextSlidePos,
-        behavior: 'smooth'
-    });
-});
+    breakpoints: {
+        
+        // when window width is >= 480px
+        590: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        // when window width is >= 640px
+        980: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    },
+   
+    // Navigation arrows
+    navigation: {
+        nextEl: '.arrow--next',
+        prevEl: '.arrow--prev',
+    },
 
-prevBtn.addEventListener('click', () => {
-    const currentScrollPos = slider.scrollLeft;
-    const slideWidth = slider.clientWidth;
-    const prevSlidePos = currentScrollPos - slideWidth;
-    slider.scrollTo({
-        left: prevSlidePos,
-        behavior: 'smooth'
-    });
 });

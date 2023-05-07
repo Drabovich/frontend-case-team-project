@@ -7,8 +7,10 @@
     <title>Event</title>
     <link rel="stylesheet" href="../styles/null.css">
     <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="../styles/event-page.css">
     <script defer src="../js/header-footer.js"></script>
+    <script defer src="../libs/swiper-bundle.min.js"></script>
     <script defer src="../js/event-page.js"></script>
 </head>
 <body>
@@ -224,71 +226,77 @@
             <div class="container event-others__container">
                 <span class="event-subtitle">Check other online events</span>
                 <h2 class="event-others__title event-title">You may be interested in</h2>
-                <div class="event-others__slider">
-                    <button id="prevBtn" class="arrow arrow--prev">
-                        <svg class="arrow__icon arrow__icon--prev">
-                            <use href="../images/event-page/icons.svg#arrow"></use>
-                        </svg>
-                    </button>
-                    <button id="nextBtn" class="arrow">
-                        <svg class="arrow__icon">
-                            <use href="../images/event-page/icons.svg#arrow"></use>
-                        </svg>
-                    </button>
-                    <ul class="event-others__items">
-                        <li class="event-others__item">
+                <button class="arrow arrow--prev">
+                    <svg class="arrow__icon arrow__icon--prev">
+                        <use href="../images/event-page/icons.svg#arrow"></use>
+                    </svg>
+                </button>
+                <button class="arrow arrow--next">
+                    <svg class="arrow__icon">
+                        <use href="../images/event-page/icons.svg#arrow"></use>
+                    </svg>
+                </button>
+                <div class="event-others__slider swiper">
+                    <ul class="event-others__items swiper-wrapper">
+                        <li class="event-others__item swiper-slide">
                             <article class="event-card">
                                 <span class="event-card__date">05 Aug</span>
                                 <time class="event-card__time">11:00 – 14:00</time>
-                                <h3 class="event-card__title">Formation of the organizational structure of the company in
+                                <h3 class="event-card__title">Formation of the organizational structure of the company
+                                    in
                                     the face of uncertainty.</h3>
                                 <span class="event-card__type">Onine master-class</span>
                                 <a class="event-card__link" href="#">View more</a>
                             </article>
                         </li>
-                        <li class="event-others__item">
+                        <li class="event-others__item swiper-slide">
                             <article class="event-card">
                                 <span class="event-card__date">24 Jul</span>
                                 <time class="event-card__time">11:00 – 12:30</time>
-                                <h3 class="event-card__title">Building a customer service department. Best Practices.</h3>
+                                <h3 class="event-card__title">Building a customer service department. Best Practices.
+                                </h3>
                                 <span class="event-card__type">Onine lecture</span>
                                 <a class="event-card__link" href="#">View more</a>
                             </article>
                         </li>
-                        <li class="event-others__item">
+                        <li class="event-others__item swiper-slide">
                             <article class="event-card">
                                 <span class="event-card__date">10 Jul</span>
                                 <time class="event-card__time">91:00 – 14:00</time>
-                                <h3 class="event-card__title">Find and evaluate: search and assessment tools for candidates.
+                                <h3 class="event-card__title">Find and evaluate: search and assessment tools for
+                                    candidates.
                                 </h3>
                                 <span class="event-card__type">Onine workshop</span>
                                 <a class="event-card__link" href="#">View more</a>
                             </article>
                         </li>
-                        <li class="event-others__item">
+                        <li class="event-others__item swiper-slide">
                             <article class="event-card">
                                 <span class="event-card__date">05 Aug</span>
                                 <time class="event-card__time">11:00 – 14:00</time>
-                                <h3 class="event-card__title">Formation of the organizational structure of the company in
+                                <h3 class="event-card__title">Formation of the organizational structure of the company
+                                    in
                                     the face of uncertainty.</h3>
                                 <span class="event-card__type">Onine master-class</span>
                                 <a class="event-card__link" href="#">View more</a>
                             </article>
                         </li>
-                        <li class="event-others__item">
+                        <li class="event-others__item swiper-slide">
                             <article class="event-card">
                                 <span class="event-card__date">24 Jul</span>
                                 <time class="event-card__time">11:00 – 12:30</time>
-                                <h3 class="event-card__title">Building a customer service department. Best Practices.</h3>
+                                <h3 class="event-card__title">Building a customer service department. Best Practices.
+                                </h3>
                                 <span class="event-card__type">Onine lecture</span>
                                 <a class="event-card__link" href="#">View more</a>
                             </article>
                         </li>
-                        <li class="event-others__item">
+                        <li class="event-others__item swiper-slide">
                             <article class="event-card">
                                 <span class="event-card__date">10 Jul</span>
                                 <time class="event-card__time">91:00 – 14:00</time>
-                                <h3 class="event-card__title">Find and evaluate: search and assessment tools for candidates.
+                                <h3 class="event-card__title">Find and evaluate: search and assessment tools for
+                                    candidates.
                                 </h3>
                                 <span class="event-card__type">Onine workshop</span>
                                 <a class="event-card__link" href="#">View more</a>
