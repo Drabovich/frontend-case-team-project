@@ -1,6 +1,6 @@
 .container {
   max-width: 1230px;
-  padding: 20px;
+  padding: 50px;
   margin: 0 auto;
 }
 /* HEADER */
@@ -168,6 +168,147 @@
   align-items: center;
   color: #1e212c;
 }
+/* Медиа-запрос: max-width 1440px */
+/* Медиа-запрос: max-width 1440px */
+@media only screen and (max-width: 1440px) {
+  .header {
+    margin-bottom: 120px;
+  }
+  .bg__shapes {
+    background-image: none;
+  }
+  .bg__shapes {
+    height: 900px;
+  }
+
+  .illustration {
+    width: 602px;
+    height: 551px;
+    position: absolute;
+    top: 42%;
+    right: 40%;
+    transform: translateX(50%);
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+
+  .button-container {
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 160px;
+  }
+
+  .header h1 {
+    font-size: 48px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .header .header__btn-1 {
+    width: 120px;
+    height: 45px;
+
+    margin-right: 16px;
+  }
+
+  .header .header__btn-1 p {
+    font-size: 16px;
+    line-height: 42px;
+  }
+
+  .header .header__btn-2 {
+    width: 180px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 42px;
+  }
+
+  .header__count {
+    display: block;
+  }
+
+  .header__count-box {
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .header__count-box span {
+    font-size: 36px;
+  }
+
+  .header__count-box p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .illustration {
+    display: none;
+  }
+}
+
+/* Медиа-запрос: max-width 834px */
+@media only screen and (max-width: 834px) {
+  .header {
+    margin-bottom: 80px;
+  }
+
+  .bg__shapes {
+    height: 700px;
+  }
+
+  .illustration {
+    width: 402px;
+    height: 361px;
+    top: 120px;
+    right: 100px;
+  }
+
+  .button-container {
+    padding-top: 120px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+
+    height: 149px;
+    margin-bottom: 30px;
+  }
+
+  .header .header__btn-1 {
+    width: 100px;
+    height: 32px;
+    margin-right: 12px;
+  }
+
+  .header .header__btn-1 p {
+    font-size: 12px;
+    line-height: 32px;
+  }
+
+  .header .header__btn-2 {
+    width: 120px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 32px;
+  }
+
+  .header__count {
+    bottom: 40px;
+    gap: 80px;
+  }
+
+  .header__count-box span {
+    font-size: 28px;
+  }
+
+  .header__count-box p {
+    font-size: 12px;
+  }
+}
+
 /* ABOUT */
 .background {
   background-image: url("../images/homepage/dots.png"),
