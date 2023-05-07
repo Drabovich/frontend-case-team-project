@@ -2,7 +2,7 @@ dist
 styles/course
 package-lock.json
 node_modules
-gulpfile.json
 package.json
 settings.json
 .vscode
+gulpfile.js
