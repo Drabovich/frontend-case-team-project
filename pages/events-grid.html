@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events grid</title>
+    <link rel="stylesheet" href="../styles/null.css">
+    <link rel="stylesheet" href="../styles/header-footer.css">
+     <link rel="stylesheet" href="../styles/events-grid.css">
+    <script defer src="../js/header-footer.js"></script>
+</head>
+<body>
+    <main>        
+      <section class="events-grid">
+        <div class="events-grid__container container">
+        <div class="events-list__sup-title title_h2">Our events</div>
+        <h2 class="events-list__title title_h1">Lectures, workshops & master-classes</h2>
+        <div class="filter">
+                <label for="event" class="event-category">
+                    <span class="event-category__title">Event category</span>
+                    <select id="event" class="event-category__value">
+                        <option value="all" selected>all themes</option>
+                        <option value="lecture">lecture</option>
+                        <option value="workshop">workshop</option>
+                        <option value="master-class">master class</option>
+                    </select>
+                </label>
+                <label for="sort" class="event-sort">
+                    <span class="event-sort__title">Sort by</span>
+                    <select id="sort" class="event-sort__value">
+                        <option value="id" selected>newest</option>
+                        <option value="monthNumber">month</option>
+                        <option value="duration">duration</option>
+                    </select>
+                    
+                </label>
+                <label class="event-number" for="number">
+                    <b>Show</b>
+                   <select id="pages">
+                        <option value="6" selected>6</option>
+                        <option value="9">9</option>
+                        <option value="12">12</option>
+                        <option value="15">15</option>
+                        <option value="18">18</option>
+                        <option value="21">21</option>
+                        <option value="24">24</option>
+                    </select>                
+               </label>
+                <span  class="events-perpage">events per page</span>
+                <div class="event-search" id="search">
+                   
+                    <input  class="event-search__text" type="text" name="event-search" placeholder="Search event...">
+                    <button class="btn_1 search" type="button"></button>
+                </div>
+                <div class="event-links">
+                    <a href="#"><img src="../images/events grid/list.svg" alt="list"></a>
+                    <a  class="event-links__grid" href="#"><img src="../images/events grid//grid.svg" alt="grid"></a>
+                </div>
+            </div>             
+          <div class="cards">
+            <article class="card">
+                <div class="card__body">
+                    <p class="card__date"> 05 Aug</p>
+                   <p class="card__time">11:00 – 14:00</p>
+                    <p class="card__text">Formation of the organizational structure of the company in the face of uncertainty.</p>
+                    <p class="card__footer card__footer--size-08">Onine master-class</p>
+                    <button class="card__button">View more</button>
+                </div>                
+            </article>    
+            <article class="card">
+                <div class="card__body">
+                    <p class="card__date">  24 Jul</p>
+                <p class="card__time">11:00 – 12:30</p>
+                    <p class="card__text"> Building a customer service department. Best Practices.</p>
+                    <p class="card__footer card__footer--size-01">Onine lecture</p>
+                    <button class="card__button">View more</button>
+                </div>                
+            </article>     
+            <article class="card">
+                <div class="card__body">
+                    <p class="card__date">  16 Jul</p>
+                   <p class="card__time">10:00 – 13:00</p>
+                    <p class="card__text">How to apply methods of speculative design in practice. Worldbuilding prototyping.</p>
+                    <p class="card__footer card__footer--size-09">Onine  workshop</p>
+                    <button class="card__button">View more</button>
+                </div>                
+            </article>       
+            <article class="card">
+                <div class="card__body">
+                    <h3 class="card__date"> 10 Jul</h3>
+                    <p class="card__time">9:00 – 14:00</p>
+                    <p class="card__text">Find and evaluate: search and assessment tools for candidates.</p>
+                    <p class="card__footer card__footer--size-02">Onine  workshop</p>
+                    <button class="card__button">View more</button>
+                </div>                
+            </article>      
+            <article class="card">
+                <div class="card__body">
+                    <p class="card__date">  27 Jun</p>
+                    <p class="card__time">15:00 – 19:00</p>
+                    <p class="card__text">Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI</p>
+                    <p class="card__footer card__footer--size-03">Onine master-class</p>
+                    <button class="card__button">View more</button>
+                </div>               
+            </article>       
+            <article class="card">
+                <div class="card__body">
+                    <p class="card__date"> 15 Jun</p>
+                   <p class="card__time">11:00 – 12:00</p>
+                    <p class="card__text">Marketing or growth hacking: main differences and what business needs</p>
+                    <p class="card__footer card__footer--size-04">Onine lecture</p>
+                    <button class="card__button">View more</button>
+                </div>               
+            </article>        
+            <article class="card">
+                <div class="card__body">
+                    <p class="card__date"> 02 Jul</p>
+                    <p class="card__time">11:00 – 13:00</p>
+                    <p class="card__text">How to brief a client and present your design to approve it from the first show.</p>
+                    <p class="card__footer card__footer--size-05">Onine lecture</p>
+                    <button class="card__button">View more</button>
+                </div>                
+            </article>       
+            <article class="card">
+                <div class="card__body">
+                    <p class="card__date"> 27 May</p>
+                    <p class="card__time">11:00 – 12:00</p>
+                    <p class="card__text">Who is a project manager and do I want to be PM?</p>
+                    <p class="card__footer card__footer--size-06">Onine lecture</p>
+                    <button class="card__button">View more</button>
+                </div>                
+             </article>      
+            <article class="card">
+                <div class="card__body">
+                    <p class="card__date">18 May</p>
+                  <p class="card__time">10:00 – 12:00</p>
+                    <p class="card__text">The company's business page as an additional tool to support the announcement of vacancies.</p>
+                    <p class="card__footer card__footer--size-07">Onine lecture</p>
+                    <button class="card__button">View more</button>
+                </div>                
+            </article>
+          </div>          
+            <div class="events-list__pages">
+                <button type="button" class="events-list__numbers change-page">
+                    <span class="events-list__numbers-list"></span>
+                    <span class="events-list__number events-list__number_active">1</span>
+                    <span class="events-list__number">2</span>
+                    <span class="events-list__number">3</span>
+                    <span class="events-list__number">4</span>
+               <span class="events-list__next"></span>                   
+                </button>
+            </div>
+        </div>
+        </div>
+    </section>
+    </main>
+</body>
+</html>
