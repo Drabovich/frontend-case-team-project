@@ -75,21 +75,21 @@ main {
   text-transform: uppercase;
 }
 
-.list-social-media-icons {
+.list-social-media-icons_c {
   display: flex;
   gap: 3rem;
   padding: 1rem;
 }
 
-.list-social-media-icons svg:nth-child(2) {
+.list-social-media-icons_c svg:nth-child(2) {
   margin-top: 0.2rem;
 }
 
-.list-social-media-icons svg:hover {
+.list-social-media-icons_c svg:hover {
   transition: transform 1s;
 }
 
-.list-social-media-icons svg:hover {
+.list-social-media-icons_c svg:hover {
   transform: scale(1.3);
 }
 
