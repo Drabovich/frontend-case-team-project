@@ -2,6 +2,10 @@ html {
   font-size: 62.5%;
 }
 
+:root {
+  --primary: #ff3f3a;
+}
+
 /*Header*/
 
 header {
