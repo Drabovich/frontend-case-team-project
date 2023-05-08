@@ -45,7 +45,7 @@ const in_icon_c = elementFromHtml(`
 `);
 
 let list_social_media_icons_c = document.querySelector(
-  ".list-social-media-icons "
+  ".list-social-media-icons_c "
 );
 
 list_social_media_icons_c.appendChild(facebook_icon_c);
