@@ -1,2 +1,9 @@
-.vscode
 bash.exe.stackdump
+dist
+.vscode
+styles/course
+package-lock.json
+node_modules
+gulpfile.js
+package.json
+settings.json

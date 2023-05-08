@@ -1,0 +1,36 @@
+@mixin line-clamp($lines: 1) {
+    @if $lines <=1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    @else {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical;
+    }
+}
+
+
+//REM call rem
+@function rem($px) {
+    $result: math.div($px, 16)+rem;
+    @return $result;
+}
+
+//EM
+@function em($px, $current: 16) {
+    $result: math.div($px, $current)+em;
+    @return $result;
+}
+
+
+//% call prc
+
+@function percent($px, $from) {
+    $result: math.div($px, $from) * 100%;
+    @return $result;
+}
