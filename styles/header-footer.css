@@ -9,16 +9,28 @@ html {
 /*Header*/
 
 header {
+  background-color: #fedeceff;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
+  height: 7vh;
 }
 
 .block-navbar-1 {
   display: flex;
   justify-content: space-between;
+  flex-grow: 6;
+}
+
+.block-navbar-2 {
+  display: flex;
   gap: 5rem;
+  flex-grow: 2;
+}
+
+.logo-header {
+  flex-grow: 1;
+  margin-left: 10rem;
 }
 
 nav {
@@ -42,22 +54,11 @@ nav ul li a:hover {
   display: flex !important;
 }
 
-.block-navbar-2 {
-  display: flex;
-  gap: 5rem;
-}
-
 .block-navbar-2 button {
   border-radius: 0.5rem;
   color: white;
-  padding: 2rem 4rem;
+  padding: 1.5rem 4rem;
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-  transition: transform 1s;
-}
-
-.block-navbar-2 button:hover {
-  transform: translateX(-15%) scale(1.2);
-  font-weight: bold;
 }
 
 .person {
@@ -331,13 +332,14 @@ footer h2 {
   }
 }
 
-@media screen and (width < 950px) {
+@media screen and (width < 1000px) {
   nav {
     display: none;
   }
 
   .burger {
     display: flex;
+    margin-left: 5rem;
   }
 
   nav {
@@ -348,11 +350,11 @@ footer h2 {
     top: 0;
     right: 0;
     z-index: 20;
-    /* overflow-y: auto; */
     animation: burgerAnimation 0.5s;
     background-color: #424551;
     padding: 3rem 1rem;
   }
+
   nav ul {
     flex-direction: column;
     color: white;
@@ -403,6 +405,15 @@ footer h2 {
   }
 }
 
+@media screen and (width < 720px) {
+  .logo-header {
+    margin-left: 8rem;
+  }
+  .block-navbar-2 button {
+    display: none;
+  }
+}
+
 @media screen and (width < 610px) {
   footer {
     grid-template-columns: 1fr 30rem 1fr;
@@ -447,8 +458,22 @@ footer h2 {
     height: 6vh;
     font-size: 1.2rem;
   }
+}
 
-  .block-navbar-2 button {
+@media screen and (width < 450px) {
+  .burger {
+    margin-left: 1rem;
+  }
+  .logo-header {
+    margin-left: 3rem;
+  }
+  .link-reg-log_in a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (width < 330px) {
+  .logo-header {
     display: none;
   }
 }

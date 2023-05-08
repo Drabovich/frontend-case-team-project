@@ -3,34 +3,33 @@ const main = document.querySelector("main");
 main.insertAdjacentHTML(
   "beforebegin",
   `
-  <header id="top">
-    <!-- <div class="burger-menu"></div> -->
-    <div class="wrapper-burger">
-      <div class="burger">
-        <span></span>
-      </div>
-    </div>
-    <div class="block-navbar-1">
-      <div class="logo-header"></div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="block-navbar-2">
-      <button>Get consultation</button>
-      <div class="link-reg-log_in">
-        <div class="person"></div>
-        <a href="#">Log in / Register</a>
-      </div>
-    </div>
-  </header>
-`
+        <header id="top">
+        <div class="wrapper-burger">
+          <div class="burger">
+            <span></span>
+          </div>
+        </div>
+        <div class="logo-header"></div>
+        <div class="block-navbar-1">
+          <nav class="nav">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="block-navbar-2">
+          <button>Get consultation</button>
+          <div class="link-reg-log_in">
+            <div class="person"></div>
+            <a href="#">Log in / Register</a>
+          </div>
+        </div>
+        </header>
+      `
 );
 
 main.insertAdjacentHTML(
