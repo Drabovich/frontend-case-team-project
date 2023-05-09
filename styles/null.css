@@ -1,47 +1,51 @@
 * {
-  padding: 0;
-  margin: 0;
-  border: none;
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
 *,
 *::before,
 *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* width */
 html::-webkit-scrollbar {
-  width: 1rem;
+    width: 1rem;
 }
 
 /* Track */
 html::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
+    box-shadow: inset 0 0 5px grey;
 }
 
 /* Handle */
 html::-webkit-scrollbar-thumb {
-  background: #ff3f3a;
+    background: #ff3f3a;
 }
 
 html,
 body {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-  line-height: 1;
-  font-size: 16px;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body._lock {
+    overflow: hidden;
 }
 nav,
 section,
@@ -54,49 +58,49 @@ hgroup,
 figure,
 figcaption,
 article {
-  display: block;
+    display: block;
 }
 input,
 textarea,
 button,
 select {
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
 }
 input::-ms-clear {
-  display: none;
+    display: none;
 }
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 :focus,
 :active {
-  outline: none;
+    outline: none;
 }
 a,
 a:visited,
 a:hover,
 a:link {
-  text-decoration: none;
+    text-decoration: none;
 }
 a {
-  color: inherit;
-  background-color: transparent;
+    color: inherit;
+    background-color: transparent;
 }
 ul,
 ul li {
-  list-style: none;
+    list-style: none;
 }
 img {
-  vertical-align: top;
-  border-style: none;
+    vertical-align: top;
+    border-style: none;
 }
 img,
 svg {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 h1,
 h2,
@@ -105,11 +109,11 @@ h4,
 h5,
 h6,
 p {
-  font-size: inherit;
-  font-weight: inherit;
+    font-size: inherit;
+    font-weight: inherit;
 }
 [hidden] {
-  display: none;
+    display: none;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");

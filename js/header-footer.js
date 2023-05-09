@@ -27,7 +27,7 @@ if (page !== "/index.html" && page !== "/") {
             <button>Get consultation</button>
             <div class="link-reg-log_in">
               <div class="person"></div>
-              <a href="#">Log in / Register</a>
+              <a id="login">Log in / Register</a>
             </div>
           </div>
           </header>
@@ -99,6 +99,27 @@ if (page !== "/index.html" && page !== "/") {
         <div class="gtt"><a href="#top">GO TO TOP</a></div>
       </div>
     </footer>
+    <div class="popup" id="popup">
+    <div class="popup__wrapper" id="popup__wrapper">
+        <div class="popup__close" id="popup__close">X</div>
+        <div class="popup__title">Sign in</div>
+        <div class="popup__text">
+            Sign in to your account using email and password
+            provided during registration.
+        </div>
+        <form action="#" class="popup__form">
+            <p class="popup__name">Email</p>
+            <input
+                type="text"
+                class="popup__email"
+                placeholder="Your working email"
+            />
+            <p class="popup__name">Password</p>
+            <input type="password" class="popup__pwd" placeholder="********"/>
+            <button class="popup__btn">Sign in</button>
+        </form>
+    </div>
+</div>
     `
     );
 } else {
@@ -127,7 +148,7 @@ if (page !== "/index.html" && page !== "/") {
           <button>Get consultation</button>
           <div class="link-reg-log_in">
             <div class="person"></div>
-            <a href="#">Log in / Register</a>
+            <a id="login">Log in / Register</a>
           </div>
         </div>
         </header>
@@ -199,9 +220,58 @@ if (page !== "/index.html" && page !== "/") {
         <div class="gtt"><a href="#top">GO TO TOP</a></div>
       </div>
     </footer>
+    <div class="popup" id="popup">
+    <div class="popup__wrapper" id="popup__wrapper">
+        <div class="popup__close" id="popup__close">X</div>
+        <div class="popup__title">Sign in</div>
+        <div class="popup__text">
+            Sign in to your account using email and password
+            provided during registration.
+        </div>
+        <form action="#" class="popup__form">
+            <p class="popup__name">Email</p>
+            <input
+                type="text"
+                class="popup__email"
+                placeholder="Your working email"
+            />
+            <p class="popup__name">Password</p>
+            <input type="password" class="popup__pwd" placeholder="********"/>
+            <button class="popup__btn">Sign in</button>
+        </form>
+    </div>
+</div>
     `
     );
 }
+
+const login = document.getElementById("login");
+const popup = document.getElementById("popup");
+const closePopup = document.getElementById("popup__close");
+const body =
+    document.querySelector(
+        "body"
+    ); /** Получаем body для блокировки прокрутки */
+console.log(body);
+const scrollWidth = window.innerWidth - document.body.clientWidth; // Получаем ширину полосы прокрутки
+
+login.addEventListener("click", () => {
+    popup.classList.add("_active");
+    body.style.padding = `0 ${scrollWidth}px 0 0`; // Добавляем паддинг справа в размере ширины полосы прокрутки для всей страницы
+    body.classList.add("_lock"); // Блокируем прокрутку страницы при окрытии модального окна
+
+    closePopup.addEventListener("click", () => {
+        popup.classList.remove("_active");
+    });
+});
+
+document.addEventListener("click", (el) => {
+    if (el.target === closePopup || el.target === popup) {
+        body.style.padding = `0`;
+        popup.classList.remove("_active");
+        body.classList.remove("_lock");
+    }
+});
 
 function elementFromHtml(html) {
     /*function for contain html*/

@@ -87,6 +87,10 @@ nav ul li a:hover {
     color: var(--primary);
 }
 
+#login {
+    cursor: pointer;
+}
+
 /* burger menu */
 
 .burger {
