@@ -983,8 +983,8 @@ body {
 } /*# sourceMappingURL=main-page.css.map */
 
 .container {
-  max-width: 1230px;
-  padding: 50px;
+  max-width: 1330px;
+  padding: 0px 50px;
   margin: 0 auto;
 }
 /* HEADER */
@@ -1171,7 +1171,7 @@ body {
     position: absolute;
     top: 42%;
     right: 40%;
-    transform: translateX(50%);
+    transform: translateX(80%);
     background-size: 60%;
     background-repeat: no-repeat;
   }
@@ -1230,6 +1230,10 @@ body {
 @media only screen and (max-width: 1100px) {
   .illustration {
     display: none;
+  }
+  .header__btn-box {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1510,8 +1514,8 @@ body {
 }
 /* Section Card */
 .container__card {
-  max-width: 1230px;
-  padding: 0px;
+  max-width: 1330px;
+  padding: 0px 50px;
   margin: 0 auto;
 }
 .courses {
