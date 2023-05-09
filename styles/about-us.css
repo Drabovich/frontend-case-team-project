@@ -1,6 +1,6 @@
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  content: none;
+    content: none;
 }
 
 .container {
@@ -25,36 +25,36 @@
 }
 
 .info__title h2 {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #1E212C;
+    color: #1e212c;
     margin-bottom: 8px;
 }
 
 .info__title h1 {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 900;
     font-size: 46px;
     line-height: 130%;
-    color: #1E212C;
+    color: #1e212c;
     margin-bottom: 48px;
 }
 
 .main__text {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
-    color: #1E212C;
+    color: #1e212c;
     margin-bottom: 24px;
 }
 
 .secondary__text {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
@@ -66,13 +66,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.5px;
-    color: #FF3F3A;
+    color: #ff3f3a;
     padding: 16px 40px;
-    border: 1px solid #FF3F3A;
+    border: 1px solid #ff3f3a;
     border-radius: 4px;
     background: transparent;
     margin-right: 24px;
@@ -81,23 +81,23 @@
 
 .no-colored-btn:hover {
     box-shadow: 0px 0px 10px 0px rgba(247, 94, 5, 0.7);
-    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
-    color: #FFFFFF;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    color: #ffffff;
 }
 
 .colored-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.5px;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
     padding: 16px 40px;
-    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
-    border: 1px solid #FF3F3A;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    border: 1px solid #ff3f3a;
     border-radius: 4px;
     transition: all 0.4s ease-in-out;
 }
@@ -105,7 +105,7 @@
 .colored-btn:hover {
     box-shadow: 0px 0px 10px 0px rgba(247, 94, 5, 0.7);
     background: transparent;
-    color: #FF3F3A;
+    color: #ff3f3a;
 }
 
 .section-statisticks {
@@ -145,18 +145,18 @@
 
 .svg-play {
     transition: filter 0.5s ease;
-  }
-  
+}
+
 .svg-play:hover {
-    filter: drop-shadow(0px 0px 8px #FF3F3A);
+    filter: drop-shadow(0px 0px 8px #ff3f3a);
 }
 
 .button-title {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
-    color: #1E212C;
+    color: #1e212c;
 }
 
 .statisticks__info {
@@ -165,21 +165,21 @@
 }
 
 .statisticks__quantity {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 900;
     font-size: 48px;
     line-height: 130%;
     letter-spacing: 1px;
-    color: #FF3F3A;
+    color: #ff3f3a;
     margin-right: 16px;
 }
 
 .statisticks__subtitle {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 150%;
-    color: #1E212C;
+    color: #1e212c;
 }
 
 .section-benefits {
@@ -198,23 +198,23 @@
 
 .section__subtitle {
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #1E212C;
+    color: #1e212c;
 }
 
 .section__title {
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 46px;
     line-height: 130%;
-    color: #1E212C;
+    color: #1e212c;
 }
 
 .benefits-layout {
@@ -229,7 +229,15 @@
     align-items: center;
     border-right-width: 2px;
     border-right-style: solid;
-    border-image: linear-gradient(to bottom, rgba(218, 219, 221, 0), rgba(218, 219, 221, 0.5), rgba(218, 219, 221, 1), rgba(218, 219, 221, 0.5), rgba(218, 219, 221, 0)) 1 100%;
+    border-image: linear-gradient(
+            to bottom,
+            rgba(218, 219, 221, 0),
+            rgba(218, 219, 221, 0.5),
+            rgba(218, 219, 221, 1),
+            rgba(218, 219, 221, 0.5),
+            rgba(218, 219, 221, 0)
+        )
+        1 100%;
     padding: 0px 22.5px;
 }
 
@@ -247,20 +255,20 @@
 }
 
 .benefit__caption {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
-    color: #1E212C;
+    color: #1e212c;
     padding-bottom: 8px;
 }
 
 .benefit__text {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    color: #787A80;
+    color: #787a80;
     text-align: center;
 }
 
@@ -269,18 +277,21 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    grid-row-gap: 30px
+    grid-row-gap: 30px;
 }
 
 .learning-program__item {
-    background: #FFFFFF;
-    border: 1px solid #E5E8ED;
+    background: #ffffff;
+    border: 1px solid #e5e8ed;
     border-radius: 4px;
     transition: all 0.5s ease;
 }
 
 .learning-program__item:hover {
-    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+        0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+        0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+        0px 4px 4px -4px rgba(30, 33, 44, 0.03);
 }
 
 .learning-program__description {
@@ -290,61 +301,61 @@
 .program__badge {
     padding: 5px 8px;
     border-radius: 4px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 160%;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .badge-marketing {
-    background: #03CEA4;
+    background: #03cea4;
 }
 
 .badge-management {
-    background: #5A87FC;
+    background: #5a87fc;
 }
 
 .badge-hr-recruting {
-    background: #F89828;
+    background: #f89828;
 }
 
 .badge-design {
-    background: #F52F6E;
+    background: #f52f6e;
 }
 
 .badge-development {
-    background: #7772F1;
+    background: #7772f1;
 }
 
 .program__text {
     max-width: 342px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    color: #787A80;
+    color: #787a80;
     margin: 20px 0;
 }
 
 .program__link {
     display: flex;
     align-items: center;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 160%;
-    color: #1E212C;
+    color: #1e212c;
     transition: all 0.5s ease;
 }
 
 .arrow {
     margin-left: 8px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .program__link:hover {
-    color: #FF3F3A;
+    color: #ff3f3a;
 }
 
 .program__link:hover .arrow {
@@ -357,13 +368,13 @@
     justify-content: center;
     width: 390px;
     height: 420px;
-    background: #F4F5F7;
+    background: #f4f5f7;
     border-radius: 4px;
 }
 
 .soonest__item-title {
     max-width: 242px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
@@ -378,7 +389,7 @@
 .circles {
     position: absolute;
     right: 0;
-    top: -90px
+    top: -90px;
 }
 
 .studying-process-subtitle {
@@ -419,28 +430,28 @@
 }
 
 .step__number {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 900;
     font-size: 12px;
     line-height: 150%;
-    color: #787A80;
+    color: #787a80;
 }
 
 .step__name {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
-    color: #1E212C;
+    color: #1e212c;
     margin-bottom: 8px;
 }
 
 .step__description {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    color: #787A80;
+    color: #787a80;
 }
 
 .shapes-arrows {
@@ -475,7 +486,7 @@
 }
 
 .member__photo {
-    background: #FFCF2D;
+    background: #ffcf2d;
     padding: 20px 20px 0 20px;
     border-radius: 4px;
     margin-bottom: 16px;
@@ -483,13 +494,22 @@
 }
 
 .member__photo::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(30, 33, 44, 0) 43.9%,
+        rgba(30, 33, 44, 0.03) 55.21%,
+        rgba(30, 33, 44, 0.33) 68.73%,
+        rgba(30, 33, 44, 0.56) 76.17%,
+        rgba(30, 33, 44, 0.768225) 83.75%,
+        rgba(30, 33, 44, 0.92) 91.49%,
+        #1e212c 100%
+    );
     opacity: 0;
     transition: opacity 0.5s ease;
     border-radius: 4px;
@@ -511,13 +531,13 @@
     margin-right: 0;
 }
 
-.social-link:hover g{
+.social-link:hover g {
     opacity: 1;
     transition: opacity 0.5s ease;
 }
 
 .member__name {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
@@ -528,18 +548,18 @@
 
 .member__profession {
     display: block;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
     text-align: center;
-    color: #787A80;
+    color: #787a80;
 }
 
 .testimonials-section {
     position: relative;
     padding: 100px 0 180px;
-    background: #F4F5F7;
+    background: #f4f5f7;
 }
 
 .reviews-container {
@@ -566,20 +586,23 @@
     top: 20px;
     right: 260px;
     z-index: 0;
-} 
+}
 
 .reviews-slider__box {
     position: relative;
 }
-  
+
 .reviews-slider {
-    max-width: 63.75rem;
+    max-width: 88.75rem;
     background: #fff;
     margin: 0 auto;
-    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+        0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+        0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+        0px 4px 4px -4px rgba(30, 33, 44, 0.03);
     border-radius: 4px;
 }
-  
+
 .reviews__slide {
     padding: 4rem 6.5625rem;
 }
@@ -590,7 +613,7 @@
 
 .testimonial {
     position: relative;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
@@ -612,19 +635,19 @@
 .author-name {
     display: block;
     margin-bottom: 4px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 160%;
-    color: #1E212C;
+    color: #1e212c;
 }
 
 .author-position {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-    color: #787A80;
+    color: #787a80;
 }
 
 .reviews-slider__btn {
@@ -634,37 +657,38 @@
     transition: all 0.4s ease-in-out;
 }
 .reviews-slider__btn:hover {
-    background: #FF3F3A;
+    background: #ff3f3a;
 }
 
 .reviews-slider__btn:hover .reviews-slider__btn-img {
     filter: brightness(0) invert(1);
 }
-  
+
 .reviews-swiper-button-prev {
     left: -15px;
 }
-  
+
 .reviews-swiper-button-next {
     right: -10px;
 }
-  
+
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: -64px;
 }
-  
+
 .swiper-pagination-bullet {
-    background: #B3B7BC;
+    background: #b3b7bc;
     opacity: 1;
     width: 30px;
     height: 3px;
     border-radius: 4px;
 }
-  
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px);
 }
-  
+
 .swiper-pagination-bullet-active {
     background: #424551;
 }
@@ -677,7 +701,7 @@
 
 .companies-section {
     position: relative;
-    background: #F4F5F7;
+    background: #f4f5f7;
     padding: 0 0 100px;
 }
 
@@ -741,7 +765,7 @@
 }
 
 .post__badge-heading {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #424551;
@@ -759,13 +783,13 @@
 }
 
 .post__profession {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
-    color: #787A80;
+    color: #787a80;
     padding-right: 12px;
-    border-right: 1px solid #787A80;
+    border-right: 1px solid #787a80;
 }
 
 .date__post {
@@ -782,28 +806,28 @@
     display: flex;
     align-items: center;
     padding: 0 6px;
-    border-left: 1px solid #787A80;
+    border-left: 1px solid #787a80;
 }
 
 .date-time {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-    color: #787A80;
+    color: #787a80;
 }
 
 .post__title {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 150%;
-    color: #1E212C;
+    color: #1e212c;
     margin-bottom: 8px;
 }
 
 .post__subtitle {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
@@ -811,7 +835,11 @@
 }
 
 .subscribe-section {
-    background: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+    background: linear-gradient(
+        55.95deg,
+        rgba(255, 63, 58, 0.2) 0%,
+        rgba(247, 94, 5, 0.2) 100%
+    );
     padding: 120px 0 0;
 }
 
@@ -824,14 +852,14 @@
 .subscribe-form {
     width: 422px;
     height: 52px;
-    background: #FFFFFF;
-    border: 1px solid #D7DADD;
+    background: #ffffff;
+    border: 1px solid #d7dadd;
     border-radius: 4px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    color: #9A9CA5;
+    color: #9a9ca5;
     padding: 13px 16px;
     margin-right: 24px;
 }
@@ -840,7 +868,6 @@
     display: flex;
     justify-content: space-between;
 }
-
 
 @media (max-width: 1250px) {
     .container {
@@ -893,7 +920,7 @@
     }
 }
 
-@media(max-width: 1155px) {
+@media (max-width: 1155px) {
     .reviews-slider__btns {
         display: none;
     }
@@ -928,7 +955,7 @@
     }
 }
 
-@media(max-width: 1115px) {
+@media (max-width: 1115px) {
     .section-about-us__container {
         flex-direction: column;
         align-items: center;
@@ -983,7 +1010,7 @@
     }
 }
 
-@media(max-width: 1048px) {
+@media (max-width: 1048px) {
     .section {
         margin-bottom: 120px;
     }
@@ -1090,7 +1117,7 @@
         width: 400px;
         height: 360px;
     }
-    
+
     .section__title {
         font-size: 27px;
     }
@@ -1099,7 +1126,7 @@
         text-align: center;
     }
 
-    .info__title h1{
+    .info__title h1 {
         font-size: 39px;
     }
 
@@ -1273,7 +1300,7 @@
     }
 }
 
-@media(max-width: 300px) {
+@media (max-width: 300px) {
     .circles {
         width: 102px;
         height: 172px;

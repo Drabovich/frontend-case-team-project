@@ -17,7 +17,7 @@ if (page !== "/index.html" && page !== "/") {
               <ul>
                 <li><a href="./about-us.html">About Us</a></li>
                 <li><a href="./courses.html">Courses</a></li>
-                <li><a href="./event-page.html">Events</a></li>
+                <li><a href="./events-list.html">Events</a></li>
                 <li><a href="./blog.html">Blog</a></li>
                 <li><a href="./contacts.html">Contacts</a></li>
               </ul>
@@ -55,7 +55,7 @@ if (page !== "/index.html" && page !== "/") {
         <ul>
         <li><a href="./about-us.html">About Us</a></li>
         <li><a href="./courses.html">Courses</a></li>
-        <li><a href="./event-page.html">Events</a></li>
+        <li><a href="./events-list.html">Events</a></li>
         <li><a href="./blog.html">Blog</a></li>
         <li><a href="./contacts.html">Contacts</a></li>
         </ul>
@@ -64,11 +64,11 @@ if (page !== "/index.html" && page !== "/") {
       <div class="third-col">
         <h2>Courses</h2>
         <ul>
-          <li><a href="#">Marketing</a></li>
-          <li><a href="#">Management</a></li>
-          <li><a href="#">HR & Recruting</a></li>
-          <li><a href="#">Design</a></li>
-          <li><a href="#">Development</a></li>
+          <li><a href="./courses.html">Marketing</a></li>
+          <li><a href="./courses.html">Management</a></li>
+          <li><a href="./courses.html">HR & Recruting</a></li>
+          <li><a href="./courses.html">Design</a></li>
+          <li><a href="./courses.html">Development</a></li>
         </ul>
       </div>
       <!-- Fourth Column -->
@@ -117,7 +117,7 @@ if (page !== "/index.html" && page !== "/") {
             <ul>
               <li><a href="./pages/about-us.html">About Us</a></li>
               <li><a href="./pages/courses.html">Courses</a></li>
-              <li><a href="./pages/event-page.html">Events</a></li>
+              <li><a href="./pages/events-list.html">Events</a></li>
               <li><a href="./pages/blog.html">Blog</a></li>
               <li><a href="./pages/contacts.html">Contacts</a></li>
             </ul>
@@ -155,7 +155,7 @@ if (page !== "/index.html" && page !== "/") {
         <ul>
         <li><a href="./pages/about-us.html">About Us</a></li>
         <li><a href="./pages/courses.html">Courses</a></li>
-        <li><a href="./pages/event-page.html">Events</a></li>
+        <li><a href="./pages/events-list.html">Events</a></li>
         <li><a href="./pages/blog.html">Blog</a></li>
         <li><a href="./pages/contacts.html">Contacts</a></li>
         </ul>
@@ -164,11 +164,11 @@ if (page !== "/index.html" && page !== "/") {
       <div class="third-col">
         <h2>Courses</h2>
         <ul>
-          <li><a href="#">Marketing</a></li>
-          <li><a href="#">Management</a></li>
-          <li><a href="#">HR & Recruting</a></li>
-          <li><a href="#">Design</a></li>
-          <li><a href="#">Development</a></li>
+          <li><a href="./pages/courses.html">Marketing</a></li>
+          <li><a href="./pages/courses.html">Management</a></li>
+          <li><a href="./pages/courses.html">HR & Recruting</a></li>
+          <li><a href="./pages/courses.html">Design</a></li>
+          <li><a href="./pages/courses.html">Development</a></li>
         </ul>
       </div>
       <!-- Fourth Column -->
