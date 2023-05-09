@@ -1,6 +1,0 @@
-
-font-family: 'Lato', sans-serif;
-
-Lato Regular - font-weight: 400;
-Lato Bold - font-weight: 700;
-Lato Black - font-weight: 900;
