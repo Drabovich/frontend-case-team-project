@@ -1478,7 +1478,7 @@ body {
   }
   .about {
     display: block;
-    margin-bottom: 180px;
+    margin-bottom: 80px;
   }
   .background {
     background-image: none;
@@ -1756,6 +1756,10 @@ body {
     margin: 0 auto;
     margin-bottom: 50px;
   }
+  .courses {
+    margin-bottom: 80px;
+  }
+
   .card__text {
     font-size: 16px;
     line-height: 150%;
