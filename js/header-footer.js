@@ -9,7 +9,7 @@ main.insertAdjacentHTML(
             <span></span>
           </div>
         </div>
-        <div class="logo-header"></div>
+        <div class="logo-header"><a href="../index.html" class="logo-link"></a></div>
         <div class="block-navbar-1">
           <nav class="nav">
             <ul>
@@ -150,7 +150,7 @@ const logo_white =
   </svg>
 `);
 
-const div_logo_header = document.querySelector(".logo-header");
+const div_logo_header = document.querySelector(".logo-link");
 const div_logo_footer = document.querySelector(".logo-footer");
 
 div_logo_header.appendChild(logo_black);
