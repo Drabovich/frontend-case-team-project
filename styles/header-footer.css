@@ -15,6 +15,7 @@ header {
   align-items: center;
   height: 7vh;
   padding: 40px 0;
+  font-size: 1.5rem;
 }
 
 .block-navbar-1 {
@@ -60,6 +61,11 @@ nav ul li a:hover {
   color: white;
   padding: 1.5rem 4rem;
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  transition: 1s;
+}
+
+.block-navbar-2 button:hover {
+  box-shadow: 0 0 1rem 0.3rem #ff3f3a;
 }
 
 .person {
@@ -152,6 +158,7 @@ footer {
   place-items: center;
   width: 100%;
   overflow: hidden;
+  font-size: 1.5rem;
 }
 
 footer > div:not(div:last-of-type) {
