@@ -1,5 +1,6 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 :root {
@@ -9,12 +10,13 @@ html {
 /*Header*/
 
 header {
-    background-color: #fedeceff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 7vh;
-    padding: 40px 0;
+  background-color: #fedeceff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  padding: 40px 0;
+  font-size: 1.5rem;
 }
 
 .block-navbar-1 {
@@ -56,10 +58,15 @@ nav ul li a:hover {
 }
 
 .block-navbar-2 button {
-    border-radius: 0.5rem;
-    color: white;
-    padding: 1.5rem 4rem;
-    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1.5rem 4rem;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  transition: 1s;
+}
+
+.block-navbar-2 button:hover {
+  box-shadow: 0 0 1rem 0.3rem #ff3f3a;
 }
 
 .person {
@@ -147,14 +154,15 @@ nav ul li a:hover {
 /*Footer*/
 
 footer {
-    display: grid;
-    grid-template-columns: 1fr 40rem 10rem 12rem 16rem 30rem 1fr;
-    grid-template-rows: 1fr 20%;
-    column-gap: 4rem;
-    height: 35rem;
-    background-color: #1e212c;
-    place-items: center;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 40rem 10rem 12rem 16rem 30rem 1fr;
+  grid-template-rows: 1fr 20%;
+  column-gap: 4rem;
+  height: 35rem;
+  background-color: #1e212c;
+  place-items: center;
+  width: 100%;
+  font-size: 1.5rem;
 }
 
 footer > div:not(div:last-of-type) {
@@ -189,9 +197,8 @@ footer a:hover {
 }
 
 .fourth-col {
-    grid-row: 1/2;
-    grid-column: 5/6;
-    padding-bottom: 6rem;
+  grid-row: 1/2;
+  grid-column: 5/6;
 }
 
 .fifth-col {
@@ -241,11 +248,10 @@ footer h2 {
 }
 
 .block-data {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 1rem;
-    margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 1rem;
 }
 
 .list-social-media-icons {
@@ -476,10 +482,34 @@ footer h2 {
     }
 }
 
+@media screen and (width < 400px) {
+  header {
+    width: 40rem;
+  }
+
+  footer {
+    width: 40rem;
+  }
+
+  .logo-header {
+    display: none;
+  }
+}
+
+@media screen and (width < 350px) {
+  .fifth-col h2 {
+    font-size: 1.5rem;
+  }
+
+  .logo-header {
+    display: none;
+  }
+
 @media screen and (width < 330px) {
     .logo-header {
         display: none;
     }
+
 }
 
 @keyframes heart {
