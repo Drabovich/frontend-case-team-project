@@ -31,6 +31,9 @@
     justify-self: end;
     cursor: pointer;
 }
+.popup__close:hover {
+    color: #ff3f3a;
+}
 .popup__title {
     font-weight: 700;
     font-size: 28px;
