@@ -262,7 +262,7 @@ p {
     align-items: center;
 }
 
-input {
+.sub-input {
     width: 100%;
     max-width: 422px;
     height: auto;

@@ -100,24 +100,30 @@ if (page !== "/index.html" && page !== "/") {
       </div>
     </footer>
     <div class="popup" id="popup">
-    <div class="popup__wrapper" id="popup__wrapper">
-        <div class="popup__close" id="popup__close">X</div>
-        <div class="popup__title">Sign in</div>
-        <div class="popup__text">
-            Sign in to your account using email and password
-            provided during registration.
-        </div>
-        <form action="#" class="popup__form">
-            <p class="popup__name">Email</p>
-            <input
-                type="text"
-                class="popup__email"
-                placeholder="Your working email"
-            />
-            <p class="popup__name">Password</p>
-            <input type="password" class="popup__pwd" placeholder="********"/>
-            <button class="popup__btn">Sign in</button>
-        </form>
+    <div class="popup__back" id="popup__back">
+      <div class="popup__wrapper" id="popup__wrapper">
+          <div class="popup__close" id="popup__close">X</div>
+          <div class="popup__title">Sign in</div>
+          <div class="popup__text">
+              Sign in to your account using email and password
+              provided during registration.
+          </div>
+          <form action="#" class="popup__form">
+              <p class="popup__name">Email</p>
+              <input
+                  type="text"
+                  class="popup__email"
+                  placeholder="Your working email"
+              />
+              <p class="popup__name">Password</p>
+              <input
+                  type="password"
+                  class="popup__pwd"
+                  placeholder="********"
+              />
+              <button class="popup__btn">Sign in</button>
+          </form>
+      </div>
     </div>
 </div>
     `
@@ -221,24 +227,30 @@ if (page !== "/index.html" && page !== "/") {
       </div>
     </footer>
     <div class="popup" id="popup">
-    <div class="popup__wrapper" id="popup__wrapper">
-        <div class="popup__close" id="popup__close">X</div>
-        <div class="popup__title">Sign in</div>
-        <div class="popup__text">
-            Sign in to your account using email and password
-            provided during registration.
-        </div>
-        <form action="#" class="popup__form">
-            <p class="popup__name">Email</p>
-            <input
-                type="text"
-                class="popup__email"
-                placeholder="Your working email"
-            />
-            <p class="popup__name">Password</p>
-            <input type="password" class="popup__pwd" placeholder="********"/>
-            <button class="popup__btn">Sign in</button>
-        </form>
+    <div class="popup__back" id="popup__back">
+      <div class="popup__wrapper" id="popup__wrapper">
+          <div class="popup__close" id="popup__close">X</div>
+          <div class="popup__title">Sign in</div>
+          <div class="popup__text">
+              Sign in to your account using email and password
+              provided during registration.
+          </div>
+          <form action="#" class="popup__form">
+              <p class="popup__name">Email</p>
+              <input
+                  type="text"
+                  class="popup__email"
+                  placeholder="Your working email"
+              />
+              <p class="popup__name">Password</p>
+              <input
+                  type="password"
+                  class="popup__pwd"
+                  placeholder="********"
+              />
+              <button class="popup__btn">Sign in</button>
+          </form>
+      </div>
     </div>
 </div>
     `
@@ -248,6 +260,7 @@ if (page !== "/index.html" && page !== "/") {
 const login = document.getElementById("login");
 const popup = document.getElementById("popup");
 const closePopup = document.getElementById("popup__close");
+const popupBack = document.getElementById("popup__back");
 const body =
     document.querySelector(
         "body"
@@ -257,6 +270,7 @@ const scrollWidth = window.innerWidth - document.body.clientWidth; // Получ
 
 login.addEventListener("click", () => {
     popup.classList.add("_active");
+    popupBack.classList.add("_active");
     body.style.padding = `0 ${scrollWidth}px 0 0`; // Добавляем паддинг справа в размере ширины полосы прокрутки для всей страницы
     body.classList.add("_lock"); // Блокируем прокрутку страницы при окрытии модального окна
 
@@ -266,9 +280,10 @@ login.addEventListener("click", () => {
 });
 
 document.addEventListener("click", (el) => {
-    if (el.target === closePopup || el.target === popup) {
+    if (el.target === closePopup || el.target === popupBack) {
         body.style.padding = `0`;
         popup.classList.remove("_active");
+        popupBack.classList.remove("_active");
         body.classList.remove("_lock");
     }
 });

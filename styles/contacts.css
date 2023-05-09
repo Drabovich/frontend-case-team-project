@@ -196,9 +196,9 @@ input:focus {
     box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.5);
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
+.input-text,
+.input-tel,
+.input-email {
     width: 30rem;
     height: 4rem;
     padding-left: 1rem;
