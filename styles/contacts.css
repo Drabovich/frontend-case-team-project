@@ -433,3 +433,56 @@ input[type="submit"]:hover {
     padding: 2rem;
   }
 }
+@media screen and (max-width: 400px) {
+  .main-grid {
+    width: 40rem;
+  }
+
+  /*First Cell*/
+
+  .block-social-media h4 {
+    font-size: 1.2rem;
+  }
+
+  .block-data div:nth-child(even) p:first-child {
+    font-size: 1.2rem;
+  }
+
+  .block-data div:nth-child(even) p:last-child {
+    font-size: 1.2rem;
+  }
+
+  .block-data-social-media h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  .block-data-social-media h2 {
+    font-size: 2.5rem;
+  }
+
+  .list-social-media-icons_c svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  /*Second Cell*/
+
+  .block-map img {
+    width: 25rem;
+    height: 15rem;
+  }
+
+  /*Third Cell*/
+
+  .block-info-image img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  /*Fourth Cell*/
+
+  .block-reg-form {
+    justify-self: start;
+  }
+}

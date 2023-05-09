@@ -480,7 +480,15 @@ footer h2 {
   }
 }
 
-@media screen and (width < 330px) {
+@media screen and (width < 400px) {
+  header {
+    width: 40rem;
+  }
+
+  footer {
+    width: 40rem;
+  }
+
   .logo-header {
     display: none;
   }
