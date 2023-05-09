@@ -1,130 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Contacts</title>
-    <link rel="stylesheet" href="../styles/null.css" />
-    <link rel="stylesheet" href="../styles/header-footer.css" />
-    <link rel="stylesheet" href="../styles/contacts.css" />
-    <script defer src="../js/header-footer.js"></script>
-    <script defer src="../js/contacts-generate-svg-html.js"></script>
-  </head>
-  <body>
-    <main>
-      <!-- Мой код -->
-      <div class="main-grid">
-        <!-- First Cell -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Page Contacts</title>
+        <link rel="stylesheet" href="../styles/null.css" />
+        <link rel="stylesheet" href="../styles/header-footer.css" />
+        <link rel="stylesheet" href="../styles/login.css" />
+        <link rel="stylesheet" href="../styles/contacts.css" />
+        <script defer src="../js/header-footer.js"></script>
+        <script defer src="../js/contacts-generate-svg-html.js"></script>
+    </head>
+    <body>
+        <main>
+            <!-- Мой код -->
+            <div class="main-grid">
+                <!-- First Cell -->
 
-        <div class="block-data-social-media">
-          <h3>Contact info</h3>
-          <h2>Get in touch</h2>
-          <div class="block-data">
-            <div class="col1-icon"></div>
-            <div class="data">
-              <p>Talk to us:</p>
-              <p>hello@createx.com</p>
+                <div class="block-data-social-media">
+                    <h3>Contact info</h3>
+                    <h2>Get in touch</h2>
+                    <div class="block-data">
+                        <div class="col1-icon"></div>
+                        <div class="data">
+                            <p>Talk to us:</p>
+                            <p>hello@createx.com</p>
+                        </div>
+                        <div class="col2-icon"></div>
+                        <div class="data">
+                            <p>Call us:</p>
+                            <p>(405) 555-0128</p>
+                        </div>
+                        <div class="col3-icon"></div>
+                        <div class="data">
+                            <p>Address:</p>
+                            <p>2464 Royal Ln. Mesa, New Jersey 45463, USA</p>
+                        </div>
+                    </div>
+                    <div class="block-social-media">
+                        <h4>Follow Us:</h4>
+                        <div class="list-social-media-icons_c"></div>
+                    </div>
+                </div>
+
+                <!-- Second Cell -->
+
+                <div class="block-map">
+                    <img src="../images/contacts/map.jpg" alt="map" />
+                </div>
+
+                <!-- Third Cell -->
+
+                <div class="block-info-image">
+                    <img
+                        src="../images/contacts/illustration.png"
+                        alt="woman"
+                    />
+                </div>
+
+                <!-- Fourth Cell -->
+
+                <div class="block-reg-form">
+                    <form action="/">
+                        <h3>Any Questions?</h3>
+                        <h2>Drop us a line</h2>
+                        <div class="block-fn">
+                            <label for="fname">First Name*</label>
+                            <input
+                                type="text"
+                                id="fname"
+                                name="first-name"
+                                placeholder="Your first name"
+                            />
+                        </div>
+
+                        <div class="block-ln">
+                            <label for="lname">Last Name*</label>
+                            <input
+                                type="text"
+                                id="lname"
+                                name="last-name"
+                                placeholder="Your last name"
+                            />
+                        </div>
+
+                        <div class="block-e">
+                            <label for="email">Email*</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Your working email"
+                            />
+                        </div>
+
+                        <div class="block-p">
+                            <label for="phone">Phone*</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Your phone number"
+                            />
+                        </div>
+
+                        <div class="block-mes">
+                            <label for="message">Message*</label>
+                            <input
+                                type="text"
+                                id="message"
+                                name="message"
+                                placeholder="Your message"
+                            />
+                        </div>
+
+                        <div class="block-ag">
+                            <label for="agree">
+                                <input type="checkbox" />I agree to receive
+                                communications from<br />
+                                Createx Online School</label
+                            >
+                        </div>
+
+                        <input type="submit" value="Send message" />
+                    </form>
+                </div>
+
+                <!-- End -->
             </div>
-            <div class="col2-icon"></div>
-            <div class="data">
-              <p>Call us:</p>
-              <p>(405) 555-0128</p>
-            </div>
-            <div class="col3-icon"></div>
-            <div class="data">
-              <p>Address:</p>
-              <p>2464 Royal Ln. Mesa, New Jersey 45463, USA</p>
-            </div>
-          </div>
-          <div class="block-social-media">
-            <h4>Follow Us:</h4>
-            <div class="list-social-media-icons_c"></div>
-          </div>
-        </div>
-
-        <!-- Second Cell -->
-
-        <div class="block-map">
-          <img src="../images/contacts/map.jpg" alt="map" />
-        </div>
-
-        <!-- Third Cell -->
-
-        <div class="block-info-image">
-          <img src="../images/contacts/illustration.png" alt="woman" />
-        </div>
-
-        <!-- Fourth Cell -->
-
-        <div class="block-reg-form">
-          <form action="/">
-            <h3>Any Questions?</h3>
-            <h2>Drop us a line</h2>
-            <div class="block-fn">
-              <label for="fname">First Name*</label>
-              <input
-                type="text"
-                id="fname"
-                name="first-name"
-                placeholder="Your first name"
-              />
-            </div>
-
-            <div class="block-ln">
-              <label for="lname">Last Name*</label>
-              <input
-                type="text"
-                id="lname"
-                name="last-name"
-                placeholder="Your last name"
-              />
-            </div>
-
-            <div class="block-e">
-              <label for="email">Email*</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your working email"
-              />
-            </div>
-
-            <div class="block-p">
-              <label for="phone">Phone*</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Your phone number"
-              />
-            </div>
-
-            <div class="block-mes">
-              <label for="message">Message*</label>
-              <input
-                type="text"
-                id="message"
-                name="message"
-                placeholder="Your message"
-              />
-            </div>
-
-            <div class="block-ag">
-              <label for="agree">
-                <input type="checkbox" />I agree to receive communications
-                from<br />
-                Createx Online School</label
-              >
-            </div>
-
-            <input type="submit" value="Send message" />
-          </form>
-        </div>
-
-        <!-- End -->
-      </div>
-    </main>
-  </body>
+        </main>
+    </body>
 </html>

@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
-    <link rel="stylesheet" href="../styles/null.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel="stylesheet" href="../styles/blog.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script defer src="../js/blog.js"></script>
-</head>
-<body>
-    <main>
-        <div class="text-box">
-            <div class="text-wrap">
-                <h4>Our blog</h4>
-                <h1>Createx School Journal</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Главная страница</title>
+        <link rel="stylesheet" href="../styles/null.css" />
+        <link rel="stylesheet" href="../styles/header-footer.css" />
+        <link rel="stylesheet" href="../styles/login.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+        />
+        <link rel="stylesheet" href="../styles/blog.css" />
+        <script defer src="../js/header-footer.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script defer src="../js/blog.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="text-box">
+                <div class="text-wrap">
+                    <h4>Our blog</h4>
+                    <h1>Createx School Journal</h1>
+                </div>
             </div>
-        </div>
 
-        <div class="list-block">
-            <ul class="list">
-                <div class="sr1">
-                    <li class="list__item active" data-id="all" id="li1"><i class="fi fi-rr-list"></i>All</li>
-                </div>
-                <div class="sr2">
-                    <li class="list__item" data-id="articles" id="li2"><i class="fi fi-rr-poll-h"></i></i>Articles</li>
-                </div>
-                <div class="sr3">
-                    <li class="list__item" data-id="videos" id="li3"><i class="fi fi-rr-play-alt"></i>Videos</li>
-                </div>
-                <div class="sr4">
-                    <li class="list__item" data-id="podcasts" id="li4"><i class="fi fi-rr-microphone"></i>Podcasts</li>
-                </div>
-            </ul>
-        </div>  
+            <div class="list-block">
+                <ul class="list">
+                    <div class="sr1">
+                        <li class="list__item active" data-id="all" id="li1">
+                            <i class="fi fi-rr-list"></i>All
+                        </li>
+                    </div>
+                    <div class="sr2">
+                        <li class="list__item" data-id="articles" id="li2">
+                            <i class="fi fi-rr-poll-h"></i>Articles
+                        </li>
+                    </div>
+                    <div class="sr3">
+                        <li class="list__item" data-id="videos" id="li3">
+                            <i class="fi fi-rr-play-alt"></i>Videos
+                        </li>
+                    </div>
+                    <div class="sr4">
+                        <li class="list__item" data-id="podcasts" id="li4">
+                            <i class="fi fi-rr-microphone"></i>Podcasts
+                        </li>
+                    </div>
+                </ul>
+            </div>
             <section class="blog">
-
-                
                 <div class="container">
-
                     <div class="cell-1 podcast blocks__item" id="rev1">
-                        <img src="../images/blog/podcast_1.png">
-                        <img class="badge" src="../images/blog/badge_podcast.png">
+                        <img src="../images/blog/podcast_1.png" />
+                        <img
+                            class="badge"
+                            src="../images/blog/badge_podcast.png"
+                        />
 
                         <div class="brief">
                             <span class="topic-name">Marketing</span>
@@ -56,20 +70,26 @@
                         </div>
 
                         <h3>
-                            What is traffic arbitrage and does it really make money?
+                            What is traffic arbitrage and does it really make
+                            money?
                         </h3>
                         <p>
-                            Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...
+                            Pharetra, ullamcorper iaculis viverra parturient sed
+                            id sed. Convallis proin dignissim lacus, purus
+                            gravida...
                         </p>
-                        <div class="conclusion">
+                        <a class="conclusion" href="./single-post.html">
                             <span class="arrow">Listen</span>
                             <i class="fi fi-rr-arrow-right"></i>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="cell-2 article blocks__item" id="rev1">
-                        <img src="../images/blog/article_1.png">
-                        <img class="badge" src="../images/blog/badge_article.png">
+                        <img src="../images/blog/article_1.png" />
+                        <img
+                            class="badge"
+                            src="../images/blog/badge_article.png"
+                        />
 
                         <div class="brief">
                             <span class="topic-name">Development</span>
@@ -82,20 +102,25 @@
                         </div>
 
                         <h3>
-                            How to choose the first programming language for a beginner
+                            How to choose the first programming language for a
+                            beginner
                         </h3>
                         <p>
-                            Turpis sed at magna laoreet gravida consequat tortor placerat. Gravida vitae aliquet enim egestas dui...
+                            Turpis sed at magna laoreet gravida consequat tortor
+                            placerat. Gravida vitae aliquet enim egestas dui...
                         </p>
-                        <div class="conclusion">
+                        <a class="conclusion" href="./single-post.html">
                             <span class="arrow">Read</span>
                             <i class="fi fi-rr-arrow-right"></i>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="cell-3 video blocks__item" id="rev2">
-                        <img src="../images/blog/video_1.png">
-                        <img class="badge" src="../images/blog/badge_video.png">
+                        <img src="../images/blog/video_1.png" />
+                        <img
+                            class="badge"
+                            src="../images/blog/badge_video.png"
+                        />
 
                         <div class="brief">
                             <span class="topic-name">Design</span>
@@ -108,22 +133,34 @@
                         </div>
 
                         <h3>
-                            Should you choose a creative profession if you are attracted to creativity?
+                            Should you choose a creative profession if you are
+                            attracted to creativity?
                         </h3>
                         <p>
-                            Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...
+                            Curabitur nisl tincidunt eros venenatis vestibulum
+                            ac placerat. Tortor, viverra sed vulputate
+                            ultrices...
                         </p>
 
-                        <div class="conclusion">
+                        <a class="conclusion" href="./single-post.html">
                             <span class="arrow">Watch</span>
                             <i class="fi fi-rr-arrow-right"></i>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="cell-4 article blocks__item" id="rev3">
-                        <img class="img-web" src="../images/blog/article_2.png">
-                        <img class="img-mob" src="../images/blog/article_mob_2.png">
-                        <img class="badge" src="../images/blog/badge_article.png">
+                        <img
+                            class="img-web"
+                            src="../images/blog/article_2.png"
+                        />
+                        <img
+                            class="img-mob"
+                            src="../images/blog/article_mob_2.png"
+                        />
+                        <img
+                            class="badge"
+                            src="../images/blog/badge_article.png"
+                        />
 
                         <div class="brief">
                             <span class="topic-name">HR & Recruting</span>
@@ -136,22 +173,33 @@
                         </div>
 
                         <h3>
-                            How to choose the first programming language for a beginner
+                            How to choose the first programming language for a
+                            beginner
                         </h3>
                         <p>
-                            Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus bibendum diam adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae pellentesque mi etiam. 
-                            Morbi commodo tempor, massa vivamus. A molestie id semper fermentum pretium...
+                            Massa, lectus nibh consectetur aliquet nunc risus
+                            aenean. Leo hac netus bibendum diam adipiscing
+                            aenean nisl. Molestie nullam ante mattis ac sit
+                            vitae pellentesque mi etiam. Morbi commodo tempor,
+                            massa vivamus. A molestie id semper fermentum
+                            pretium...
                         </p>
-                        <div class="conclusion">
+                        <a class="conclusion" href="./single-post.html">
                             <span class="arrow">Read</span>
                             <i class="fi fi-rr-arrow-right"></i>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="cell-5 video blocks__item" id="rev7">
-                        <img class="img-web" src="../images/blog/video_2.png">
-                        <img class="img-mob" src="../images/blog/video_mob_2.png">
-                        <img class="badge" src="../images/blog/badge_video.png">
+                        <img class="img-web" src="../images/blog/video_2.png" />
+                        <img
+                            class="img-mob"
+                            src="../images/blog/video_mob_2.png"
+                        />
+                        <img
+                            class="badge"
+                            src="../images/blog/badge_video.png"
+                        />
 
                         <div class="brief">
                             <span class="topic-name">Management</span>
@@ -164,20 +212,26 @@
                         </div>
 
                         <h3>
-                            Should you choose a creative profession if you are attracted to creativity?
+                            Should you choose a creative profession if you are
+                            attracted to creativity?
                         </h3>
                         <p>
-                            Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus. Curabitur nisl tincidunt eros venenatis...                    
+                            Neque a, senectus consectetur odio in aliquet nec
+                            eu. Ultricies ac nibh urna urna sagittis faucibus.
+                            Curabitur nisl tincidunt eros venenatis...
                         </p>
-                        <div class="conclusion">
+                        <a class="conclusion" href="./single-post.html">
                             <span class="arrow">Watch</span>
                             <i class="fi fi-rr-arrow-right"></i>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="cell-6 podcast blocks__item" id="rev5">
-                        <img src="../images/blog/podcast_2.png">
-                        <img class="badge" src="../images/blog/badge_podcast.png">
+                        <img src="../images/blog/podcast_2.png" />
+                        <img
+                            class="badge"
+                            src="../images/blog/badge_podcast.png"
+                        />
 
                         <div class="brief">
                             <span class="topic-name">Design</span>
@@ -190,20 +244,26 @@
                         </div>
 
                         <h3>
-                            What is traffic arbitrage and does it really make money?
+                            What is traffic arbitrage and does it really make
+                            money?
                         </h3>
                         <p>
-                            Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend...
+                            Aliquam vulputate hendrerit quam sollicitudin urna
+                            enim viverra gravida. Consectetur urna arcu
+                            eleifend...
                         </p>
-                        <div class="conclusion">
+                        <a class="conclusion" href="./single-post.html">
                             <span class="arrow">Listen</span>
                             <i class="fi fi-rr-arrow-right"></i>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="cell-7 video blocks__item" id="rev5">
-                        <img src="../images/blog/video_3.png">
-                        <img class="badge" src="../images/blog/badge_video.png">
+                        <img src="../images/blog/video_3.png" />
+                        <img
+                            class="badge"
+                            src="../images/blog/badge_video.png"
+                        />
 
                         <div class="brief">
                             <span class="topic-name">Management</span>
@@ -216,20 +276,25 @@
                         </div>
 
                         <h3>
-                            How to choose the first programming language for a beginner
+                            How to choose the first programming language for a
+                            beginner
                         </h3>
                         <p>
-                            Nisi, massa ut sit faucibus et diam. Faucibus at malesuada at justo scelerisque in nisi, urna...
+                            Nisi, massa ut sit faucibus et diam. Faucibus at
+                            malesuada at justo scelerisque in nisi, urna...
                         </p>
-                        <div class="conclusion">
+                        <a class="conclusion" href="./single-post.html">
                             <span class="arrow">Watch</span>
                             <i class="fi fi-rr-arrow-right"></i>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="cell-8 article blocks__item" id="rev6">
-                        <img src="../images/blog/article_3.png">
-                        <img class="badge" src="../images/blog/badge_article.png">
+                        <img src="../images/blog/article_3.png" />
+                        <img
+                            class="badge"
+                            src="../images/blog/badge_article.png"
+                        />
 
                         <div class="brief">
                             <span class="topic-name">Marketing</span>
@@ -242,60 +307,97 @@
                         </div>
 
                         <h3>
-                            Should you choose a creative profession if you are attracted to creativity?
+                            Should you choose a creative profession if you are
+                            attracted to creativity?
                         </h3>
                         <p>
-                            Malesuada in augue mi feugiat morbi a aliquet enim. Elementum lacus, pellentesque etiam arcu tristique ac...
+                            Malesuada in augue mi feugiat morbi a aliquet enim.
+                            Elementum lacus, pellentesque etiam arcu tristique
+                            ac...
                         </p>
-                        <div class="conclusion">
+                        <a class="conclusion" href="./single-post.html">
                             <span class="arrow">Read</span>
                             <i class="fi fi-rr-arrow-right"></i>
-                        </div>
+                        </a>
                     </div>
-
                 </div>
             </section>
 
-        <div class="number-box">
-            <ul class="number-wrap">
-                <li class="eee">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-            </ul>
+            <div class="number-box">
+                <ul class="number-wrap">
+                    <li class="eee">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
                 <i class="fi fi-rr-arrow-right"></i>
-        </div>
-        
-    <div class="last">
-        <div class="last-wrap">
-            <img src="../images/blog/footer-pic.png">
-        </div>
-        <div class="sub-box">  
-            <div class="sub-wrap">
-                <h2>Want to get the best articles weekly?</h2>
-                <h2>Subscribe to our newsletter!</h2>
+            </div>
+
+            <div class="last">
+                <div class="last-wrap">
+                    <img src="../images/blog/footer-pic.png" />
+                </div>
+                <div class="sub-box">
+                    <div class="sub-wrap">
+                        <h2>Want to get the best articles weekly?</h2>
+                        <h2>Subscribe to our newsletter!</h2>
 
                         <div class="field">
-                            <input type="email" name="email" placeholder="Enter email address" required>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Enter email address"
+                                required
+                            />
                             <button class="sr5">SUBSCRIBE</button>
                         </div>
 
-                <label class="check-cont"><p>I agree to receive communications from Createx Online School</p>
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-                </label>
+                        <label class="check-cont"
+                            ><p>
+                                I agree to receive communications from Createx
+                                Online School
+                            </p>
+                            <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</main>
+        </main>
 
-<script>
-    ScrollReveal().reveal('.sr1', { delay: 150, origin: 'top', distance: '28px', duration: 850 });
-    ScrollReveal().reveal('.sr2', { delay: 150, origin: 'top', distance: '38px', duration: 1300 });
-    ScrollReveal().reveal('.sr3', { delay: 150, origin: 'top', distance: '48px', duration: 1480 });
-    ScrollReveal().reveal('.sr4', { delay: 150, origin: 'top', distance: '57px', duration: 1650 });
-    ScrollReveal().reveal('.sr5', { delay: 200, origin: 'top', distance: '6px', duration: 600, easing: 'ease-in-out', scale: 1.2 });
-</script>
-
-</body>
+        <script>
+            ScrollReveal().reveal(".sr1", {
+                delay: 150,
+                origin: "top",
+                distance: "28px",
+                duration: 850,
+            });
+            ScrollReveal().reveal(".sr2", {
+                delay: 150,
+                origin: "top",
+                distance: "38px",
+                duration: 1300,
+            });
+            ScrollReveal().reveal(".sr3", {
+                delay: 150,
+                origin: "top",
+                distance: "48px",
+                duration: 1480,
+            });
+            ScrollReveal().reveal(".sr4", {
+                delay: 150,
+                origin: "top",
+                distance: "57px",
+                duration: 1650,
+            });
+            ScrollReveal().reveal(".sr5", {
+                delay: 200,
+                origin: "top",
+                distance: "6px",
+                duration: 600,
+                easing: "ease-in-out",
+                scale: 1.2,
+            });
+        </script>
+    </body>
 </html>
