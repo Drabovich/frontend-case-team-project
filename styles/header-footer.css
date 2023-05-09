@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 :root {
@@ -157,7 +158,6 @@ footer {
   background-color: #1e212c;
   place-items: center;
   width: 100%;
-  overflow: hidden;
   font-size: 1.5rem;
 }
 
