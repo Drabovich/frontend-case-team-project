@@ -494,6 +494,16 @@ footer h2 {
   }
 }
 
+@media screen and (width < 350px) {
+  .fifth-col h2 {
+    font-size: 1.5rem;
+  }
+
+  .logo-header {
+    display: none;
+  }
+}
+
 @keyframes heart {
   0% {
     transform: scale(1.5) translateY(-10%);
