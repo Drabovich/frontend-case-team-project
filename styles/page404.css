@@ -1,0 +1,126 @@
+html {
+  font-size: 62.5%;
+}
+
+main {
+  height: 80vh;
+}
+
+.page-404 {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 50% 1fr 1fr;
+  grid-template-rows: 65% 1fr;
+  background-color: #e5e5f7;
+}
+
+.page-404 .second-col {
+  align-self: end;
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+
+.page-404 .first-col {
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  align-self: end;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  gap: 2rem;
+}
+
+.page-404 .first-col h1 {
+  font-size: 5rem;
+  color: #fc4f00;
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+.page-404 .first-col h1 svg {
+  height: 4rem;
+  width: 4rem;
+}
+
+.page-404 .first-col h1:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.page-404 .first-col div:first-of-type {
+  line-height: 1.5;
+  margin-left: 1rem;
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+.page-404 .first-col div:first-of-type:hover {
+  transform: scale(1.1);
+}
+
+.page-404 .second-col img {
+  object-fit: cover;
+  width: 40rem;
+  height: 50rem;
+}
+
+main a {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  width: 25rem;
+  padding: 2rem 1rem;
+  color: white;
+  transition: transform 1s;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+  margin-left: 1rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+main a:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .page-404 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 2rem;
+  }
+
+  .page-404 .first-col {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: center;
+    margin-left: 4rem;
+  }
+
+  .page-404 .second-col {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .page-404 .second-col img {
+    object-fit: cover;
+    width: 25rem;
+    height: 30rem;
+  }
+
+  .page-404 .first-col div:first-of-type {
+    line-height: 1.2;
+  }
+
+  .page-404 .first-col h1 {
+    font-size: 4rem;
+  }
+
+  .page-404 button {
+    margin-top: 0;
+    padding: 1.5rem 0.5rem;
+    margin-left: 2rem;
+  }
+}
