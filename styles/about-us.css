@@ -12,6 +12,14 @@
     margin-bottom: 180px;
 }
 
+.header-main {
+    background: transparent;
+}
+
+.header-main__container {
+    background: transparent;
+}
+
 .section-about-us {
     margin-top: 80px;
 }
