@@ -71,7 +71,7 @@
     /* max-width: 315px; */
     position: relative;
 }
-input {
+.input-input {
     padding: 10px;
     border: 1px solid #d7dadd;
     border-radius: 4px;

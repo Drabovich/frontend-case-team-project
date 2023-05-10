@@ -14,7 +14,7 @@ main {
 }
 
 .main-grid {
-    margin: 80px 0 180px 0;
+    margin: 80px auto; 180px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -196,9 +196,9 @@ input:focus {
     box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.5);
 }
 
-.input-text,
-.input-tel,
-.input-email {
+input[type="text"],
+.input-input,
+input[type="tel"] {
     width: 30rem;
     height: 4rem;
     padding-left: 1rem;
@@ -433,57 +433,4 @@ input[type="submit"]:hover {
     input[type="submit"] {
         padding: 2rem;
     }
-}
-@media screen and (max-width: 400px) {
-  .main-grid {
-    width: 40rem;
-  }
-
-  /*First Cell*/
-
-  .block-social-media h4 {
-    font-size: 1.2rem;
-  }
-
-  .block-data div:nth-child(even) p:first-child {
-    font-size: 1.2rem;
-  }
-
-  .block-data div:nth-child(even) p:last-child {
-    font-size: 1.2rem;
-  }
-
-  .block-data-social-media h3 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-  }
-
-  .block-data-social-media h2 {
-    font-size: 2.5rem;
-  }
-
-  .list-social-media-icons_c svg {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  /*Second Cell*/
-
-  .block-map img {
-    width: 25rem;
-    height: 15rem;
-  }
-
-  /*Third Cell*/
-
-  .block-info-image img {
-    width: 20rem;
-    height: 20rem;
-  }
-
-  /*Fourth Cell*/
-
-  .block-reg-form {
-    justify-self: start;
-  }
 }

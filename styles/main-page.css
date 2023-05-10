@@ -34,6 +34,7 @@ body {
 }
 
 .container {
+    overflow: hidden;
     max-width: 83.125rem;
     width: 100%;
     padding: 0 3.125rem;

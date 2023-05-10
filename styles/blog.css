@@ -262,7 +262,7 @@ p {
     align-items: center;
 }
 
-.sub-input {
+.input-input {
     width: 100%;
     max-width: 422px;
     height: auto;
@@ -461,7 +461,7 @@ p {
         width: 85%;
         margin: auto;
     }
-    button {
+    .button-button {
         transform: translateY(-4px);
         margin-top: 3px;
         margin-bottom: 5px;
