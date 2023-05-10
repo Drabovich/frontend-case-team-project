@@ -20,6 +20,10 @@
     background: transparent;
 }
 
+.header-main__butger-icon span {
+    background: #fedcd1;
+}
+
 .section-about-us {
     margin-top: 80px;
 }
