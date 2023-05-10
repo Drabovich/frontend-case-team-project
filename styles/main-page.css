@@ -1514,6 +1514,9 @@ body {
 }
 .courses__title {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
 }
 .courses__title p {
     font-family: "Lato";
