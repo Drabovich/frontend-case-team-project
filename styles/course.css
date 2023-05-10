@@ -1248,7 +1248,7 @@
 }
 .steps-pacman {
     position: absolute;
-    right: 0;
+    right: 15px;
     top: 0;
     height: 30px;
     width: 30px;

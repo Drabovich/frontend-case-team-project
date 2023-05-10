@@ -96,6 +96,7 @@ if (page !== "/index.html" && page !== "/") {
             </div>
         </footer>
     <div class="popup" id="popup">
+    <div class="popup__back" id="popup__back">
     <div class="popup__wrapper" id="popup__wrapper">
         <div class="popup__close" id="popup__close">X</div>
         <div class="popup__title">Sign in</div>
@@ -115,6 +116,7 @@ if (page !== "/index.html" && page !== "/") {
             <button class="popup__btn">Sign in</button>
         </form>
     </div>
+</div>
 </div>
     `
     );
@@ -213,6 +215,7 @@ if (page !== "/index.html" && page !== "/") {
             </div>
         </footer>
     <div class="popup" id="popup">
+        <div class="popup__back" id="popup__back">
     <div class="popup__wrapper" id="popup__wrapper">
         <div class="popup__close" id="popup__close">X</div>
         <div class="popup__title">Sign in</div>
@@ -233,55 +236,57 @@ if (page !== "/index.html" && page !== "/") {
         </form>
     </div>
 </div>
+</div>
     `
     );
 }
 
 const login = document.getElementById("login"),
-popup = document.getElementById("popup"),
-closePopup = document.getElementById("popup__close"),
-body = document.querySelector("body"),
-burger = document.querySelector(".header-main__burger"),
-goTo = document.querySelector(".footer__bottom-btn"),
-nav = document.querySelector('.header-main__nav');
+    popup = document.getElementById("popup"),
+    closePopup = document.getElementById("popup__close"),
+    popupBack = document.getElementById("popup__back");
+(body = document.querySelector("body")),
+    (burger = document.querySelector(".header-main__burger")),
+    (goTo = document.querySelector(".footer__bottom-btn")),
+    (nav = document.querySelector(".header-main__nav"));
 let scrollWidth = window.innerWidth - document.body.clientWidth; // Получаем ширину полосы прокрутки
-burger.addEventListener("click", ()=>{
-  nav.classList.toggle('header-main__nav_active');
-  burger.classList.toggle('header-main__burger_active');
+burger.addEventListener("click", () => {
+    nav.classList.toggle("header-main__nav_active");
+    burger.classList.toggle("header-main__burger_active");
 });
-goTo.addEventListener("click", ()=>{
-  window.scrollTo({
-    top: 0,
-    let: 0,
-    behavior: "smooth"
-  });
+goTo.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        let: 0,
+        behavior: "smooth",
+    });
 });
 
 window.addEventListener("resize", replaceEl);
 replaceEl();
- function replaceEl(iWidth){
-  iWidth = window.innerWidth;
-  console.log("work")
-  const regBtn = document.querySelector('.header-main__reg'),
-  header = document.querySelector('.header-main__container'),
-  logo = document.querySelector('.header-main__logo');
-  if(768 < iWidth && iWidth < 992) {
-    nav.before(logo);
-    nav.append(regBtn);
-  } else if(768 > iWidth) {
-    nav.prepend(logo);
-    nav.append(regBtn);
-  } else if( iWidth > 992){
-    nav.classList.remove('header-main__nav_active');
-  burger.classList.remove('header-main__burger_active');
-    nav.before(logo);
-    header.append(regBtn);
-  }
+function replaceEl(iWidth) {
+    iWidth = window.innerWidth;
+    console.log("work");
+    const regBtn = document.querySelector(".header-main__reg"),
+        header = document.querySelector(".header-main__container"),
+        logo = document.querySelector(".header-main__logo");
+    if (768 < iWidth && iWidth < 992) {
+        nav.before(logo);
+        nav.append(regBtn);
+    } else if (768 > iWidth) {
+        nav.prepend(logo);
+        nav.append(regBtn);
+    } else if (iWidth > 992) {
+        nav.classList.remove("header-main__nav_active");
+        burger.classList.remove("header-main__burger_active");
+        nav.before(logo);
+        header.append(regBtn);
+    }
 }
-
 
 login.addEventListener("click", () => {
     popup.classList.add("_active");
+    popupBack.classList.add("_active");
     body.style.padding = `0 ${scrollWidth}px 0 0`; // Добавляем паддинг справа в размере ширины полосы прокрутки для всей страницы
     body.classList.add("_lock"); // Блокируем прокрутку страницы при окрытии модального окна
 
@@ -291,9 +296,10 @@ login.addEventListener("click", () => {
 });
 
 document.addEventListener("click", (el) => {
-    if (el.target === closePopup || el.target === popup) {
+    if (el.target === closePopup || el.target === popupBack) {
         body.style.padding = `0`;
         popup.classList.remove("_active");
+        popupBack.classList.remove("_active");
         body.classList.remove("_lock");
     }
 });
@@ -362,7 +368,7 @@ function elementFromHtml(html) {
 //   <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00019 1.70866C7.38936 1.70866 6.08353 3.0145 6.08353 4.62533C6.08353 6.23616 7.38936 7.54199 9.00019 7.54199C10.611 7.54199 11.9169 6.23616 11.9169 4.62533C11.9169 3.0145 10.611 1.70866 9.00019 1.70866ZM4.41686 4.62533C4.41686 2.09402 6.46889 0.0419922 9.00019 0.0419922C11.5315 0.0419922 13.5835 2.09402 13.5835 4.62533C13.5835 7.15663 11.5315 9.20866 9.00019 9.20866C6.46889 9.20866 4.41686 7.15663 4.41686 4.62533Z" fill="#424551"/>
 //   <path fill-rule="evenodd" clip-rule="evenodd" d="M4.08691 11.7087C3.50914 11.7087 3.05755 11.99 2.87424 12.3942C2.62053 12.9536 2.39078 13.6196 2.33656 14.2513C2.31233 14.5337 2.43006 14.7418 2.5923 14.8426C3.44993 15.3753 5.43719 16.292 9.00019 16.292C12.5632 16.292 14.5505 15.3753 15.4081 14.8426C15.5703 14.7418 15.6881 14.5337 15.6638 14.2513C15.6096 13.6196 15.3799 12.9536 15.1261 12.3942C14.9428 11.99 14.4912 11.7087 13.9135 11.7087H4.08691ZM1.35639 11.7058C1.86301 10.5887 2.99428 10.042 4.08691 10.042H13.9135C15.0061 10.042 16.1374 10.5887 16.644 11.7058C16.935 12.3474 17.2472 13.2099 17.3244 14.1088C17.3946 14.9273 17.0544 15.7819 16.2876 16.2583C15.1596 16.959 12.8665 17.9587 9.00019 17.9587C5.13386 17.9587 2.84078 16.959 1.71283 16.2583C0.945947 15.7819 0.605747 14.9273 0.676001 14.1088C0.753149 13.2099 1.0654 12.3474 1.35639 11.7058Z" fill="#424551"/>
 //   </svg>
-  
+
 // `);
 
 // const div_person = document.querySelector(".person");
@@ -424,7 +430,7 @@ function elementFromHtml(html) {
 //     elementFromHtml(`<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 //   <path fill-rule="evenodd" clip-rule="evenodd" d="M9.86193 4.52925C10.1223 4.2689 10.5444 4.2689 10.8047 4.52925L13.8047 7.52925C14.0651 7.7896 14.0651 8.21171 13.8047 8.47206L10.8047 11.4721C10.5444 11.7324 10.1223 11.7324 9.86193 11.4721C9.60158 11.2117 9.60158 10.7896 9.86193 10.5292L11.7239 8.66732H2.66667C2.29848 8.66732 2 8.36884 2 8.00065C2 7.63246 2.29848 7.33398 2.66667 7.33398H11.7239L9.86193 5.47206C9.60158 5.21171 9.60158 4.7896 9.86193 4.52925Z" fill="white"/>
 //   </svg>
-  
+
 // `);
 
 // const span_right_arrow = document.querySelector(".span-right-arrow");

@@ -15,10 +15,6 @@
 .team-slide:hover .team-slide__image::after,
 .team-slide:hover .slide-socials,
 .team-slide,
-body {
-    transition: all 0.5s ease-out;
-}
-
 html {
     scroll-behavior: smooth;
     height: 100%;
