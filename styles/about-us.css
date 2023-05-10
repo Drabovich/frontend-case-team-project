@@ -23,6 +23,11 @@
 .header-main__butger-icon span {
     background: #fedcd1;
 }
+@media(max-width: 992px) {
+    .header-main__nav {
+        background: #ffffff;
+    }
+}
 
 .section-about-us {
     margin-top: 80px;
