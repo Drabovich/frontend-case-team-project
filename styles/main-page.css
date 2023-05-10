@@ -1099,7 +1099,6 @@ body {
 
     letter-spacing: 0.5px;
     background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .header .header__btn-2 {
