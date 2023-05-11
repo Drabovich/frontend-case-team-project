@@ -97,6 +97,13 @@
     height: 438px;
 }
 
+@media (max-width: 420px) {
+    .managers-item {
+        width: auto;
+        height: auto;
+    }
+}
+
 .managers-item-img-1 {
     background-image: url(../images/courses-page/image-1.jpg);
     background-repeat: no-repeat;
@@ -293,6 +300,8 @@
 }
 .testimonials-img {
     margin-right: 30px;
+    width: 72px;
+    height: 72px;
 }
 .testimonials-img-wrapper {
     justify-content: center;
