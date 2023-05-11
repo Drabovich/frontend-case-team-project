@@ -122,6 +122,7 @@ main {
 
 .block-info-image {
   justify-self: center;
+  align-self: center;
 }
 
 .block-info-image img {
