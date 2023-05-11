@@ -1234,6 +1234,10 @@ body {
         margin-bottom: 80px;
     }
 
+    .container{
+        padding: 20px;
+    }
+
     .bg__shapes {
         height: 700px;
     }
@@ -1297,7 +1301,7 @@ body {
 }
 .about {
     display: flex;
-    margin-bottom: 180px;
+    margin-bottom: 60px;
 }
 .about__img {
     background-image: url("../images/homepage/image-1.jpg");
@@ -1421,7 +1425,7 @@ body {
     .check p {
         font-family: "Lato";
         font-weight: 400;
-        font-size: 11px;
+        font-size: 16px;
         line-height: 130%;
         color: #424551;
         margin-bottom: 10px;
@@ -1438,7 +1442,7 @@ body {
         letter-spacing: 0.5px;
         font-family: "Lato";
         font-weight: 700;
-        font-size: 11px;
+        font-size: 13px;
         line-height: 25px;
         cursor: pointer;
     }
@@ -1469,7 +1473,7 @@ body {
     }
     .about {
         display: block;
-        margin-bottom: 180px;
+        margin-bottom: 60px;
     }
     .background {
         background-image: none;
@@ -1510,7 +1514,7 @@ body {
     margin: 0 auto;
 }
 .courses {
-    margin-bottom: 160px;
+    margin-bottom: 60px;
 }
 .courses__title {
     display: flex;
@@ -1699,7 +1703,7 @@ body {
         margin-bottom: 25px;
     }
     .courses__title p {
-        font-size: 11px;
+        font-size: 16px;
         line-height: 100%;
         margin-bottom: 10px;
     }
@@ -1712,11 +1716,11 @@ body {
         margin: 10px 0 0 10px;
     }
     .card__text {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 80%;
     }
     .card__baks {
-        font-size: 13px;
+        font-size: 16px;
         line-height: 100%;
     }
     .card__slash {
@@ -1724,7 +1728,7 @@ body {
         width: 11px;
     }
     .card__name {
-        font-size: 13px;
+        font-size: 16px;
         line-height: 100%;
     }
 }
@@ -1738,8 +1742,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 390px;
-        height: 438px;
+        max-width: 390px;
+        width: 100%;
+        height: auto;
         background: #ffffff;
         border: 1px solid #e5e8ed;
         box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
@@ -1879,7 +1884,7 @@ body {
     .benefits__title h3 {
         font-family: "Lato";
         font-weight: 900;
-        font-size: 30px;
+        font-size: 46px;
         line-height: 130%;
         text-align: center;
         color: #1e212c;
@@ -1902,7 +1907,7 @@ body {
         margin: 40px 0 50px 0;
     }
     .benefits__tab p {
-        font-size: 12px;
+        font-size: 16px;
     }
     .benefits__tab button:hover {
         display: flex;
@@ -1935,7 +1940,7 @@ body {
     .benefits__text p {
         width: 300px;
         height: 90px;
-        font-size: 11px;
+        font-size: 16px;
         line-height: 100%;
     }
 }
@@ -2000,11 +2005,11 @@ body {
 }
 .events__bg {
     background-color: rgba(255, 63, 58, 0.2);
-    height: 850px;
+    min-height: 400px;
 }
 .events {
     width: 100%;
-    height: 1080px;
+    min-height: 400px;
     background-image: url("../images/homepage/circle-event.png"),
         url("../images/homepage/dots-event.png");
     background-position: 100% -17%, 0 75%;
@@ -2167,29 +2172,31 @@ body {
         line-height: 100%;
     }
     .events__item-month span {
-        font-size: 11px;
+        font-size: 16px;
         line-height: 60%;
     }
     .events__item-text .events__item-text-title {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 100%;
     }
     .events__item-text p {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 100%;
     }
     .events__item button {
         width: 80px;
         height: 35px;
-        font-size: 11px;
+        font-size: 13px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 10px;
     }
-    events__more {
-        margin-top: 35px;
+
+    .events__more{
+        padding-bottom: 30px;
     }
+
     .events__more p {
         font-size: 22px;
         line-height: 100%;
@@ -2208,8 +2215,9 @@ body {
         flex-direction: column;
         text-align: center;
         justify-content: space-between;
-        width: 450px;
-        height: 189px;
+        max-width: 450px;
+        width: 100%;
+        height: auto;
     }
 
     .events__title {
@@ -2219,7 +2227,11 @@ body {
         font-size: 22px;
     }
     .events__title h3 {
-        font-size: 45px;
+        font-size: 35px;
+    }
+
+    .benefits__title h3 {
+        font-size: 35px;
     }
 
     .events__block {
@@ -2227,6 +2239,7 @@ body {
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
+        padding: 0 10px;
     }
 
     .events__item-date {
@@ -2257,7 +2270,7 @@ body {
         margin-top: 20px;
     }
     .events__more p {
-        font-size: 45px;
+        font-size: 35px;
         margin-right: 0;
         margin-bottom: 20px;
     }
