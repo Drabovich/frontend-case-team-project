@@ -1,18 +1,18 @@
 # Online courses Createx
 
-Первый совместный проект, чата @frontend_case_chat, подошел к концу (:
-За неделю с хвостиком был создан многостраничный сайт "Online courses Createx".
-Пора подводить итоги!
+The first joint project, chat @frontend_case_chat, has come to an end (:
+In just over a week, the multi-page website "Online courses Createx" was created.
+It's time to sum it up!
 
-1) В проекте приняло участие 13 разработчиков!
-2) Было сделано 250 комитов, 25 pull риквестов, создано 20 веток и решено не понятно сколько конфликтов в коде! 😀
-3) Создано 10 страниц и прелесть в том, что каждый писал как умеет, как привык со своими фишечками :)
+1) 13 developers took part in the project!
+2) 250 commits were made, 25 pull requests were made, 20 branches were created and it’s unclear how many conflicts in the code were resolved! 😀
+3) 10 pages were created and the beauty is that everyone wrote as best they could, as they were used to with their own tricks :)
 
-Да, конечно во многих местах есть, косячки с адаптивом, НО в целом результат супер крутой!!!
-Вы только представьте, что каждый делал свой кусочек, свою страницу, как умеет, как привык. А это все нужно потом соединить в единый механизм. Я считаю ребята, получили хороший опыт работы в GitHub и не только.
-Рад, что все кто начал делать свой участок, не бросили не слились, а довели дело до конца!
+Yes, of course, in many places there are jambs with adaptive, BUT in general the result is super cool!!!
+Just imagine that everyone did their own piece, their own page, as they knew how, as they were used to. And then all this needs to be combined into a single mechanism. I think the guys got a good experience working at GitHub and more.
+I’m glad that everyone who started making their own site didn’t give up or merge, but brought the job to the end!
 
-Хочу выделить людей, которые отличились особенно:
-1) @stasholmansky и Alexandr  - сделали свою страницу и бросились собирать весь проект по кусочкам, исправляя бесконечные баги!
-2) John Konan - это вообще отдельная история) Человек, который прикрыл все дыры в нашем проекте! Сначала он сделал страницу 404, потом Contacts, потом header and footer. Подменяя людей, которые не смогли в итоге начать делать свой кусок и сошли с дистанции!
-3) Все девушки! Для меня был шок, как круто они верстают) У всех, реально у всех, верстака на хорошем уровне!
+I would like to highlight people who especially distinguished themselves:
+1) @stasholmansky and Alexandr - they made their own page and rushed to piece together the entire project, fixing endless bugs!
+2) John Konan is a completely different story) The man who covered all the holes in our project! First he made the 404 page, then Contacts, then header and footer. Replacing people who were unable to eventually start doing their part and left the race!
+3) All girls! It was a shock to me how cool they make layouts) Everyone, really everyone, has a good level of workbench!
